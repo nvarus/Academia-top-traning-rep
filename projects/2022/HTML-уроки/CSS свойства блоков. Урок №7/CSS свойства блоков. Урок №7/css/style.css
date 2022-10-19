@@ -86,4 +86,22 @@ h5 {
   font-weight: 400;
 }
 
-/******************************************************************************************/
+/****************НАЧАЛО***************/
+.example-block {
+  background-color: green;
+  padding: 10px 20px 30px 5px;
+  border: 2px solid #000;
+  margin: 10px 20px 15px 20px;
+  min-height: 100px;
+}
+
+.example-string {
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
+  width: 500px;
+}
+
+.example-image {
+  max-height: 100px;
+}
