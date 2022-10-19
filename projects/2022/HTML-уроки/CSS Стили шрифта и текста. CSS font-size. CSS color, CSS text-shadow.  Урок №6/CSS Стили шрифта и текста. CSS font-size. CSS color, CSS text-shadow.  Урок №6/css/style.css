@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5 {font: inherit;font-weight: 400;}
 	font-weight: 700;
 }
 .colorred {
-	color: #f00;
+	color: rgb(4, 0, 255);
 }
 .textright {
 	text-align: justify;
