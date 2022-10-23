@@ -1,0 +1,26 @@
+.example-block {
+	background-color: aqua;
+	padding: 10px 20px 30px 5px;
+	border: 2px solid #000;
+	margin: 10px 20px 15px 20px;
+	max-height: 70px;
+		max-width: 400px;
+		overflow: auto;
+		display: inline-block;
+}
+
+.example-string {
+	background-color: green;
+	border: 1px solid #000;
+	padding: 20px;
+	margin: 10px;
+	width: 500px;
+	display: inline-block;
+		max-width: 400px;
+}
+
+.example-image {
+
+	max-height: 100px;
+	display: block;
+}

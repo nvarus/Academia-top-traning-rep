@@ -1,0 +1,96 @@
+// импортируем _resetting-styles.scss для сброса стилей CSS
+@import "./resetting-styles";
+/******************  Стили CSS сброшены  ******************/
+body {
+	padding: 30px 0 0 326px;
+	width: 1440px;
+	height: 1700px;
+	background-color: #e8e8e8;
+	font-family: Arial;
+	font-size: 20px;
+	color: #273d46;
+	line-height: 36px;
+	font-weight: 400;
+}
+
+.list {
+
+	li {
+		background: url(../img/check_icon_37.png) left no-repeat;
+		padding: 0 0 0 35px;
+	}
+
+	li:nth-child(1) {
+		text-decoration: line-through;
+
+	}
+
+	li:nth-child(2) {
+		font-weight: 700;
+	}
+
+	li:nth-child(3) {
+		font-style: italic;
+	}
+
+	li:nth-child(4) {
+		text-transform: uppercase;
+	}
+
+	li:nth-child(1):hover {
+		text-decoration: none;
+	}
+
+	li:nth-child(2):hover {
+		color: #d55a5a;
+		background: url(../img/check_icon_95.png) left no-repeat;
+	}
+
+	li:nth-child(3):hover {
+		font-style: normal;
+	}
+
+	li:nth-child(4):hover {
+		text-transform: none;
+	}
+}
+
+.button {
+	width: 199px;
+	height: 44px;
+	background-color: #80b7b3;
+	display: block;
+	margin: 120px 0 120px 30px;
+	border-radius: 50px;
+	box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+
+	&:hover {
+		background-color: #3a5856;
+	}
+
+	&:active {
+		background-color: #818181;
+	}
+
+}
+
+.text {
+	width: 294px;
+	height: 52px;
+	border: 1px solid #b0b0b0;
+
+	&:focus {
+		border: 1px solid #7fbed5;
+		box-shadow: 0px 0px 20px -1px rgba(127, 190, 213, 0.93);
+	}
+}
+
+.box {
+	width: 200px;
+	height: 80px;
+	background: #273d46 url(../img/check_icon_95.png)left no-repeat;
+	padding: 0 0 0 60px;
+}

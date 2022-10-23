@@ -1,0 +1,6 @@
+@mixin rectangle($width, $height, $color) {
+	width: $width;
+	height: $height;
+	background: $color;
+	display: inline-block;
+}
