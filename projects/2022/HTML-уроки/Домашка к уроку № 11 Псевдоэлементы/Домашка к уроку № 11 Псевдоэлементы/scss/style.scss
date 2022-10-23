@@ -1,0 +1,27 @@
+// импортируем _resetting-styles.scss для сброса стилей CSS
+@import "./resetting-styles";
+/******************  Стили CSS сброшены  ******************/
+@import "./mixinos";
+
+body {
+
+	padding: 30px;
+}
+
+.text {
+	font-size: 24px;
+	line-height: 33px;
+	margin: 0px 0px 30px 0px;
+}
+
+.text::first-line {
+	color: red;
+	font-weight: 700;
+}
+
+.list {}
+
+.list li {
+	font-size: 24px;
+	margin: 0px 0px 20px 0px;
+}
