@@ -1,0 +1,180 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input ::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a :visited {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font: inherit;
+  font-weight: 400;
+}
+
+/******************  Стили CSS сброшены  ******************/
+body {
+  padding: 20px 90px 30px 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #273d46;
+}
+
+.list {
+  line-height: 36px;
+}
+
+.list li::before {
+  content: url(../img/check_icon_37.png);
+  padding: 0px 10px 0px 0px;
+}
+
+.list li:nth-child(1) {
+  text-decoration: line-through;
+}
+
+.list li:nth-child(2) {
+  font-weight: 700;
+}
+
+.list li:nth-child(3) {
+  font-style: italic;
+}
+
+.list li:nth-child(4) {
+  text-transform: uppercase;
+}
+
+.list li:hover:nth-child(1) {
+  text-decoration: none;
+}
+
+.list li:hover:nth-child(2) {
+  font-weight: 400;
+  color: red;
+}
+
+.list li:hover:nth-child(2)::before {
+  content: url(../img/check_icon_95.png);
+}
+
+.list li:hover:nth-child(3) {
+  font-style: normal;
+}
+
+.list li:hover:nth-child(4) {
+  text-transform: none;
+}
+
+.button {
+  margin: 20px 0px 20px 0px;
+  height: 44px;
+  width: 199px;
+  background-color: #73B7B3;
+  border-radius: 50px;
+  box-shadow: -6px 6px 30px 1px rgba(16, 17, 17, 0.54);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+
+.button::after {
+  content: url(../img/shape_2_9.png);
+  padding: 0px 0px 0px 10px;
+}
+
+.button:hover {
+  background-color: #3a5856;
+}
+
+.button:active {
+  background-color: #818181;
+}
+
+.text p {
+  margin: 0px 0px 20px 0px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text p:first-child::first-line {
+  color: red;
+}
+
+.text p:last-child::first-letter {
+  color: red;
+  font-size: 25px;
+  font-weight: 700;
+}
