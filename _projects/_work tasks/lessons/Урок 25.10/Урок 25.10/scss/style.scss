@@ -1,0 +1,33 @@
+@import "./resetting-styles";
+@import "./_mixinos"; 
+/*--------------------------*/
+
+body {
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, "Helvetica Neue", Helvetica, 
+	sans-serif;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 500px;
+	height: 500px;
+	border: 5px solid red;
+	margin: 20px auto 0px auto;
+	text-align: center;
+	&__button {
+
+	}
+}
+.button {
+	height: 80px;
+	width: 300px;
+	font-size: 40px;
+	text-transform: uppercase;
+	background-color: rgb(35, 191, 35);
+	padding: 20px;
+	border-radius: 40px;
+	color: white;
+}
