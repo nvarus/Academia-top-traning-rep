@@ -99,12 +99,16 @@ h5 {
   color: green;
 }
 .block__text {
-  font-size: 80px;
+  font-size: 100px;
 }
 
 .link {
   color: blue;
   text-decoration: underline;
+  font-size: 100px;
+}
+.block .link {
+  font-size: 100px;
 }
 .link:hover {
   color: green;
