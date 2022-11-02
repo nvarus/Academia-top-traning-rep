@@ -121,4 +121,55 @@ a {
 	color: var(--color-dim-gray);
 	font-style: italic;
 }
+/* -----list-multi----- */
+.list-multi {
+	margin: 10px 0px 10px 40px;
+}
+.list-multi li {
+	margin: 3px 0px 0px 20px;
+}
+.list-multi span {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--color-dim-gray);
+	font-style: italic;
+}
+
+/* -----details----- */
+.list-details details summary{
+	position: relative;
+	cursor: pointer;
+	padding: 5px;
+	background-color: var(--color-silver);
+	border-radius: 5px;
+	border: 1px solid var(--color-dim-gray);
+	list-style: none;
+	z-index: 1;
+}
+
+.list-details details summary::before {
+	content: "\27A3";
+	margin-right: 5px;
+	display: inline-block;
+	width: 15px;
+
+}
+
+.list-details details[open] summary::before {
+	content: "\2B99";
+	margin-right: 5px;	
+	display: inline-block;
+}
+.list-details details > div {
+	background-color: var(--color-old-lace);
+	border: 1px solid var(--color-bisque);
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 5px 11px 20px var(--color-silver);
+}
+.list-details details h3 {
+	margin-top: 10px;
+}
+
+ 
 

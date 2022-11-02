@@ -7,3 +7,99 @@
 		margin: 20px 0;
 }
 
+.format-image-svg {
+	width: 200px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid var(--color-dim-gray);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px auto 0;
+}
+
+.format-image-svg svg {
+	cursor: pointer;
+	transition: .5s ease;
+}
+
+.format-image-svg svg:nth-child(1):hover {
+	width: 40px;
+	height: 40px;
+}
+
+.format-image-svg svg:nth-child(2) path {
+	stroke: var(--color-rosy-broun);
+}
+
+.format-image-svg svg:nth-child(2):hover {
+	fill: var(--color-rosy-broun);
+}
+
+.format-image-svg svg:nth-child(3):hover {
+	transform: rotate(180deg);
+}
+
+/* -----formats-image-image----------- */
+
+.formats-image-images {
+	max-width: 800px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.formats-image-images__item {
+	display: inline-block;
+	transition: .5s ease;
+}
+
+.formats-image-images__item img {
+	width: 300px;
+}
+
+.formats-image-images__item:hover {
+	background-color: rgba(0, 0, 0, .3);
+}
+
+/* ---------tag-img----------*/
+
+.tag-img, .tag-img-wrap {
+	margin: 20px 0;
+}
+
+.tag-img p {
+	font-style: italic;
+}
+
+/* ---------backgroung-image----------*/
+
+.backgroung-image {
+	margin: 20px 0;
+}
+
+.backgroung-image p {
+	margin: 0 0 10px 0;
+}
+
+.background-image-wrap {
+	margin: 20px 0;
+	height: 200px;
+	border: 1px solid var(--color-dim-gray);
+	border-radius: 5px;
+}
+
+.background-image__image {
+	background: url(../img/leopard-black.jpg);
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	/* background-repeat: no-repeat; */
+	/* background-position: center 0; */
+	background-clip: text;
+	font-size: 100px;
+	color: transparent;
+	-webkit-background-clip: text;
+
+}
