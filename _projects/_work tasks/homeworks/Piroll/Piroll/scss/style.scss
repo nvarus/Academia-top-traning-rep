@@ -1,0 +1,96 @@
+@import "./resetting-styles";
+@import "./_mixinos"; 
+/*--------------------------*/
+
+body {
+	padding: 0px 0px 0px 0px;
+}
+
+
+.container {}
+
+.header {
+
+	// .header__logo
+
+	&__logo {}
+
+	// .header__menu
+
+	&__menu {}
+}
+
+.menu {
+
+	// .menu__item
+
+	&__item {
+
+		// .menu__item_active
+
+		&_active {}
+	}
+}
+
+.text {
+
+	// .text__title
+
+	&__title {}
+
+	// .text__description
+
+	&__description {}
+}
+
+.work {
+
+	// .work__img-item
+
+	&__img-item {}
+}
+
+.footer {
+
+	// .footer__company
+
+	&__company {}
+
+	// .footer__company-name
+
+	&__company-name {}
+
+	// .footer__reserved
+
+	&__reserved {}
+
+	// .footer__contacts
+
+	&__contacts {}
+
+	// .footer__bottom-menu
+
+	&__bottom-menu {}
+
+	// .footer__partners-menu
+
+	&__partners-menu {}
+}
+
+.bottom-menu {
+
+	// .bottom-menu__submenu
+
+	&__submenu {}
+
+	// .bottom-menu__item
+
+	&__item {}
+}
+
+.partners-menu {
+
+	// .partners-menu__item
+
+	&__item {}
+}
