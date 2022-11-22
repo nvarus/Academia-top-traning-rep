@@ -1,0 +1,27 @@
+.before-after .exemple p::before, .before-after .exemple p::after {
+	content: "\2665";
+	border: 1px dashed var(--color-rosy-brown);
+	padding: 2px;
+	margin-right: 10px;
+}
+
+.before-after .exemple p::after {
+	margin-left: 10px	;
+}
+
+.first-line .exemple p::first-line {
+	color: var(--color-rosy-brown);
+	text-shadow: 1px 1px 1px var(--color-dim-gray);
+	font-style: italic;
+}
+
+.first-letter .exemple p::first-letter {
+	display: inline-block;
+	color: var(--color-rosy-brown);
+	font-size: 25px;
+	font-weight: bold;
+	border: 1px solid var(--color-dim-gray);
+	padding: 2px 8px;
+	float: left;
+	margin: 7px 10px 0 0;
+}

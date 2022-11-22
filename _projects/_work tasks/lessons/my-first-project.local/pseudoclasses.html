@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/smile.png">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<title>Animation</title>
+</head>
+
+<body>
+	<div class="container header-container">
+		<header>
+			<div class="head-menu box-shadow">
+				<div class="logo-wrap">
+					<a href="/" class="logo"></a>
+				</div>
+				<div class="nav-links">
+					<nav>
+						<ul>
+							<li><a href="#">Main</a></li>
+							<li><a href="">Block-model</a></li>
+							<li><a href="./images.html">Images</a></li>
+							<li><a href="./animation.html">Animation</a></li>
+							<li><a href="./tables.html">Tables</a></li>
+							<li><a href="./pseudoclasses.html">Pseudoclasses</a></li>
+							<li><a href="./position.html">Position</a></li>
+							<li><a href="./flexbox.html">Flexbox</a></li>
+							<li><a href="./grid.html">Grid</a></li>
+							<li><a href="./forms.html">Forms</a></li>
+							<li><a href="./adaptive.html">Adaptive</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="container body-container">
+		<aside class="aside-container">
+			<h2 class="title-color">Ссылки</h2>
+			<h3>Полезные программы</h3>
+			<ul class="aside-nav">
+				<li class="sprite-generate">
+					<a href="https://spritegen.website-performance.org/" target="_blank">sprite generate</a>
+				</li>
+				<li class="fonts-google">
+					<a href="https://fonts.google.com/" target="_blank">link fonts</a>
+				</li>
+				<li class="colors-cheme">
+					<a href="https://colorscheme.ru/html-colors.html" target="_blank">colors cheme</a>
+				</li>
+				<li class="htmlbook">
+					<a href="http://htmlbook.ru/" target="_blank">html-book</a>
+				</li>
+				<li class="html-symbols">
+					<a href="https://htmlweb.ru/html/symbols.php/" target="_blank">html-symbols</a>
+				</li>
+				<li class="image-png">
+					<a href="http://imgpng.ru/" target="_blank">image-png</a>
+				</li>
+				<li class="image-png">
+					<a href="https://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+				</li>
+				<li class="image-png">
+					<a href="https://icons8.ru/icons/" target="_blank">icons</a>
+				</li>
+			</ul>
+		</aside>
+
+		<main class="main-container box-shadow animatiom">
+			<div class="content-container">
+				<section class="title-color title-h1">
+					<h1>Использование псевдоэлементов и псевдоклассов</h1>
+				</section>
+
+				<section class="pseudoelements text-wrap">
+					<h2 class="title-h2">Псевдоэлементы</h2>
+
+					<div class="before-after text-wrap">
+						<h3 class="title-h3">Псевдоэлементы ::after и ::before</h3>
+						<p>Элементы :before и :after не будут сгенерированы, т.е. не будут видны в коде страницы, поэтому они
+							и
+							называются
+							псевдоэлементами. ::after создаёт псевдоэлемент после содержимого элемента. Этот псевдоэлемент
+							работает только совместно
+							со стилевым свойством content, которое определяет содержимое для вставки. По своему действию
+							::before
+							аналогичен
+							::after, но вставляет псевдоэлемент до содержимого элемента.</p>
+						<div class="exemple">
+							<h3 class="title-h3">Пример:</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur neque ipsa voluptates labore
+								saepe
+								minima commodi hic sunt distinctio a molestiae, est ullam necessitatibus, odio, accusamus
+								placeat
+								repudiandae fugiat iure. Aut excepturi aliquid fuga hic cum magni iusto, totam animi?
+							</p>
+						</div>
+					</div>
+
+					<div class="first-line text-wrap">
+						<h3 class="title-h3">Псевдоэлемент ::first-line</h3>
+						<p>По названию этого псевдоэлемента можно догадаться, что предназначен он для форматирования первой
+							строки блочных
+							элементов. Для оформления первой строки можно использовать не все css-свойства, а только те, что
+							перечислены в списке
+							ниже:</p>
+						<ol>
+							<li>Свойства группы <b>
+									<i>font (font-family, font-size, fontstyle, font-weight, font-variant и
+										др.)</i> </b>.</li>
+							<li><b>
+									<i>сolor.</i> </b></li>
+							<li></li>Свойства группы <b>
+								<i>background.</i> </b></li>
+							<li><b>
+									<i>word-spacing.</i> </b></li>
+							<li>letter-spacing.</i> </b></li>
+							<li><b>
+									<i>text-decoration, text-decoration-color, text-decoration-line, text-decoration-style.</i>
+								</b>
+							</li>
+							<li><b>
+									<i>vertical-align.</i> </b></li>
+							<li><b>
+									<i>text-shadow.</i> </b></li>
+							<li><b>
+									<i>text-transform.</i></b></li>
+							<li><b>
+									<i>line-height.</i> </b></li>
+							<li><b><i>clear.</i></b></li>
+						</ol>
+						<div class="exemple">
+							<h3 class="title-h3">Пример:</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur neque ipsa voluptates labore
+								saepe
+								minima commodi hic sunt distinctio a molestiae, est ullam necessitatibus, odio, accusamus
+								placeat
+								repudiandae fugiat iure. Aut excepturi aliquid fuga hic cum magni iusto, totam animi?
+							</p>
+						</div>
+					</div>
+
+					<div class="first-letter text-wrap">
+						<h3 class="title-h3">Псевдоэлемент ::first-letter</h3>
+						<p>По названию этого псевдоэлемента также можно понять, что его предназначение — оформить первую букву
+							блочного элемента.
+							Для него тоже есть ограничения по используемым свойствам.</p>
+						<ol>
+							<li>Свойства группы<b><i>margin</i> </b>.</li>
+							<li>Свойства группы<b>
+									<i>padding</i> </b></li>
+							<li>Свойства группы<b>
+									<i>border</i> </b></li>
+							<li><b>
+									<i>box-shadow.</i> </b></li>
+							<li><b>
+									<i>float.</i> </b></li>
+							<li><b>
+									<i>vertical-align</i> </b>(только если float равен none).</li>
+						</ol>
+						<div class="exemple">
+							<h3 class="title-h3">Пример:</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur neque ipsa voluptates labore
+								saepe
+								minima commodi hic sunt distinctio a molestiae, est ullam necessitatibus, odio, accusamus
+								placeat
+								repudiandae fugiat iure. Aut excepturi aliquid fuga hic cum magni iusto, totam animi?
+							</p>
+						</div>
+
+					</div>
+				</section>
+
+				<section class="pseudoclasses text-wrap">
+					<h2 class="title-h2">Псевдоклассы</h2>
+					<div class="text">
+						Помимо псевдоэлементов в CSS существуют псевдоклассы. Они всегда записываются с одним двоеточием после
+						селектора.
+						Псевдоклассы определяют различные состояния элементов, например, их вид при наведении курсора мыши или
+						при клике на
+						элементе.
+
+					</div>
+
+					<div class="first-child_last-child text-wrap">
+						<h3 class="title-h3">Псевдоклассы first-child и last-child</h3>
+						<p>Например, псевдокласс :first-child отвечает за форматирование первого элемента, а псевдокласс
+							:last-child отвечает за
+							форматирование последнего элемента среди подобных.</p>
+
+
+						<h3 class="title-h3">Пример: p:first-child, p:last-child</h3>
+
+						<div class="exemple">
+							<h3 class="title-h3">Пример: p:first-child, p:last-child</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur neque ipsa voluptates labore
+								saepe
+								minima commodi hic sunt distinctio a molestiae, est ullam necessitatibus, odio, accusamus
+								placeat
+								repudiandae fugiat iure. Aut excepturi aliquid fuga hic cum magni iusto, totam animi?
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur neque ipsa voluptates labore
+								saepe
+								minima commodi hic sunt distinctio a molestiae, est ullam necessitatibus, odio, accusamus
+								placeat
+								repudiandae fugiat iure. Aut excepturi aliquid fuga hic cum magni iusto, totam animi?
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur neque ipsa voluptates labore
+								saepe
+								minima commodi hic sunt distinctio a molestiae, est ullam necessitatibus, odio, accusamus
+								placeat
+								repudiandae fugiat iure. Aut excepturi aliquid fuga hic cum magni iusto, totam animi?
+							</p>
+						</div>
+					</div>
+
+					<div class="nth-child text-wrap">
+						<h3 class="title-h3">Псевдокласс nth-child</h3>
+						<p>Чтобы отформатировать какой-либо определенный элемент, необходимо использовать псевдокласс
+							:nth-child(n). Вместо n нужно
+							поставить какую-либо цифру.</p>
+
+						<h3 class="title-h3">Пример: :nth-child(3), :nth-child(6)</h3>
+
+						<div class="exemple box-shadow">
+							<h3 class="title-h3">Пример: :nth-child(3), :nth-child(6)</h3>
+							<div class="box-item">
+								<div class="box-item">1</div>
+								<div class="box-item">2</div>
+								<div class="box-item">3</div>
+								<div class="box-item">4</div>
+								<div class="box-item">5</div>
+								<div class="box-item">6</div>
+							</div>
+						</div>
+
+						<p>Если необходимо задать форматирование для каждого 3-го абзаца, стоит использовать псевдокласс
+							:nth-child(3n). Вместо
+							цифры 3 может быть любая цифра или выражение, например, 4n-1, 3n+1 и т.д. Достаточно часто бывает
+							нужно отформатировать
+							четные или нечетные элементы. Для этой цели можно использовать, например, псевдокласс
+							:nth-child(2n) или
+							:nth-child(2n-1). Кроме того, существуют специальные ключевые слова для четных элементов (even) и
+							нечетных (odd).</p>
+
+						<h3 class="title-h3">Пример: :nth-child(2n-1)</h3>
+
+						<div class="exemple box-shadow">
+							<h3 class="title-h3">Пример: :nth-child(2n-1)</h3>
+							<div class="box-item">
+								<div class="box-item">1</div>
+								<div class="box-item">2</div>
+								<div class="box-item">3</div>
+								<div class="box-item">4</div>
+								<div class="box-item">5</div>
+								<div class="box-item">6</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+				</section>
+
+
+			</div>
+
+
+		</main>
+	</div>
+
+</body>
+
+</html>
