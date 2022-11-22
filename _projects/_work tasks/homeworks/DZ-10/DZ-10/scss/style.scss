@@ -1,0 +1,35 @@
+@import "./resetting-styles";
+/*--------------------------*/
+$gray-color:#E4E4E4;
+$mark-color:#7FFFD4;
+
+.table {
+	margin: 30px auto;
+	border: 1px solid $gray-color;
+	padding: 5px;
+	border-spacing: 5px;
+
+	&__caption {
+		font-style: italic;
+		text-align: end;
+	}
+
+	&__header {
+		background-color: $gray-color;
+	}
+	
+	&__colgroup-marked {
+		background-color: $mark-color;
+		min-width: 200px;
+	}
+
+	// форматирование ячеек
+	th, td {
+		text-align: start;
+		padding: 4px;
+		border: 1px solid $gray-color;
+		border-radius: 2px;
+	}
+}
+
+

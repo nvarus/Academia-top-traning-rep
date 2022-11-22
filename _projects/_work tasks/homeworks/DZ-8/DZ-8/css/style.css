@@ -1,40 +1,69 @@
-@import url(./resetting-styles.css);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
 body {
-	padding: 30px;
-	font-family: 'Inter';
-	font-weight: 400;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-.container {
-	margin: 0 auto;
-	max-width: 1087px;
+input,
+button,
+textarea {
+  font-family: inherit;
 }
 
-.block {
-	display: flex;
-	justify-content: space-between;
+input ::-ms-clear {
+  display: none;
 }
 
-.block__background {
-	background: url(../img/img1.jpg) 0px -200px / 100% no-repeat;
-	height: 266px;
-	width: 805px;
+button {
+  cursor: pointer;
 }
 
-.block__wrap {
-	margin: 120px 0 0 30px;
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
-.block__wrap p {
-	font-size: 32px;
-	line-height: 46px;
-	letter-spacing: -0.05em;
-	color: #ECE6D9;
-	background-color: rgba(31, 29, 29, 0.5);
-	display: inline;
+a,
+a :visited {
+  text-decoration: none;
 }
 
+<<<<<<< HEAD
 .block__square {
 	width: 266px;
 	height: 266px;
@@ -44,26 +73,30 @@ body {
 
 .block__square:hover {
 	background: url(../img/img2.jpg) center / 160% no-repeat;
+=======
+a :hover {
+  text-decoration: none;
+>>>>>>> 95f2fc99f6ec98c3416b11e89a937d4c05a71895
 }
 
-.text {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 0 30px 0;
+ul li {
+  list-style: none;
 }
 
-.text__column {
-	width: 398px;
+img {
+  vertical-align: top;
 }
 
-.text__column h2 {
-	font-family: 'Inter';
-	font-weight: 600;
-	font-size: 28px;
-	line-height: 34px;
-	letter-spacing: -0.05em;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font: inherit;
+  font-weight: 400;
 }
 
+<<<<<<< HEAD
 .text__column p {
 	font-weight: 500;
 	font-size: 14px;
@@ -151,4 +184,9 @@ body {
 	color: #676767;
 	font-weight: 800;
 	line-height: 22px;
+=======
+/*--------------------------*/
+body {
+  padding: 0px 0px 0px 0px;
+>>>>>>> 95f2fc99f6ec98c3416b11e89a937d4c05a71895
 }
