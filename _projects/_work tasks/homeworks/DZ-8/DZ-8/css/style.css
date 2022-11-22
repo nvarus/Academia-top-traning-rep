@@ -39,6 +39,11 @@ body {
 	width: 266px;
 	height: 266px;
 	background-color: rgb(42, 39, 39);
+	transition: .5s ease;
+}
+
+.block__square:hover {
+	background: url(../img/img2.jpg) center / 160% no-repeat;
 }
 
 .text {
@@ -72,6 +77,13 @@ body {
 	width: 80px;
 	height: 24px;
 	background: #232323;
+	transition: 3.5 ease;
+}
+
+.text__column button:hover {
+	width: 86px;
+	height: 30px;
+	background: #5f5f5f;
 }
 
 .text__column button>a {
