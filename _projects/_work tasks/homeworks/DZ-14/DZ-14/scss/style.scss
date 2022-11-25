@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import "./resetting-styles";
+@import "./_mixinos"; 
+/*--------------------------------------------------*/
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+.content {
+	max-width: 1170px;
+	margin: 20px auto;
+	border: 1px solid #000; //! удалить
+
+}
+.background-box {
+	width: 100%;
+	min-height: 629px;
+	background: url(../img/background-box__back.jpg) 0 0 / auto auto no-repeat scroll;
+	border: 1px solid #000; //! удалить
+
+        &__header {
+					min-height: 82px;
+					border-bottom: 2px solid #D6CDCD;
+        }
+
+        &__center-block {
+        }
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 60px 0px 60px;
+ 
+        &__logo {
+        }
+
+        &__nav {
+margin: 5px 0 0 0;
+        }
+				&__nav li {
+					display: inline-flex;
+
+				}
+
+}
+
+
+.center-block {
+
+        // .center-block__button
+
+        &__button {
+        }
+}
+.button {
+
+        // .button__title
+
+        &__title {
+        }
+}
+.inform-box {
+
+        // .inform-box__text
+
+        &__text {
+        }
+
+        // .inform-box__card-container
+
+        &__card-container {
+        }
+}
+.card-container {
+
+        // .card-container__card
+
+        &__card {
+        }
+}
+.card {
+
+        // .card__picture
+
+        &__picture {
+        }
+
+        // .card__info
+
+        &__info {
+        }
+
+        // .card__header
+
+        &__header {
+        }
+
+        // .card__text
+
+        &__text {
+        }
+
+        // .card__link
+
+        &__link {
+        }
+}
+
