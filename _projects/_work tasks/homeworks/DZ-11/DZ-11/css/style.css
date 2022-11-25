@@ -16,7 +16,7 @@
 }
 /*--------------------------*/
 .container {
-  width: var(--box-width);
+  max-width: var(--box-width);
   height: var(--box-height);
   background: LightSalmon;
   margin: 30px auto;

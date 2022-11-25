@@ -1,0 +1,32 @@
+.position .exemple {
+	position: relative;
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+.block-box {
+	height: 50px;
+	background: var(--color-rosy-brown);
+	border: 1px solid var(--color-dim-gray);
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+.block-box:nth-child(1) {
+	position: relative;
+	z-index: 3;
+}
+
+.block-box:nth-child(2) {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	background: var(--color-bisque);
+	z-index: 4;
+}
+
+.block-box:nth-child(3) {
+	position: relative;
+	background: var(--color-silver);
+	z-index: 3;
+}
