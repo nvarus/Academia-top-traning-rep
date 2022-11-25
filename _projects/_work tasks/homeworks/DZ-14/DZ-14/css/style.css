@@ -113,7 +113,10 @@ body {
 }
 .header__nav {
   margin: 5px 0 0 0;
-}
-.header__nav li {
-  display: inline-flex;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #E1E1E1;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
 }

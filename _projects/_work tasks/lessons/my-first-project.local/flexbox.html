@@ -91,7 +91,6 @@
 				</section>
 
 				<section>
-
 					<h2 class="title-h2">Свойства flex-контейнера</h2>
 					<div class="flex-wrap flex-display">
 						<h3 class="title-h3">Свойство display:</h3>
@@ -169,7 +168,7 @@
 								<li>flex-start</li>
 								<li>flex-end</li>
 								<li>center</li>
-								<li>stratch</li>
+								<li>stretch</li>
 								<li>baseline</li>
 							</ul>
 							<div data-box="flex-box">
@@ -246,7 +245,7 @@
 						</div>
 						<div class="flex-container">
 							<ul class="flex-nav" data-name="flex-wrap">
-								<li>stratch</li>
+								<li>stretch</li>
 								<li>flex-start</li>
 								<li>flex-end</li>
 								<li>space-between</li>
@@ -267,10 +266,127 @@
 					</div>
 				</section>
 
+				<section>
+					<div>
+						<h2 class="title-h2">Свойства flex-элементов</h2>
+						<div class="text">
+							<p>Свойства <b><i>flex</i></b> -элементов позволяют управлять каждым из элементов внутри
+								<b><i>flex</i></b>
+								-контейнера по отдельности.
+								Это, в первую очередь, свойства, которые управляют размерами дочерних элементов, их растяжимостью и
+								сжимаемостью, порядком отображения вне зависимости от <b><i>html</i></b> -разметки, а также возможностью
+								переопределить
+								размещение <b><i>flex</i></b> -элементов, заданное свойствами <b><i>flex</i></b> -контейнера
+							</p>
+						</div>
+					</div>
+
+
+					<div class="flex-wrap flex-grow flex-property">
+						<h3 class="title-h3">Свойство flex-grow:</h3>
+
+						<div class="text">
+							<p>определяет фактор (коэффициент) растяжимости flex-элемента при наличии избыточного пространства во
+								flex-контейнере. По умолчанию flex-grow имеет значение 0, т.е. все flex-элементы будут того размера,
+								который им задан с помощью width или flex-basis, и часть flex-контейнера останется незанятой
+								например, flex-контейнер с шириной 800px содержит 4 flex-элемента с шириной 150px, т.е. 200px остаются
+								незаполненными. Если каждому из этих элементов назначить flex-grow: 1, то 200px избыточного пространства
+								нужно разделить на сумму этих коэффициентов, т.е. 200px:4 = 50px, а потом добавить результат к ширине
+								каждого элемента. В результате этих действий ширина каждого flex-элемента станет 200px.
+								если же какой-то один flex-элемент получит свойство flex-grow: 2, то расчет будет уже другим. 200px: 5 =
+								40px. Цифра 5 — это сумма flex-grow всех элементов (1+1+1+2= 5). Затем к 3-м из наших элементов нужно
+								добавить по 40px, и их размер станет 190px, а к тому, у которого flex-grow: 2, мы добавим 80px (40px*2)
+								— и получим 230px. Общая сумма всех ширин будет по-прежнему 800px.</p>
+						</div>
+
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="flex-wrap">
+								<li>flex-grow1</li>
+								<li>flex-grow2</li>
+							</ul>
+
+							<div data-box="flex-box class=" basis">
+								<div class="flex-item">
+									<h4>column1</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+
+
+							<div class="basis" data-box="flex-box">
+								<div class="flex-item">
+									<h4>column2</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae
+										dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias
+										laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+
+
+							<div data-box="flex-box" class="basis">
+								<div class="flex-item">
+									<h4>column3</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae
+										dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias
+										laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+
+
+							<div data-box="flex-box" class="basis">
+								<div class="flex-item">
+									<h4>column4</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae
+										dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias
+										laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+
 			</div>
 		</main>
 	</div>
 
+	<script>
+		let items = document.querySelectorAll('.flex-nav');
+
+		function example(selector) {
+			items.forEach(item => {
+				item.addEventListener('click', (e) => {
+					let attr = e.target.parentNode.getAttribute('data-name');
+					let text = e.target.innerText;
+					let parent = e.target.parentNode.parentNode;
+					let box = parent.querySelector('[data-box]');
+
+					if (box.hasAttribute('class')) { box.removeAttribute('class'); }
+
+					if (!box.classList.contains(text)) { box.classList.add(text); }
+				});
+			});
+
+		};
+		example(items);
+	</script>
 </body>
 
 </html>

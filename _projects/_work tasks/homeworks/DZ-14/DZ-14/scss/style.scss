@@ -37,17 +37,16 @@ body {
 	justify-content: space-between;
 	padding: 20px 60px 0px 60px;
  
-        &__logo {
-        }
-
-        &__nav {
-margin: 5px 0 0 0;
-        }
-				&__nav li {
-					display: inline-flex;
-
-				}
-
+	&__nav {
+		margin: 5px 0 0 0;
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 20px;
+		color: #E1E1E1;
+		text-transform: uppercase;
+		letter-spacing: -0.05em;
+					
+					
 }
 
 
