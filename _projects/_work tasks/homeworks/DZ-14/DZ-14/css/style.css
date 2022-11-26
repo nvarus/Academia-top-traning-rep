@@ -90,30 +90,196 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.content {
+.container {
+  width: 98vw;
+  height: 113.42vw;
   max-width: 1170px;
-  margin: 20px auto;
-  border: 1px solid #000;
+  max-height: 1327px;
+  margin: 2% auto;
 }
 
 .background-box {
-  width: 100%;
-  min-height: 629px;
-  background: url(../img/background-box__back.jpg) 0 0/auto auto no-repeat scroll;
-  border: 1px solid #000;
+  background: url(../img/background-box__back.jpg) 0 0/100% 100% no-repeat;
+  min-height: 47.4%;
 }
-.background-box__header {
-  min-height: 82px;
-  border-bottom: 2px solid #D6CDCD;
-}
+
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px 0px 60px;
+  padding: 1.4% 5% 1.4% 5%;
+  min-height: 62px;
+  border-bottom: 2px solid #D6CDCD;
+}
+.header__logo {
+  margin-right: 10%;
 }
 .header__nav {
-  margin: 5px 0 0 0;
+  margin-top: 0.5%;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  color: #E1E1E1;
+  text-transform: uppercase;
+}
+.header__nav a:visited {
+  color: #E1E1E1;
+}
+.header__nav a:hover {
+  text-decoration: underline;
+  color: yellow;
 }
 .header__nav li {
   display: inline-flex;
+  margin-right: 10px;
+}
+.header__nav ul:last-child {
+  margin-right: 0;
+}
+
+.center-block {
+  color: #FFFEFC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15% 2%;
+}
+.center-block h1, .center-block h3 {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.center-block h1 {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 70px;
+  margin-bottom: 5%;
+}
+.center-block h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 5%;
+}
+
+.button {
+  width: 248px;
+  height: 63px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+.button__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #494646;
+  text-transform: uppercase;
+}
+.button__title img {
+  margin-right: 10px;
+}
+
+.inform-box {
+  min-height: 52.6%;
+}
+.inform-box__text {
+  min-height: 259px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inform-box__text h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: #494646;
+  margin: 5% 0 2% 0;
+}
+.inform-box__text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #9A98A0;
+  max-width: 472px;
+  align-self: center;
+}
+.inform-box__card-container {
+  min-height: 62.89%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-container__card {
+  margin-bottom: 40px;
+}
+
+.card {
+  max-width: 330px;
+  min-height: 391px;
+}
+.card:nth-child(1) .card__picture {
+  background: url(../img/flex-item__foto1.png) 0 0/auto auto repeat scroll;
+}
+.card:nth-child(2) .card__picture {
+  background: url(../img/flex-item__foto2.png) 0 0/auto auto repeat scroll;
+}
+.card:nth-child(3) .card__picture {
+  background: url(../img/flex-item__foto3.png) 0 0/auto auto repeat scroll;
+}
+.card__info {
+  padding: 0 2px 0 2px;
+}
+.card__picture {
+  width: 100%;
+  min-height: 224px;
+}
+.card__header {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: baseline;
+  padding-top: 10px;
+}
+.card__header h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #494646;
+  margin-right: 20px;
+}
+.card__header h4 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #9A98A0;
+}
+.card__text {
+  min-height: 109px;
+}
+.card__text p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #9A98A0;
+  margin-bottom: 10px;
+}
+.card__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  color: #646367;
+}
+.card__link a:visited {
+  color: #646367;
+}
+.card__link a:hover {
+  text-decoration: underline;
+  color: blue;
 }
