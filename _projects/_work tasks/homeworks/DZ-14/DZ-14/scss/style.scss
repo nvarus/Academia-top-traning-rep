@@ -22,6 +22,7 @@ body {
 .header {
 	display: flex;
 	justify-content: space-between;
+<<<<<<< HEAD
 	padding: 1.4% 5% 1.4% 5%;
 	min-height: 62px;
 	border-bottom: 2px solid #D6CDCD;
@@ -62,6 +63,20 @@ body {
 		margin-right: 0;
 
 	}
+=======
+	padding: 20px 60px 0px 60px;
+ 
+	&__nav {
+		margin: 5px 0 0 0;
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 20px;
+		color: #E1E1E1;
+		text-transform: uppercase;
+		letter-spacing: -0.05em;
+					
+					
+>>>>>>> ba744390b545537a07bd87b51bf26f52b86e4c46
 }
 
 .center-block {

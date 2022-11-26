@@ -114,6 +114,7 @@ body {
   margin-right: 10%;
 }
 .header__nav {
+<<<<<<< HEAD
   margin-top: 0.5%;
   font-weight: 700;
   font-size: 17px;
@@ -283,3 +284,13 @@ body {
   text-decoration: underline;
   color: blue;
 }
+=======
+  margin: 5px 0 0 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #E1E1E1;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+>>>>>>> ba744390b545537a07bd87b51bf26f52b86e4c46

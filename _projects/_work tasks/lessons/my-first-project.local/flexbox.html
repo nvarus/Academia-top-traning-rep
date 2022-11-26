@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/smile.png">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<title>Flexbox</title>
+</head>
+
+<body>
+	<div class="container header-container">
+		<header>
+			<div class="head-menu box-shadow">
+				<div class="logo-wrap">
+					<a href="/" class="logo"></a>
+				</div>
+				<div class="nav-links">
+					<nav>
+						<ul>
+							<li><a href="#">Main</a></li>
+							<li><a href="">./block-model.html</a></li>
+							<li><a href="./images.html">Images</a></li>
+							<li><a href="./animation.html">Animation</a></li>
+							<li><a href="./tables.html">Tables</a></li>
+							<li><a href="./pseudoclasses.html">Pseudoclasses</a></li>
+							<li><a href="./position.html">Position</a></li>
+							<li><a href="./flexbox.html">Flexbox</a></li>
+							<li><a href="./grid.html">Grid</a></li>
+							<li><a href="./forms.html">Forms</a></li>
+							<li><a href="./adaptive.html">Adaptive</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="container body-container">
+		<aside class="aside-container">
+			<h2 class="title-color">Ссылки</h2>
+			<h3>Полезные программы</h3>
+			<ul class="aside-nav">
+				<li class="sprite-generate">
+					<a href="https://spritegen.website-performance.org/" target="_blank">sprite generate</a>
+				</li>
+				<li class="fonts-google">
+					<a href="https://fonts.google.com/" target="_blank">link fonts</a>
+				</li>
+				<li class="colors-cheme">
+					<a href="https://colorscheme.ru/html-colors.html" target="_blank">colors cheme</a>
+				</li>
+				<li class="htmlbook">
+					<a href="http://htmlbook.ru/" target="_blank">html-book</a>
+				</li>
+				<li class="html-symbols">
+					<a href="https://htmlweb.ru/html/symbols.php/" target="_blank">html-symbols</a>
+				</li>
+				<li class="image-png">
+					<a href="http://imgpng.ru/" target="_blank">image-png</a>
+				</li>
+				<li class="image-png">
+					<a href="https://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+				</li>
+				<li class="image-png">
+					<a href="https://icons8.ru/icons/" target="_blank">icons</a>
+				</li>
+			</ul>
+		</aside>
+
+		<main class="main-container box-shadow animatiom">
+			<div class="content-container">
+				<section class="title-color title-h1">
+					<h1>Модель Flexbox</h1>
+				</section>
+
+				<section>
+					<h2 class="title-h2">Что такое Flexbox?</h2>
+					<div class="text">
+						<p>
+							<b><i> Flexbox (CSS Flexible Box Layout) </i></b>— это модель отображения содержимого страницы, при
+							которой вы получаете набор гибких элементов внутри контейнера, имеющего свойство
+							<b><i>display</i></b>
+							со значением <b><i>flex</i></b> или <b><i>inline-flex</i></b>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2 class="title-h2">Свойства flex-контейнера</h2>
+					<div class="flex-wrap flex-display">
+						<h3 class="title-h3">Свойство display:</h3>
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="display">
+								<li>block</li>
+								<li>flex</li>
+								<li>inline-flex</li>
+							</ul>
+							<div data-box="flex-box">
+								<div class="flex-item">1</div>
+								<div class="flex-item">2</div>
+								<div class="flex-item">3</div>
+								<div class="flex-item">4</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-wrap flex-direction flex-box">
+						<h3 class="title-h3">Свойство flex-direction:</h3>
+						<div class="text">
+							<p>направление <b><i>row</i></b> или <b><i>row-reverse</i></b> выстраивает дочерние элементы по
+								горизонтали в направлении слева
+								направо или справа налево. Значения <b><i>column</i></b> или <b><i>column-reverse</i></b> меняют
+								направление размещения блоков
+								на вертикальное: сверху вниз или снизу вверх.</p>
+						</div>
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="flex-direction">
+								<li>row</li>
+								<li>row-reverse</li>
+								<li>colume</li>
+								<li>colume-reverse</li>
+							</ul>
+							<div data-box="flex-box">
+								<div class="flex-item">1</div>
+								<div class="flex-item">2</div>
+								<div class="flex-item">3</div>
+								<div class="flex-item">4</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-wrap flex-justify-content flex-box">
+						<h3 class="title-h3">Свойство justify-content:</h3>
+						<div class="text">
+							<p>определяет выравнивание <b><i>flex-элементов</i></b> вдоль главной оси. Оно часто используется
+								при построении колонок, т.к. позволяет распределить контент внутри контейнера.</p>
+						</div>
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="flex-justify-content">
+								<li>flex-start</li>
+								<li>flex-end</li>
+								<li>center</li>
+								<li>space-between</li>
+								<li>space-around</li>
+								<li>space-evenly</li>
+							</ul>
+							<div data-box="flex-box">
+								<div class="flex-item">1</div>
+								<div class="flex-item">2</div>
+								<div class="flex-item">3</div>
+								<div class="flex-item">4</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-wrap flex-align-items flex-box">
+						<h3 class="title-h3">Свойство align-items:</h3>
+						<div class="text">
+							<p>определяет, каким образом выравнивать <b><i>flex</i></b> -элементы вдоль поперечной оси.</p>
+						</div>
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="align-items">
+								<li>flex-start</li>
+								<li>flex-end</li>
+								<li>center</li>
+								<li>stretch</li>
+								<li>baseline</li>
+							</ul>
+							<div data-box="flex-box">
+								<div class="flex-item">1</div>
+								<div class="flex-item">2</div>
+								<div class="flex-item">3</div>
+								<div class="flex-item">4</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-wrap flex-flex-wrap flex-box">
+						<h3 class="title-h3">Свойство flex-wrap:</h3>
+						<div class="text">
+							<p>отвечает за то, как будут размещаться вложенные <b><i>flex</i></b> -элементы внутри контейнера,
+								если они не помещаются в одну строку.</p>
+						</div>
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="flex-wrap">
+								<li>nowrap</li>
+								<li>wrap</li>
+								<li>wrap-reverse</li>
+							</ul>
+							<div data-box="flex-box">
+								<div class="flex-item">1</div>
+								<div class="flex-item">2</div>
+								<div class="flex-item">3</div>
+								<div class="flex-item">4</div>
+								<div class="flex-item">5</div>
+								<div class="flex-item">6</div>
+								<div class="flex-item">7</div>
+								<div class="flex-item">8</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-wrap flex-flow flex-box">
+						<h3 class="title-h3">Свойство flex-flow:</h3>
+						<div class="text">
+							<p>предназначено для объединения свойств <b><i>flex-direction</i></b> и <b><i>flex-wrap</i></b> .
+								По умолчанию имеет значение <b><i>flex-flow</i></b> : <b><i>row nowrap</i></b> . Имеет смысл
+								использовать его при переопределении обоих этих значений или одного из них.</p>
+						</div>
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="flex-wrap">
+								<li>row-nowrap</li>
+								<li>row-wrap</li>
+								<li>row-wrap-reverse</li>
+								<li>colume-nowrap</li>
+								<li>colume-wrap</li>
+								<li>colume-wrap-reverse</li>
+							</ul>
+							<div data-box="flex-box">
+								<div class="flex-item">1</div>
+								<div class="flex-item">2</div>
+								<div class="flex-item">3</div>
+								<div class="flex-item">4</div>
+								<div class="flex-item">5</div>
+								<div class="flex-item">6</div>
+								<div class="flex-item">7</div>
+								<div class="flex-item">8</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-wrap flex-align-content flex-box">
+						<h3 class="title-h3">Свойство align-content:</h3>
+						<div class="text">
+							<p>используется только в многострочном режиме (т.е. в случае, когда свойство
+								<b><i>flex-wrap</i></b> имеет значение <b><i>wrap</i></b> или <b><i>wrap-reverse</i></b> ). Оно
+								определяет, каким образом ряды <b><i>flex</i></b> -элементы будут выровнены по вертикали, а
+								также то, как они будут делить между собой все пространство <b><i>flex</i></b> -контейнера.
+							</p>
+						</div>
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="flex-wrap">
+								<li>stretch</li>
+								<li>flex-start</li>
+								<li>flex-end</li>
+								<li>space-between</li>
+								<li>space-around</li>
+								<li>space-evenly</li>
+							</ul>
+							<div data-box="flex-box">
+								<div class="flex-item">1</div>
+								<div class="flex-item">2</div>
+								<div class="flex-item">3</div>
+								<div class="flex-item">4</div>
+								<div class="flex-item">5</div>
+								<div class="flex-item">6</div>
+								<div class="flex-item">7</div>
+								<div class="flex-item">8</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div>
+						<h2 class="title-h2">Свойства flex-элементов</h2>
+						<div class="text">
+							<p>Свойства <b><i>flex</i></b> -элементов позволяют управлять каждым из элементов внутри
+								<b><i>flex</i></b>
+								-контейнера по отдельности.
+								Это, в первую очередь, свойства, которые управляют размерами дочерних элементов, их растяжимостью и
+								сжимаемостью, порядком отображения вне зависимости от <b><i>html</i></b> -разметки, а также возможностью
+								переопределить
+								размещение <b><i>flex</i></b> -элементов, заданное свойствами <b><i>flex</i></b> -контейнера
+							</p>
+						</div>
+					</div>
+
+
+					<div class="flex-wrap flex-grow flex-property">
+						<h3 class="title-h3">Свойство flex-grow:</h3>
+
+						<div class="text">
+							<p>определяет фактор (коэффициент) растяжимости flex-элемента при наличии избыточного пространства во
+								flex-контейнере. По умолчанию flex-grow имеет значение 0, т.е. все flex-элементы будут того размера,
+								который им задан с помощью width или flex-basis, и часть flex-контейнера останется незанятой
+								например, flex-контейнер с шириной 800px содержит 4 flex-элемента с шириной 150px, т.е. 200px остаются
+								незаполненными. Если каждому из этих элементов назначить flex-grow: 1, то 200px избыточного пространства
+								нужно разделить на сумму этих коэффициентов, т.е. 200px:4 = 50px, а потом добавить результат к ширине
+								каждого элемента. В результате этих действий ширина каждого flex-элемента станет 200px.
+								если же какой-то один flex-элемент получит свойство flex-grow: 2, то расчет будет уже другим. 200px: 5 =
+								40px. Цифра 5 — это сумма flex-grow всех элементов (1+1+1+2= 5). Затем к 3-м из наших элементов нужно
+								добавить по 40px, и их размер станет 190px, а к тому, у которого flex-grow: 2, мы добавим 80px (40px*2)
+								— и получим 230px. Общая сумма всех ширин будет по-прежнему 800px.</p>
+						</div>
+
+						<div class="flex-container">
+							<ul class="flex-nav" data-name="flex-wrap">
+								<li>flex-grow1</li>
+								<li>flex-grow2</li>
+							</ul>
+
+							<div data-box="flex-box class=" basis">
+								<div class="flex-item">
+									<h4>column1</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+
+
+							<div class="basis" data-box="flex-box">
+								<div class="flex-item">
+									<h4>column2</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae
+										dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias
+										laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+
+
+							<div data-box="flex-box" class="basis">
+								<div class="flex-item">
+									<h4>column3</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae
+										dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias
+										laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+
+
+							<div data-box="flex-box" class="basis">
+								<div class="flex-item">
+									<h4>column4</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, inventore? Molestiae
+										dolorem
+										maiores ut aut optio. Odit ipsam obcaecati ipsum ab repudiandae commodi. Sunt earum alias
+										laudantium
+										ipsam quisquam dolores?
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+
+			</div>
+		</main>
+	</div>
+
+	<script>
+		let items = document.querySelectorAll('.flex-nav');
+
+		function example(selector) {
+			items.forEach(item => {
+				item.addEventListener('click', (e) => {
+					let attr = e.target.parentNode.getAttribute('data-name');
+					let text = e.target.innerText;
+					let parent = e.target.parentNode.parentNode;
+					let box = parent.querySelector('[data-box]');
+
+					if (box.hasAttribute('class')) { box.removeAttribute('class'); }
+
+					if (!box.classList.contains(text)) { box.classList.add(text); }
+				});
+			});
+
+		};
+		example(items);
+	</script>
+</body>
+
+</html>

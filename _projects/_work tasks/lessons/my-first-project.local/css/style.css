@@ -2,6 +2,10 @@
 @import url(./animation.css);
 @import url(./tables.css);
 @import url(./pseudoclasses.css);
+@import url(./position.css);
+@import url(./forms.css);
+@import url(./flexbox.css);
+
 
 :root{
     --color-rosy-brown: #BC8F8F;
@@ -304,4 +308,8 @@ a{
 .bi {
 	font-style: italic;
 	font-weight: bold;
+}
+
+.flex {
+	display: flex;
 }
