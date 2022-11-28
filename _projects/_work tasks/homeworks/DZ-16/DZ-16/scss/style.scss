@@ -1,0 +1,168 @@
+	@import "./resetting-styles";
+	/**--------------------------*/
+	
+	@media only screen and (min-width : 900px) and (max-width : 2400px) {
+		
+		.flex-container {
+			flex-wrap: nowrap;
+		}
+
+		.grid-container {
+			grid-template-columns: minmax(140px, 1fr) minmax(140px 2fr); 
+			grid-template-areas: 
+								"header header"
+								"acide block1"
+								"acide block2"
+								"footer footer";
+		}
+		.grid-container__grid-item {
+			background: DarkSlateGrey;
+		}
+		}
+
+
+	@media only screen and (min-width : 480px) and (max-width : 900px) {
+		
+		.flex-container {
+			flex-wrap: wrap;
+		}
+
+		.grid-container {
+			grid-template-columns: minmax(140px, 1fr) minmax(140px 2fr); 
+			grid-template-areas: 
+								"header acide"
+								"block2 block1"
+								"footer footer";
+		}
+		.grid-container__grid-item {
+			background: Olive;
+		}
+		}
+	
+		@media only screen and (min-width : 300px) and (max-width : 480px) {
+			
+			.flex-container {
+			flex-wrap: wrap;
+			}
+
+			.grid-container {
+				grid-template-columns: minmax(140px, 1fr) minmax(140px 2fr); 
+				grid-template-areas: 
+									"header"
+									"acide"
+									 "block1"
+									"block2"
+									"footer";
+			}
+			.grid-container__grid-item {
+				background: Brown;
+			}
+			}
+
+
+
+body {
+	background-color: #000;
+}
+.content {
+	max-width: 1170px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+.flex-container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		background: Chocolate;
+		border-radius: 5px;
+		padding: 0.5%;
+	
+
+	&__flex-item {
+		background: darkgray;
+		margin: 5px;
+		padding: 0px 1% 0.5% 1%;
+	}
+
+	&__flex-item h2 {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 600;
+		color: MidnightBlue;
+		text-align: center;
+	}
+
+	&__flex-item p {
+		font-size: 19px;
+	}
+
+	& div:nth-child(1), div:nth-child(2) {
+		max-width: 550px;
+	}
+
+	& div:nth-child(3),
+		div:nth-child(4),
+		div:nth-child(5) {
+			max-width: 340px;
+		}
+}
+
+
+
+
+
+.grid-container {
+	background: Wheat;
+	margin-bottom: 1%;
+	padding: 1%;
+	min-height: 800px;
+	border-radius: 5px;
+	display: grid;
+	gap: 5px;
+	grid-template-columns: minmax(140px, 1fr) minmax(140px 2fr); 
+
+	&__grid-item {
+		padding: .5% 1% 1% 1%;
+	}
+
+
+	&__grid-item h2 {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 600;
+		color: Silver;
+		text-align: center;
+		margin-bottom: 2%;
+	}
+
+	&__grid-item p {
+		font-size: 19px;
+		line-height: 25px;
+
+	}
+
+}
+
+.grid-item_1 {
+	grid-area: header;
+} 
+
+.grid-item_2 {
+	grid-area: acide;
+	
+} 
+
+.grid-item_3 {
+	grid-area: block1;
+} 
+
+.grid-item_4 {
+	grid-area: block2;
+	
+} 
+
+.grid-item_5 {
+	grid-area: footer;
+} 

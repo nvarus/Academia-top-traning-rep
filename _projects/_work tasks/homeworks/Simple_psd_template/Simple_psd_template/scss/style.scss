@@ -1,3 +1,62 @@
 @import "./resetting-styles";
 @import "./_mixinos"; 
 /*--------------------------*/
+
+
+.back {
+	max-width: 1280px;
+	margin: 20px auto;
+	border: 5px solid fuchsia;
+}
+
+//* Секция HEADER
+
+.section-header {
+	background-color: #445161;
+	padding: 3.906% 0 0 0;
+}
+.header {
+	max-width: 1170px;
+	min-height: 323px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "site-name picture"
+												"list picture";
+
+	&__grid {
+	border: 1px dashed beige;
+		
+	}
+
+
+&__site-name {
+	grid-area: site-name;
+}
+
+&__list {
+	grid-area: list;
+	
+}
+
+&__picture {
+	grid-area: picture;
+	padding-left: 19.5%;
+}
+
+&__picture-wrapper {
+	max-width: 469px;
+	min-width: 340px;
+	height: 214px;
+}
+
+&__picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 0 0;
+}
+
+}
+

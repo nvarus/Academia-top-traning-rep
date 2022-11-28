@@ -85,3 +85,49 @@ h5 {
 }
 
 /*--------------------------*/
+.back {
+  max-width: 1280px;
+  margin: 20px auto;
+  border: 5px solid fuchsia;
+}
+
+.section-header {
+  background-color: #445161;
+  padding: 3.906% 0 0 0;
+}
+
+.header {
+  max-width: 1170px;
+  min-height: 323px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "site-name picture" "list picture";
+}
+.header__grid {
+  border: 1px dashed beige;
+}
+.header__site-name {
+  grid-area: site-name;
+}
+.header__list {
+  grid-area: list;
+}
+.header__picture {
+  grid-area: picture;
+  padding-left: 19.5%;
+}
+.header__picture-wrapper {
+  max-width: 469px;
+  min-width: 340px;
+  height: 214px;
+}
+.header__picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
