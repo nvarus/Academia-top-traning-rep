@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Мой первый сайт</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon" href="/smile.png">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+    <body>
+        <div class="container header-container">
+            <header>
+                <div class="head-menu box-shadow">
+                    <div class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </div>
+                    <div class="nav-links">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Main</a></li>
+                                <li><a href="./block-model.html">Block-model</a></li>
+                                <li><a href="./images.html">Images</a></li>
+                                <li><a href="./animation.html">Animation</a></li>
+                                <li><a href="./tables.html">Tables</a></li>
+                                <li><a href="./pseudoclasses.html">Pseudoclasses</a></li>
+                                <li><a href="./position.html">Position</a></li>
+                                <li><a href="./flexbox.html">Flexbox</a></li>
+                                <li><a href="./grid.html">Grid</a></li>
+                                <li><a href="./forms.html">Forms</a></li>
+                                <li><a href="./adaptive.html">Adaptive</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            </div>
+        <div class="container body-container">
+            <aside class="aside-container">
+                <h2 class="title-color">Ссылки</h2>
+                <h3>полезные программы</h3>
+                <ul class="aside-nav">
+                    <li class="sprite-generate">
+                        <a href="https://spritegen.website-performance.org/" target="_blank">sprite generate</a>
+                    </li>
+                    <li class="fonts-google">
+                        <a href="https://fonts.google.com/" target="_blank">link fonts</a>
+                    </li>
+                    <li class="colors-cheme">
+                        <a href="https://colorscheme.ru/html-colors.html" target="_blank">colors cheme</a>
+                    </li>
+                    <li class="htmlbook">
+                        <a href="http://htmlbook.ru/" target="_blank">html-book</a>
+                    </li>
+                    <li class="html-symbols">
+                        <a href="https://htmlweb.ru/html/symbols.php/" target="_blank">html-symbols</a>
+                    </li>
+                    <li class="image-png">
+                        <a href="http://imgpng.ru/" target="_blank">image-png</a>
+                    </li>
+                    <li class="image-png">
+                        <a href="https://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+                    </li>
+                    <li class="image-png">
+                        <a href="https://icons8.ru/icons/" target="_blank">icons</a>
+                    </li>
+                </ul>
+            </aside>
+    
+            <main class="main-container box-shadow grid">
+                <div class="content-container">
+
+                    <section  class="title-color title-h1">
+                        <h1>Grid Layout</h1>
+                    </section>
+
+                    <section class="grid-components">
+                        <h2 class="title-h2">Основные понятия и компоненты сетки</h2>
+                        <div class="text">
+                            <p>
+                               <b>Контейнер сетки</b> — это блок, который создает область с сеткой и устанавливает контекст форматирования по типу сетки, то есть дочерние элементы располагаются согласно правилам компоновки сетки, а не блочной компоновки. 
+                            </p>
+                            <p>
+                                Контейнер сетки определяется при помощи <b><i>display: grid</i></b> или <b><i>display: inline-grid</i></b>. Как только мы это сделаем, все прямые дочерние элементы контейнеры автоматически станут элементами сетки.
+                            </p>
+                            <p>
+                                Когда мы создаем контейнер сетки, сетка по умолчанию имеет один столбец и одну строку, которые занимают полный размер контейнера. 
+                            </p>
+                            <p>
+                                Контейнеры сетки не являются блочными контейнерами, поэтому некоторые CSS-свойства в контексте
+                                контейнера сетки работать не будут. 
+                            </p>
+                        </div>
+
+                        <div class="img-grid">
+                            <img src="/img/grid.png" alt="grid">
+                        </div>
+
+                        <div class="list-details">
+                            <ol class="list-multi">
+                                <li> 
+                                    <details>
+                                        <summary><span>Grid Container</span></summary>
+                                            <div>
+                                                <b><i>Контейнер сетки</i></b> — главный родительский элемент для всех элементов сетки.
+                                            </div>
+                                    </details>
+                                </li> 
+                                <li> 
+                                    <details>
+                                        <summary><span>Grid Item</span></summary>
+                                            <div>
+                                                <b><i>Элемент сетки</i></b> — дочерний элемент
+                                                (прямой потомок) контейнера сетки.
+                                            </div>
+                                    </details>
+                                </li> 
+                                <li> 
+                                    <details>
+                                        <summary><span>Grid Line</span></summary>
+                                            <div>
+                                                <b><i>Линия сетки</i></b> — линия, которая разделяет элементы сетки. Она может быть горизонтальной или вертикальной.
+                                            </div>
+                                    </details>
+                                </li> 
+                                <li> 
+                                    <details>
+                                        <summary><span>Grid Track</span></summary>
+                                            <div>
+                                                <b><i>Трек сетки</i></b> — пространство между двумя параллельными линиями сетки. Можно считать, что это строка или столбец сетки.
+                                            </div>
+                                    </details>
+                                </li> 
+                                <li> 
+                                    <details>
+                                        <summary><span>Grid Cell</span></summary>
+                                            <div>
+                                                <b><i>Ячейка сетки</i></b> — пространство между двумя соседними строками и двумя соседними столбцами линий сетки, аналогично ячейке в таблице. Это область, в которую можно что-то поместить. Ячейка является наименьшей единицей сетки,
+                                                на которую можно ссылаться при позиционировании элементов сетки.
+                                            </div>
+                                    </details>
+                                </li> 
+                                <li> 
+                                    <details>
+                                        <summary><span>Grid Area</span></summary>
+                                            <div>
+                                                <b><i>Область сетки</i></b> — любое пространство между четырьмя линиями сетки может состоять из любого количества ячеек. Область сетки может быть не больше одной ячейки или размером со все ячейки сетки.
+                                            </div>
+                                    </details>
+                                </li> 
+                            </ol>
+                        </div>
+                    </section>
+
+                    <section class="grid-create">
+                        <h2 class="title-h2">Создание Grid-контейнера</h2>
+
+                        <div class="grid-display text-wrap">
+                            <ul class="list">
+                                <h3 class="title-h3">свойство display:</h3>
+                                <li>
+                                    <span>grid</span> — генерирует контейнер сетки уровня блока.
+                                </li>
+                                <li>
+                                    <span>inline-grid</span> — генерирует контейнер сетки уровня
+                                    строки.
+                                </li>
+                                <li>
+                                    <span>subgrid</span> — если контейнер также является элементом другой сетки (вложенный контейнер), можно указать, что параметры для текущей сетки следует взять из родительской.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grid-col-row text-wrap">
+                            <ul class="list">
+                                <h3 class="title-h3">строки и столбцы:</h3>
+                                <li>
+                                    <span>grid-template-rows</span> — генерирует количество строк.
+                                </li>
+                                <li>
+                                    <span>grid-template-columns</span> — генерирует количество столбцов.
+                                </li>
+                                <div class="example box-shadow">
+                                    grid-template-columns: 100px 10em 30%; <br>
+                                    grid-template-rows: 10em 100px 100px;
+                                </div>
+
+                                <div class="text">
+                                    <h3>Гибкие размеры треков: единица измерения fr</h3>
+                                    <p>
+                                        <b>Fr</b> — единица измерения длины, которая позволяет создавать гибкие треки. При определении размеров треков, общий размер фиксированных строк или столбцов вычитается из доступного пространства контейнера-сетки. Оставшееся пространство делится между строками и столбцами с гибкими размерами пропорционально их коэффициенту. Если сумма размеров всех гибких треков меньше 1, они будут занимать только соответствующую часть оставшегося пространства, а не расширяться, чтобы заполнить все пространство полностью.
+                                    </p>
+                                    <p>
+                                        Если ширина или высота контейнера-сетки не заданы, треки сетки масштабируются по их содержимому, сохраняя при этом пропорции.
+                                    </p>
+                                </div>   
+                                <div class="example box-shadow">
+                                    grid-template-columns: 2fr 1fr 1fr; 
+                                </div>
+
+                                <div class="text">
+                                    <h3>Автоматические размеры</h3>
+                                    <p>
+                                        Значение <b><i>auto</i></b> ориентируется на содержание элементов сетки одного трека. Минимальный размер трека рассматривается как минимальный размер элемента сетки, то есть <b><i>Grid </i></b>использует свойства <b><i>min-width или min-height</i></b>. Максимальный размер трека устанавливается из расчета на значение свойства <b><i>max-content</i></b>. Трек может растягиваться при использовании свойств <b><i>align-content и justify-content</i></b>.
+                                    </p>
+                                </div>   
+                                <div class="example box-shadow">
+                                    grid-template-columns: auto auto auto; <br>
+                                    grid-template-rows: auto auto auto;
+                                </div>
+
+                                <div class="text">
+                                    <h3>Функция repeat</h3>
+                                    <p>
+                                        Функция <b><i>repeat()</i></b> позволяет создавать фрагменты списка треков, которые повторяются.
+                                    </p>
+                                </div>   
+                                <div class="example box-shadow">
+                                    grid-template-columns: 50px repeat(2, 1fr 2fr);
+                                </div>
+                            </ul> 
+                        </div>
+
+                        <div class="grid-line text-wrap">
+                            <ul class="list">
+                                <h3 class="title-h3">размеры линий сетки:</h3>
+                                <li>
+                                    <span>grid-column-gap</span> — устанавливает ширину вертикальной линии сетки (промежуток между столбцами).
+                                </li>
+                                <li>
+                                    <span>grid-row-gap</span> — устанавливает высоту горизонтальной линии сетки (промежуток между строками).
+                                </li>
+                                <li>
+                                    <span>grid-gap</span> — сокращенная форма записи для и <b><i> grid-row-gap + gridcolumn-gap</i></b>.
+                                </li>
+
+                                <div class="text">
+                                    <p>
+                                        Размеры треков сетки можно задавать с помощью различных значений, используя относительные единицы длины, например, <b><i>em, vh, vw;   абсолютные единицы длины px; и проценты %</i></b>. Размеры в % высчитываются по ширине или высоте контейнера-сетки.
+                                    </p>
+                                </div>
+                                <div class="example box-shadow">
+                                    grid-column-gap: 10px; <br>
+                                    grid-row-gap: 10px; <br>
+                                    grid-gap: 20px 10px;
+                                </div>
+
+                            </ul>    
+
+                        </div>
+                    </section>
+
+                    <section class="grid-example">
+                        <h3 class="title-h3">Пример: Grid-контейнер</h3>
+                        <div class="example box-shadow grid-box">
+                            <ul class="grid-nav" data-name="grid-wrap">
+                                <li>grid</li>
+                                <li>grid-template</li>
+                                <li>grid-template-gap</li>
+                                <li>grid-fr</li>
+                                <li>grid-fr-gap</li>
+                                <li>grid-fr-repeat</li>
+                                <li>grid-position-span</li>
+                                <li>grid-position-name</li>
+                                <li>grid-position-name-span</li>
+                                <li>grid-area</li>
+                                
+                            </ul>
+                            
+                            <div data-box="grid-box">
+                                <div class="grid-item">1</div>
+                                <div class="grid-item">2</div>
+                                <div class="grid-item">3</div>
+                                <div class="grid-item">4</div>
+                                <div class="grid-item">5</div>
+                                <div class="grid-item">6</div>
+                                <div class="grid-item">7</div>
+                                <div class="grid-item">8</div>
+                                <div class="grid-item">9</div>
+                            </div>
+    
+                            <div class="text-wrap">
+                                <div class="example-text box-shadow" data-text="grid-template">
+                                    <h3>.grid-template{</h3>
+                                    <p>                                
+                                        grid-template-columns: 200px auto 100px; <br>
+                                        grid-template-rows: 100px 50px 150px; 
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+    
+                                <div class="example-text box-shadow" data-text="grid-template-gap">
+                                    <h3>.grid-template-gap{</h3>
+                                    <p>                                
+                                        grid-template-columns: 200px auto 100px; <br>
+                                        grid-template-rows: 100px 50px 150px; <br> 
+                                        grid-column-gap: 10px; <br>
+                                        grid-row-gap: 10px;
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+    
+                                <div class="example-text box-shadow" data-text="grid-fr">
+                                    <h3>.grid-fr{</h3>
+                                    <p>                                
+                                        grid-template-columns: 2fr 1fr 1fr;
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+    
+                                <div class="example-text box-shadow" data-text="grid-fr-gap">
+                                    <h3>.grid-fr-gap{</h3>
+                                    <p>                                
+                                        grid-template-columns: 2fr 1fr 1fr; <br>
+                                        grid-gap: 20px 10px;
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+    
+                                <div class="example-text box-shadow" data-text="grid-fr-repeat">
+                                    <h3>.grid-fr-repeat{</h3>
+                                    <p>                                
+                                        grid-template-columns: 50px repeat(2, 1fr 2fr);
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+
+                                <div class="example-text box-shadow" data-text="grid-position-span">
+
+                                    <h3>.grid-position1 .grid-item:nth-child(1){</h3>
+                                    <p>                                
+                                        grid-column-start: 1; <br>
+                                        grid-column-end: 4; <br>
+                                        grid-row-start: 1; <br>
+                                        grid-row-end: 2;
+                                    </p>
+                                    <h3>}</h3>
+
+                                    <h3>.grid-position1 .grid-item:nth-child(2){</h3>
+                                    <p>                                
+                                        grid-column: 1 / 2; <br>
+                                        grid-row: 2 /3 ;
+                                    </p>
+                                    <h3>}</h3>
+
+                                    <h3>.grid-position1 .grid-item:nth-child(3){</h3>
+                                    <p>                                
+                                        grid-column: 2 / 3; <br>
+                                        grid-row: 2 / 4 ; <br>
+                                        grid-area: 2 / 2 / 4 / 3;
+                                    </p>
+                                    <h3>}</h3>
+
+                                    <h3>.grid-position1 .grid-item:nth-child(4){</h3>
+                                    <p>                                
+                                        grid-column: 3 / 4; <br>
+                                        grid-row: 2 / span 4;
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+
+                                <div class="example-text box-shadow" data-text="grid-position-name">
+                                    <h3>.grid-position-name{</h3>
+                                    <p>                                
+                                        grid-template-columns: [col1-start] 100px [col2-start]
+                                        auto [col3-start] auto [col3-end]; <br>
+                                        grid-template-rows: [row1-start] auto [row2-start]
+                                        auto [row3-start] auto [row3-end];<br>
+                                        grid-column: col1-start / col3-end;<br>
+                                        grid-row: row1-start / row3-end;
+                                        
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+
+                                <div class="example-text box-shadow" data-text="grid-position-name-span">
+                                    <h3>.grid-position-name-span{</h3>
+                                    <p>                                
+                                        grid-template-columns: [col] auto [col] 150px [col] auto; <br>
+                                        grid-template-rows: [row] auto [row] 150px [row] auto;<br>
+                                        grid-column: col 1;<br>
+                                        grid-row: row / span 3;
+                                    </p>
+                                    <h3>}</h3>
+                                </div>
+
+                                <div class="example-text box-shadow" data-text="grid-area">
+
+                                    <h3>.grid-area .grid-item:nth-child(1){</h3>
+                                    <p>                                
+                                        grid-area: area1;
+                                    </p>
+                                    <h3>}</h3>
+
+                                    <h3>.grid-area .grid-item:nth-child(2){</h3>
+                                    <p>                                
+                                        grid-area: area2;
+                                    </p>
+                                    <h3>}</h3>
+
+                                    <h3>.grid-area .grid-item:nth-child(3){</h3>
+                                    <p>                                
+                                        grid-area: area3;
+                                    </p>
+                                    <h3>}</h3>
+
+                                    <h3>.grid-area{</h3>
+                                    <p>                                
+                                        grid-template-areas:  <br>
+                                        'area1 area1 area1'<br>
+                                        'area3 area4 area2'<br>
+                                        'area5 area6 area2';
+                                    </p>
+                                    <h3>}</h3>
+            
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="grid-position">
+                        <div class="text-wrap">
+                            <h2 class="title-h2">Позиционирование элементов и Grid-линии</h2>
+                            <div class="text">
+                                <p>
+                                    Позиционирование элементов сетки определяется расположением линий сетки и диапазоном сетки — количеством треков, которые занимает элемент. По умолчанию элемент сетки занимает одну ячейку трека на каждой оси.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Позиционирование элементов сетки с помощью номеров линий сетки</h3>
+                            <ul class="list">
+                                <li>
+                                    <span>grid-column-start</span> — задает начальную линию расположения элемента в столбце.
+                                </li>
+                                <li>
+                                    <span>grid-column-end</span> — задает конечную линию расположения элемента в столбце.
+    
+                                <li>
+                                    <span>grid-row-start</span> — задает начальную линию расположения элемента в строке.
+                                </li>
+    
+                                <li>
+                                    <span>grid-row-end</span> — задает конечную линию расположения элемента в строке.
+                                </li>
+                            </ul>
+    
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Сокращенные формы записи для позиционирования</h3>
+                            <ul class="list">
+                                <li>
+                                    <span>grid-column</span> — задает начальную и конечную линию расположения элемента в столбце.
+                                </li>
+                                <li>
+                                    <span>grid-row</span> — задает начальную и конечную линию расположения элемента в строке.
+    
+                                <li>
+                                    <span>grid-area</span> — задает начальную и конечную линию расположения элемента в строке и столбце.
+                                </li>
+    
+                                <div class="example box-shadow">
+                                    grid-column: 1 / 4; <br>
+                                    grid-row: 1 / 2; <br>
+                                    grid-area: 2 / 3 / 4 / 4;
+                                </div>
+                            </ul>
+    
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Объединение ячеек с помощью ключевого слова span</h3>
+                            <div class="text">
+                                <p>
+                                    Ключевое слово span дает возможность объединять ячейки без указания начальной и конечной линии трека.
+                                </p>
+                            </div>
+    
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Именованные линии сетки</h3>
+                            <div class="text">
+                                <p>
+                                    Имена линиям можно задать явно, используя свойства <b><i>grid-template-rows и grid-template-columns</i></b> или неявно — путем создания именованных областей сетки с помощью свойства <b><i>grid-template-areas.</i></b>
+                                </p>
+                                <p>
+                                    Имя линии может быть любым. При задании в значении свойства, его следует взять в квадратные скобки. Ключевое слово <b><i>span</i></b> не может использоваться в качестве названия линии сетки.
+                                </p>
+                            </div>
+                            <div class="example box-shadow">
+                                grid-template-columns: [col1-start] 100px [col2-start]                      auto [col3-start] auto [col3-end];<br>
+                                grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+                            </div>
+
+                            <img src="/img/grid-name.png" alt="grid-name">
+
+                            <div class="text">
+                                <p>
+                                    Теперь для позиционирования элементов в сетке можно использовать имена линий сетки.
+                                </p>
+                            </div>
+                            <div class="example box-shadow">
+                                grid-column: col1-start / col3-end; <br>
+                                grid-row: row1-start / row3-end;
+                            </div>
+
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Именованные строки и столбцы и ключевое слово span</h3>
+                            <div class="text">
+                                <p>
+                                    Строкам и столбцам можно также задать одно и то же имя, а потом задавать расположение элементов по этим именам и использовать ключевое слово <b><i>span</i></b> для объединения ячеек.
+                                </p>
+                                <p>
+                                    В следующем примере создаются 3 строки и 3 столбца, и для каждой строки и столбца задается одинаковое название:
+                                </p>
+                            </div>
+                            <div class="example box-shadow">
+                                grid-template-columns: [col] auto [col] 150px [col] auto;<br>
+                                grid-template-rows: [row] auto [row] 150px [row] auto; <br>
+                                grid-column: col 1; <br>
+                                grid-row: row / span 3;
+                            </div>
+
+
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Области сетки</h3>
+                            <div class="text">
+                                <p>
+                                    Мы можем создать именованные участки сетки для размещения содержимого. Для этого мы сначала определяем элементы нашей разметки для сетки, используя свойство <b><i>grid-area.</i></b>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="grid-align">
+                        <h2 class="title-h2">Выравнивание в Grid</h2>
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Выравнивание всей сетки</h3>
+                            <div class="text">
+                                <p>
+                                    Иногда размер сетки может быть меньше, чем размер самого контейнера сетки. Такое может случиться, если заданный размер строк и столбцов является фиксированным (в px). В этом случае мы можем установить выравнивание для сетки в контейнере с помощью свойств <b><i>justify-content и align-content.</i></b> 
+                                </p>
+                            </div>
+
+                            <div class="text-wrap">
+                                <ul class="list">
+                                    <h3 class="title-h3">Свойство justify-content выравнивает всю сетку относительно вертикальной оси.</h3>
+                                    <li>
+                                        <span>start</span> — выравнивает сетку по левому краю контейнера.
+                                    </li>
+                                    <li>
+                                        <span>end</span> — выравнивает сетку по правому краю контейнера.
+                                    </li>
+                                    <li>
+                                        <span>center</span> — выравнивает сетку по центру.
+                                    </li>
+                                    <li>
+                                        <span>stretch</span> — растягивает сетку на всю ширину контейнера.
+                                    </li>
+                                    <li>
+                                        <span>space-around</span> — размещает единицу пустого пространства между элементами и половину единицы по краям.
+                                    </li>
+                                    <li>
+                                        <span>space-between</span> — размещает единицу пустого пространства между элементами, без отступов по краям.
+                                    </li>
+                                    <li>
+                                        <span>space-evenly</span> — размещает единицу пустого пространства между элементами, включая края сетки.
+                                    </li>
+    
+                                </ul>
+    
+                            </div>
+
+                            <div class="text-wrap">
+                                <ul class="list">
+                                    <h3 class="title-h3">Свойство align-content выравнивает сетку относительно горизонтальной оси.</h3>
+                                    <li>
+                                        <span>start</span> — выравнивает сетку по верхнему краю контейнера.
+                                    </li>
+                                    <li>
+                                        <span>end</span> — выравнивает сетку по нижнему краю контейнера.
+                                    </li>
+                                    <li>
+                                        <span>center</span> — выравнивает сетку по центру.
+                                    </li>
+                                    <li>
+                                        <span>stretch</span> — растягивает сетку на всю высоту контейнера.
+                                    </li>
+                                    <li>
+                                        <span>space-around</span> — размещает единицу пустого пространства между элементами и половину единицы по краям.
+                                    </li>
+                                    <li>
+                                        <span>space-between</span> — размещает единицу пустого пространства между элементами, без отступов по краям.
+                                    </li>
+                                    <li>
+                                        <span>space-evenly</span> — размещает единицу пустого пространства между элементами, включая края сетки.
+                                    </li>
+    
+                                </ul>
+    
+                            </div>
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Выравнивание всех элементов сетки</h3>
+                            <div class="text">
+                                <p>
+                                    Иногда возникает необходимость выровнять контент внутри ячеек. Мы можем установить выравнивание для контента с помощью свойств <b><i>justify-items и align-items.</i></b> Данные значения применяются ко всем ячейкам сетки. 
+                                </p>
+                            </div>
+
+                            <div class="text-wrap">
+                                <ul class="list">
+                                    <h3 class="title-h3">Свойство justify-items выравнивает содержимое внутри ячейки относительно вертикальной оси.</h3>
+                                    <li>
+                                        <span>start</span> — выравнивает содержимое по левому краю ячейки.
+                                    </li>
+                                    <li>
+                                        <span>end</span> — выравнивает содержимое по правому краю ячейки.
+                                    </li>
+                                    <li>
+                                        <span>center</span> — выравнивает содержимое по центру.
+                                    </li>
+                                    <li>
+                                        <span>stretch</span> — растягивает содержимое на всю ячейку (значение по умолчанию).
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="text-wrap">
+                                <ul class="list">
+                                    <h3 class="title-h3">Свойство align-items выравнивает содержимое внутри ячейки относительно горизонтальной оси.</h3>
+                                    <li>
+                                        <span>start</span> — выравнивает содержимое по верхнему краю ячейки.
+                                    </li>
+                                    <li>
+                                        <span>end</span> — выравнивает содержимое по нижнему краю ячейки.
+                                    </li>
+                                    <li>
+                                        <span>center</span> — выравнивает содержимое по центру.
+                                    </li>
+                                    <li>
+                                        <span>stretch</span> — растягивает содержимое на всю ячейку (значение по умолчанию).
+                                    </li>
+                                </ul>
+    
+                            </div>
+                        </div>
+
+                        <div class="text-wrap">
+                            <h3 class="title-h3">Выравнивание отдельных элементов сетки</h3>
+                            <div class="text">
+                                <p>
+                                    Установить индивидуальное поведение для ячейки можно с помощью свойств <b><i>justify-self и align-self.</i></b>
+                                </p>
+                            </div>
+
+                            <div class="text-wrap">
+                                <ul class="list">
+                                    <h3 class="title-h3">Свойство justify-self выравнивает текущий элемент относительно вертикальной оси.</h3>
+                                    <li>
+                                        <span>start</span> — выравнивает элемент по левому краю зоны.
+                                    </li>
+                                    <li>
+                                        <span>end</span> — выравнивает элемент по правому краю зоны.
+                                    </li>
+                                    <li>
+                                        <span>center</span> — выравнивает элемент по центру зоны.
+                                    </li>
+                                    <li>
+                                        <span>stretch</span> — растягивает элемент по горизонтали на все
+                                        свободное место (значение по умолчанию).
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="text-wrap">
+                                <ul class="list">
+                                    <h3 class="title-h3">Свойство align-self выравнивает текущий элемент относительно горизонтальной оси.</h3>
+                                    <li>
+                                        <span>start</span> — выравнивает элемент по верхнему краю зоны.
+                                    </li>
+                                    <li>
+                                        <span>end</span> — выравнивает элемент по нижнему краю зоны.
+                                    </li>
+                                    <li>
+                                        <span>center</span> — выравнивает элемент по центру зоны.
+                                    </li>
+                                    <li>
+                                        <span>stretch</span> — растягивает элемент по вертикали на все
+                                        свободное место (значение по умолчанию).
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script>
+            let items = document.querySelectorAll('.grid-nav');
+
+            function example(selector){
+                items.forEach(item =>{
+                    item.addEventListener('click', (e) => {
+                        let text = e.target.innerText;
+                        let parent = e.target.parentNode.parentNode;
+                        let box = parent.querySelector('[data-box]');
+                        let examples = parent.querySelectorAll('[data-text]');
+
+
+                        examples.forEach(example => {
+                            example.classList.remove('active')
+                            example.style.maxHeight = 0 + 'px'
+
+                            if(text == example.getAttribute('data-text')){
+                                example.classList.add('active')
+                                example.style.maxHeight = example.scrollHeight + 'px'
+                            }
+                            
+                        })
+    
+                        if(box.hasAttribute('class')){
+                            box.removeAttribute('class');
+                        }
+                       
+                        if(!box.classList.contains(text)){
+                            box.classList.add(text); 
+                        }
+                   }); 
+                });
+            };
+            example(items);
+    
+        </script>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

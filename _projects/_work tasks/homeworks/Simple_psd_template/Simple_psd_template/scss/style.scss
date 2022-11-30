@@ -2,11 +2,107 @@
 @import "./_mixinos"; 
 /*--------------------------*/
 
+// *        МЕДИА ЗАПРОСЫ                                   
+@media only screen and (min-width : 900px) and (max-width : 2400px) {
+	.header {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 30% 70%;
+		grid-template-areas: "site-name picture"
+													"list picture";
+		
+	}
+	.header__picture {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.header__picture-wrapper {
+		width: 469px;
+		height: 214px;
+	}
+
+	.header__list {
+		font-size: 20px;
+		line-height: 36px;
+		font-weight: 400;
+	}
+
+	.header__site-name {
+		font-size: 60px;
+		font-weight: 400;
+	}
+}
+	
+
+ 
+@media only screen and (min-width : 480px) and (max-width : 900px) {
+	.header {
+		grid-template-columns: 1fr;
+		grid-template-rows: .3fr .7fr 1fr ;
+		grid-template-areas: "site-name" 
+													"list"
+													"picture";
+	}
+	.header__picture {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header__picture-wrapper {
+		width: 469px;
+		height: 214px;
+	} 
+
+	.header__list {
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+
+	.header__site-name {
+		font-size: 50px;
+		font-weight: 400;
+	}
+	.header__site-name {
+		text-align: center;
+	}
+
+	@media only screen and (min-width : 100px) and (max-width : 480px) {
+		.header {
+			grid-template-columns: 1fr;
+			grid-template-rows: .2fr .6fr 1fr ;
+			grid-template-areas: "site-name" 
+														"list"
+														"picture";
+		}
+		.header__picture {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.header__list {
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 400;
+		}
+	
+		.header__site-name {
+			font-size: 30px;
+			font-weight: 400;
+		}
+
+		}
+
+// *                                                           
+body {
+	font-family: Arial;
+}
 
 .back {
 	max-width: 1280px;
 	margin: 20px auto;
-	border: 5px solid fuchsia;
 }
 
 //* Секция HEADER
@@ -20,36 +116,38 @@
 	min-height: 323px;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas: "site-name picture"
-												"list picture";
+	
+
 
 	&__grid {
-	border: 1px dashed beige;
 		
 	}
 
 
 &__site-name {
-	grid-area: site-name;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+	color: #ffffff;
 }
 
 &__list {
 	grid-area: list;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+	color: #ffffff;
+	padding: 0px 0px 0px 5px;
 	
+}
+
+&__list li:before {
+	content: url(/img/check_icon_346.png);
+	margin: 0 10px 0 0;
 }
 
 &__picture {
 	grid-area: picture;
-	padding-left: 19.5%;
+	
 }
 
-&__picture-wrapper {
-	max-width: 469px;
-	min-width: 340px;
-	height: 214px;
-}
+
 
 &__picture img {
 	width: 100%;

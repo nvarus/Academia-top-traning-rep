@@ -1,34 +1,46 @@
-.animation-transition__button{
-    margin: 20px 0;
-    text-align: center;
-}
+@import url(./header.css);
+@import url(./aside.css);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-.animation-transition__button button{
-    padding: 8px 30px;
-    color: var(--bg-main);
-    background: var(--color-rosy-brown);
+.transition__button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-rosy-brown);
     border: 1px solid var(--color-rosy-brown);
     border-radius: 5px;
-    font-family: var(--ff-dancing);
-    font-size: 20px;
     transition: all .5s ease 0s;
+    color: var(--bg-main);
+    padding: 8px 30px;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+
 }
 
-.animation-transition__button button:hover{
+.transition__button:hover {
     letter-spacing: 2px;
     background-color: var(--color-dim-gray);
+    color: var(--bg-main);
     border: 1px solid var(--bg-main);
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
 }
 
-.animation-transition p > span{
-    font-style: italic;
+.transition__text{
+    margin-bottom: 20px;
+}
+
+.transition__text-color {
     color: var(--color-rosy-brown);
-    font-size: 19px;
+    font-style: italic;
+    font-size: 18px;
+    display: inline-block;
 }
 
-/* -------animation-transform__example */
-.animation-transform__example{
+.mt {
+    margin-top: 20px;
+}
+
+.transform__example-wrap {
     margin: 20px 0;
     background-color: var(--color-gainsboro);
     border: 1px solid var(--color-dim-gray);
@@ -36,134 +48,119 @@
     overflow: hidden;
 }
 
-.animation-transform__example-aside{
+.transform__example {
     position: relative;
-    background-color: var(--color-bisque);
     max-width: 700px;
+    background-color: var(--color-bisque);
     height: 150px;
     padding: 10px;
-    transform: translateX(-700px);
+    transform: translateX(-662px);
     transition: transform .8s ease-in-out;
+    border-radius: 3px 0 0 3px;
 }
 
-.animation-transform__example-aside::after{
-    content: 'нажми на меня';
-    background: var(--color-dim-gray);
-    color: var(--bg-main);
-    width: 150px;
-    border: 1px solid var(--color-dim-gray);
+.transform__example::after {
+    content: "Нажми на меня";
     position: absolute;
-    left: 700px;
-    top: 151px;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-    border-radius: 0 0 8px 8px;
-    padding: 5px 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    background-color: var(--color-dim-gray);
+    writing-mode: vertical-rl;
+    border-radius: 5px 0 0 5px;
     text-align: center;
+    padding-right: 8px;
+    color: var(--bg-main);
+    rotate: -180deg;
+    cursor: pointer;
 }
 
-.animation-transform__example-aside:hover{
-    transform: translateX(0);
+.transform__example:hover {
+    transform: translateX(0px);
 }
 
-.animation-transform__item{
+.transform__example-box {
     display: inline-block;
-    margin: 0 20px;
     text-align: center;
+    margin: 0 20px;
 }
 
-.animation-round{
+.transform__exemple-round {
     display: inline-block;
     width: 100px;
     height: 100px;
     background-color: var(--color-rosy-brown);
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
     border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 50%);
+    transition: .5s ease;
     margin-top: 5px;
-    transition: all .5s ease;
 }
 
-.animation-round.rotate{
-    background-color: var(--color-silver);
-}
-
-.animation-round.skew{
-    background-color: var(--color-dim-gray);
-}
-
-.animation-round.scale:hover{
+.scale:hover {
     transform: scale(1.1);
 }
 
-.animation-round.rotate:hover{
+.rotate {
+    background-color: var(--color-silver);
+}
+
+.rotate:hover {
     transform: rotate(90deg);
 }
 
-.animation-round.skew:hover{
+.skew {
+    background-color: var(--color-dim-gray);
+}
+
+.skew:hover {
     transform: skewX(-30deg);
 }
 
-/* ----animation-property------ */
+.animation-propety__title {
+    margin-top: 20px;
+}
 
-.animation-property__syntax{
+.animation-propety__syntax {
     padding: 30px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, .5);
+    margin: 0;
     border-radius: 5px;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
     font-style: oblique;
+    margin-bottom: 20px;
 }
 
-.animation-property__syntax span{
-    display: inline-block;
-}
-
-.animation-property__example {
+.animation-propety__exemple {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    border-radius: 10px;
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-    background: var(--color-gainsboro);
-    border: 1px solid var(--color-dim-gray);
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    background-color: var(--color-gainsboro);
 }
 
-.animation-round.animation {
+.animation-propety__box {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%) rotate(-25deg) skew(25deg);
-    opacity: .6;
-    z-index: 1;
+    width: 150px;
+    height: 100px;
+    background-color: var(--color-rosy-brown);
+    border: 1px solid #000;
+    transform: translate(-50%, -46%) rotate(25deg) skew(13deg);
 }
-
-.animation-round.animation:nth-child(2) {
-    animation: animation2 0.8s ease-in-out alternate infinite;
-    opacity: .8;
-    z-index: 2;
-}
-
-.animation-round.animation:nth-child(3) {
-    animation: animation3 0.8s ease-in-out alternate infinite;
-    opacity: 1;
-    z-index: 3;
-}
-
 
 @keyframes animation2 {
-
-    from {
-        transform: translate(-50%, -30%) rotate(-25deg) skew(25deg);
+    from{
+        transform: translate(-50%, -46%) rotate(25deg) skew(13deg);
     }
     to {
-        transform: translate(-50%, -60%) rotate(-25deg) skew(25deg);
-    }
-}
-
-@keyframes animation3 {
-
-    from {
-        transform: translate(-50%, -30%) rotate(-25deg) skew(25deg);
-    }
-    to {
-        transform: translate(-50%, -90%) rotate(-25deg) skew(25deg);
+        transform: translate(-50%, -66%) rotate(25deg) skew(13deg);
     }
 }

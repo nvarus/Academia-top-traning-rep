@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon" href="/smile.png">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+
+    <body>
+        <div class="container header-container">
+            <header>
+                <div class="head-menu box-shadow">
+                    <div class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </div>
+                    <div class="nav-links">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Main</a></li>
+                                <li><a href="./block-model.html">Block-model</a></li>
+                                <li><a href="./images.html">Images</a></li>
+                                <li><a href="./animation.html">Animation</a></li>
+                                <li><a href="./tables.html">Tables</a></li>
+                                <li><a href="./pseudoclasses.html">Pseudoclasses</a></li>
+                                <li><a href="./position.html">Position</a></li>
+                                <li><a href="./flexbox.html">Flexbox</a></li>
+                                <li><a href="./grid.html">Grid</a></li>
+                                <li><a href="./forms.html">Forms</a></li>
+                                <li><a href="./adaptive.html">Adaptive</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+    </div>
+        <div class="container body-container">
+            <aside class="aside-container">
+                <h2 class="title-color">Ссылки</h2>
+                <h3>полезные программы</h3>
+                <ul class="aside-nav">
+                    <li class="sprite-generate">
+                        <a href="https://spritegen.website-performance.org/" target="_blank">sprite generate</a>
+                    </li>
+                    <li class="fonts-google">
+                        <a href="https://fonts.google.com/" target="_blank">link fonts</a>
+                    </li>
+                    <li class="colors-cheme">
+                        <a href="https://colorscheme.ru/html-colors.html" target="_blank">colors cheme</a>
+                    </li>
+                    <li class="htmlbook">
+                        <a href="http://htmlbook.ru/" target="_blank">html-book</a>
+                    </li>
+                    <li class="html-symbols">
+                        <a href="https://htmlweb.ru/html/symbols.php/" target="_blank">html-symbols</a>
+                    </li>
+                    <li class="image-png">
+                        <a href="http://imgpng.ru/" target="_blank">image-png</a>
+                    </li>
+                    <li class="image-png">
+                        <a href="https://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+                    </li>
+                    <li class="image-png">
+                        <a href="https://icons8.ru/icons/" target="_blank">icons</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="main-container box-shadow images">
+                <div class="content-container">
+                    <section  class="title-color title-h1">
+                        <h1>Работа с изображениями</h1>
+                    </section>
+
+                    <section class="formats-image">
+                        <h2 class="title-h2">Форматы изображений</h2>
+        
+                        <div class="formats-image-vector">
+                            <h3 class="title-h3">Векторная графика</h3>
+                            <div class="text">
+                                <p>Векторное изображение состоит из опорных точек и соединяющих линий и в векторном файле содержатся формулы, а размер этого файла не зависит от масштаба изображаемого объекта.</p>
+                                <ul class="list">
+                                    <li>Преимущества векторной графики:
+                                        <ul>
+                                            <li>при изменении масштаба изображения сохраняется его чёткость;</li>
+                                            <li>векторная графика легко переводится в растровую графику;</li>
+                                            <li>легко править изображение без потери качества.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Недостатки векторной графики:
+                                        <ul>
+                                            <li>векторная графика состоит из фигур;</li>
+                                            <li>при переводе обратно теряется качество.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>На html-страницах используют формат <b>SVG</b> (от англ. Scalable Vector Graphics — масштабируемая векторная графика). <br> К векторной графике можно применять различные свойства css стилей, например, изменить цвет, размер, а также применить различные анимационные эффекты.</p>
+                                <p>Посмотрите примеры некоторых примененных css свойствах наведясь мышкой на любую из картинок svg, которые отображены ниже!</p>
+                            </div>
+
+                            <div class="formats-image-svg">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 19.082C14.9706 19.082 19 15.0526 19 10.082C19 5.11147 14.9706 1.08203 10 1.08203C5.02944 1.08203 1 5.11147 1 10.082C1 15.0526 5.02944 19.082 10 19.082Z"
+                                        stroke="#FF5252" stroke-width="1.5" stroke-miterlimit="10" />
+                                    <path
+                                        d="M6.625 9.33203C7.24632 9.33203 7.75 8.82835 7.75 8.20703C7.75 7.58571 7.24632 7.08203 6.625 7.08203C6.00368 7.08203 5.5 7.58571 5.5 8.20703C5.5 8.82835 6.00368 9.33203 6.625 9.33203Z"
+                                        fill="#FF5252" />
+                                    <path
+                                        d="M13.375 9.33203C13.9963 9.33203 14.5 8.82835 14.5 8.20703C14.5 7.58571 13.9963 7.08203 13.375 7.08203C12.7537 7.08203 12.25 7.58571 12.25 8.20703C12.25 8.82835 12.7537 9.33203 13.375 9.33203Z"
+                                        fill="#FF5252" />
+                                    <path
+                                        d="M13.8968 14.582C13.5017 13.8979 12.9334 13.3297 12.2492 12.9347C11.5649 12.5397 10.7888 12.3318 9.99871 12.3318C9.20864 12.3318 8.43247 12.5397 7.74822 12.9347C7.06396 13.3297 6.49572 13.8978 6.10059 14.582"
+                                        stroke="#FF5252" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 23C14 23 1.5 16 1.5 7.50001C1.50025 5.99768 2.02082 4.5418 2.97318 3.3799C3.92555 2.21801 5.25093 1.42181 6.72399 1.12669C8.19704 0.831559 9.72685 1.05572 11.0533 1.76105C12.3798 2.46638 13.421 3.60935 14 4.99563L14 4.99565C14.579 3.60936 15.6202 2.46639 16.9467 1.76106C18.2731 1.05572 19.8029 0.83156 21.276 1.12669C22.7491 1.42181 24.0745 2.21801 25.0268 3.3799C25.9792 4.5418 26.4997 5.99768 26.5 7.50001C26.5 16 14 23 14 23Z"
+                                        stroke="#3B6BE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 19.082C14.9706 19.082 19 15.0526 19 10.082C19 5.11147 14.9706 1.08203 10 1.08203C5.02944 1.08203 1 5.11147 1 10.082C1 15.0526 5.02944 19.082 10 19.082Z"
+                                        stroke="#229E6C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.625 9.33203C7.24632 9.33203 7.75 8.82835 7.75 8.20703C7.75 7.58571 7.24632 7.08203 6.625 7.08203C6.00368 7.08203 5.5 7.58571 5.5 8.20703C5.5 8.82835 6.00368 9.33203 6.625 9.33203Z"
+                                        fill="#229E6C" />
+                                    <path
+                                        d="M13.375 9.33203C13.9963 9.33203 14.5 8.82835 14.5 8.20703C14.5 7.58571 13.9963 7.08203 13.375 7.08203C12.7537 7.08203 12.25 7.58571 12.25 8.20703C12.25 8.82835 12.7537 9.33203 13.375 9.33203Z"
+                                        fill="#229E6C" />
+                                    <path
+                                        d="M13.8968 12.3318C13.5017 13.016 12.9334 13.5841 12.2492 13.9791C11.5649 14.3741 10.7888 14.582 9.99871 14.582C9.20864 14.582 8.43247 14.3741 7.74822 13.9791C7.06396 13.5841 6.49572 13.016 6.10059 12.3318"
+                                        stroke="#229E6C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+        
+                        <div class="formats-image-raster">
+                            <h3 class="title-h3">Растровая графика</h3>
+                            <p>Все ячейки (называются растрами) обладают своими параметрами: это яркость ячейки и это цвет ячейки. Получается, что из этой мозайки и состоит изображение. Чем больше таких ячеек, и чем меньший размер они имеют, тем чётче мы воспринимаем изображение.</p>
+                            <ul class="list">
+                                <li>Преимущества растровой графики:
+                                    <ul>
+                                        <li>хорошо выглядят изображения из мелких деталей.</li>
+                                    </ul>
+                                </li>
+                                <li>Недостатки растровой графики:
+                                    <ul>
+                                        <li>при изменении масштаба пропадает чёткость;</li>
+                                        <li>большой вес изображения;</li>
+                                        <li>сложно перевести изображение из растровой графики в векторную графику.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                            <h4> На html-страницах используют такие форматы графики:</h4>
+                            <ol class="list">
+                                <li><b>JPEG</b> (по названию организации-разработчика Joint Photographic Experts Group) — формат, поддерживающий миллионы цветов. Основным расширением является <b>JPG</b></li>
+                                <li><b>PNG</b> (от англ. portable network graphics) — формат, который выполняет сжатие без потерь.</li>
+                                <li><b>GIF</b> (от англ. Graphics Interchange Format — «формат для обмена изображениями») — был долгое время очень популярным форматом в web, т.к. позволяет сохранять изображения с прозрачностью (логотипы) и с анимацией (аватары, открытки).</li>
+                            </ol>
+                        </div>
+
+                        <div class="formats-image-images">
+                            <div class="formats-image-images__item">
+                                <img src="/img/leopard.png" alt="img" srcset="">
+                                <h3>Картинка в формате png</h3>
+                            </div>
+                            <div class="formats-image-images__item">
+                                <img src="/img/leopard.jpg" alt="img">
+                                <h3>Картинка в формате jpg</h3>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tag-img">
+                            <h2 class="title-h2">Вставка изображения с помощью тега &lt; img &gt;</h2>
+
+                        <div class="tag-img-wrap">
+                            <h3 class="title-h3">Синтаксис</h3>
+                            <p>&#60; img src="/img.png" alt="image" &#62;</p>
+                        </div>
+
+                        <div class="tag-img-wrap">
+                            <h3 class="title-h3">Атрибуты</h3>
+                            <ol class="list">
+                                <li>В атрибуте <span>src</span> указывается относительный путь до изображения. Термин
+                                    «относительный путь» обозначает расположения файла изображения относительно html-файла.
+                                </li>
+                                <li>Атрибут <span>alt</span> необходим для указания альтернативного текста, который
+                                    появится, если путь к изображению указан неверно, файл картинки имеет неподдерживаемый
+                                    формат или был удален с сервера. Этот атрибут имеет важное значение для поисковых
+                                    роботов и программ для чтения с экрана, которые помогают людям с ограниченным зрением
+                                    ориентироваться на сайте, поэтому является обязательным. Также нужно указывать в нем
+                                    информацию, соответствующую тому, что изображено на картинке.</li>
+                                <li><span>width</span> — ширина изображения в px (не указывается в кавычках).</li>
+                                <li><span>height</span> — ширина изображения в px (не указывается в кавычках).</li>
+                                <li><span>sizes</span> — размеры изображения для разных макетов страницы при разных разрешениях экрана. Используется вместе с медиа-запросами.</li>
+                                <li><span>srcset</span> — позволяет указать одного или несколько через запятую, указывающих набор возможных изображений для отображения в браузере в зависимости от плотности пикселей устройства.</li>
+                            </ol>
+                        </div>
+        
+                        <p>Для продвижения сайта (seo-оптимизация), картинку для логотипа лучше вставлять с помощью тега &#60; img &#62;. Вставленный таким образом, поисковики его будут отображать в картинках, если пользователь введет название вашего лого.</p>
+                    </section>
+
+                    <section class="background-image">
+                        <h2 class="title-h2">Вставка изображения с помощью CSS - свойства "background-image"</h2>
+                        <p>Свойство background-image устанавливает фоновое изображение для элемента. Если одновременно для элемента задан цвет фона, он будет показан, пока фоновая картинка не загрузится полностью. То же произойдет, если изображения не доступны или их показ в браузере отключен. В случае наличия в рисунке прозрачных областей, через них будет проглядывать фоновый цвет. Допустимо указывать несколько фоновых изображений, перечисляя их параметры через запятую.</p>
+        
+                        <h3 class="title-h3">Свойства и значения background</h3>
+
+
+                        <div class="list-details">
+                            <ol class="list-multi">
+                                <li> 
+                                    <details>
+                                        <summary><span>background-image:</span></summary>
+                                            <div>
+                                                url(../img/leopard-black.jpg)
+                                            </div>
+                                    </details>
+                                </li>    
+
+                                <li>
+                                    <details>
+                                        <summary><span>background-repeat:</span></summary>
+                                        <div>
+                                            <ul> По умолчанию браузер повторяет указанное изображение по горизонтали и по вертикали, укладывая его плитками.
+                                                <li>Ключевые значения
+                                                    <ol class="list-multi">
+                                                        <li><b>repeat-x;</b><br>
+                                                            Изображение повторяется по-горизонтали.
+                                                        </li>
+                                                        <li><b>repeat-y;</b><br>
+                                                            Изображение повторяется по-вертикали.
+                                                        </li>
+                                                        <li><b>repeat;</b><br>
+                                                            Изображения повторяются столько, сколько необходимо, чтобы полностью покрыть
+                                                            область элемента, последнее обрезается, если не хватает места.
+                                                        </li>
+                                                        <li><b>space;</b><br>
+                                                            Изображение повторяется в заданном направлении столько раз, сколько
+                                                            необходимо, чтобы покрыть большую часть области рисования фонового
+                                                            изображения, не обрезая изображение. Оставшееся незакрытое пространство
+                                                            равномерно распределено между изображениями.
+                                                        </li>
+                                                        <li><b>round;</b><br>
+                                                            Изображение повторяется в заданном направлении столько раз, сколько
+                                                            необходимо, чтобы покрыть большую часть области рисования фонового
+                                                            изображения, не обрезая изображение. Если оно не покрывает точно область,
+                                                            плитки изменяются в этом направлении, чтобы соответствовать ей.
+                                                        </li>
+                                                        <li><b>no-repeat;</b><br>
+                                                            Изображение не повторяется.
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>Два значения: горизонтальное | вертикальное
+                                                    <ol class="list-multi">
+                                                        <li><b>repeat space;</b></li>
+                                                        <li><b>repeat repeat;</b></li>
+                                                        <li><b>round space;</b></li>
+                                                        <li><b>no-repeat round;</b></li>
+                                                    </ol>
+                                                </li>
+                                            </ul>
+        
+                                        </div>
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <details>
+                                        <summary><span>background-position:</span></summary>
+                                        <div>
+                                            отвечает за размещение фонового изображения относительно блока или страницы (<i>background-repeat</i> должено иметь значение <i>no-repeat</i>). Может быть указано с помощью ключевых слов или значений в px, pt, em, % и т. д. для координаты x и y (размещение по горизонтали и вертикали). <br><br> Ключевые слова помогают разместить фоновое изображение: <br> по горизонтали <b>(координата x — left, center, right)</b> <br> по вертикали <b>(координата y — top, center, bottom)</b>.
+                                        </div>
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <details>
+                                        <summary><span>background-size:</span></summary>
+                                        <div>
+                                            используется для управления размерами фонового изображения. Это очень удобное свойство, которое позволяет растягивать или, наоборот, уменьшать изображение, подгоняя его величину под размеры блока.
+                                            <ol>
+                                                <li><b>contain;</b><br>
+                                                сохраняет пропорции так, чтобы картинка целиком поместилась внутрь блока.
+                                                    </li>
+                                                <li><b>cover;</b><br>
+                                                изменяет масштаб фона с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.
+                                                </li>
+                                                <li><b>auto;</b></li>
+                                            </ol>
+                                        </div>
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <details>
+                                        <summary><span>background-attachment:</span></summary>
+                                        <div>
+                                            необходимо для указания того, будет ли фоновое изображение прокручиваться вместе с содержимым элемента или всей страницы. С помощью этого свойства можно зафиксировать зображение, что позволяет прокручивать контент поверх него.
+                                            <ol>
+                                                <li><b>fixed;</b><br>
+                                                прокручивает фоновое изображение вместе с контентом.
+                                                </li>
+                                                <li><b>scroll;</b><br>
+                                                фиксирует изображение, а контент прокручивается сверху.
+                                                </li>
+                                                <li><b>local;</b><br>
+                                                фиксирует фон относительно содержимого элемента, т.е. при прокрутке страницы либо самого элемента фон прокручивается вместе с содержимым элемента.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <details>
+                                        <summary><span>background-origin:</span></summary>
+                                        <div>
+                                            определяет, в какой области будет позиционироваться фоновое изображение. Особенность использования: нельзя применять <i>background-origin</i>, если значение <i>background-attachment</i> задано как <i>fixed</i>.
+                                            <p>Визуально это свойство определяет, будет ли фоновый рисунок занимать пространство, включая внутренние отступы <i>padding-box</i>, внутренние отступы + рамки <i>border-box</i> или только область контента без тступов и рамок <i>content-box</i>.</p>
+                                        </div>
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <details>
+                                        <summary><span>background-clip:</span></summary>
+                                        <div>
+                                            определяет, как цвет фона или фоновое изображение будет выводиться под рамками элемента. Действие этого свойства можно заметить либо при прозрачных, либо при пунктирных или точечных границах. Возможные значения: <i>padding-box, border-box, content-box, text</i> . 
+                                            <p>Первые 3 значения свойства <i>background-clip</i> подобны по внешнему виду работе свойства <i>background-origin</i>. Значение text позволяет как бы «вырезать» текст из фона. Для этого необходимо к остальным стилям добавить свойство <i>color: tansparent;</i></p>
+                                    </div>
+                
+                                    </details>
+                                </li>
+
+                                <li>
+                                    <details>
+                                        <summary>Обобщенное свойство <span>background:</span></summary>
+                                        <div>
+                                            background: <i>url(bg/golden-paper.jpg)</i> center/cover no-repeat gold;
+                                        </div>
+                                    </details>
+                                </li>
+                                
+                                <li>
+                                    <details>
+                                        <summary>
+                                            Множественные фоны  <span>background-image:</span>
+                                        </summary>
+                                        <div>
+                                            <i>url(img1.png), url(img2.png);</i> <br> 
+                                            <i>background-repeat: no-repeat, no-repeat; </i><br>
+                                            <i>background-position: left bottom, right bottom;</i>
+                                        </div>
+                                    </details>
+                                </li>
+                            </ol>
+        
+                        </div>
+        
+                        <div class="background-image-wrap">
+                            <div class="background-image__image">
+                                background
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+    </div>
+    <script src="/js/script.js"></script>
+    </body>
+
+</html>

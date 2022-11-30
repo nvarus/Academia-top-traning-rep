@@ -1,105 +1,169 @@
-.formats-image{
+.formats-image {
     margin: 20px 0;
 }
 
-.formats-image-vector, .formats-image-raster, .formats-image-images{
+.formats-image__vector,
+.formats-image__rastr,
+.formats-image__images {
     margin: 20px 0;
 }
 
-.formats-image-svg{
+.formats-image-svg {
     width: 200px;
     height: 50px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    border: 1px solid var(--color-dim-gray);
+    align-items: center;
+    margin: 10px auto 0px;
+    border: 3px solid var(--color-dim-gray);
     border-radius: 5px;
     padding: 20px;
-    margin: 10px auto 0;
 }
 
-.formats-image-svg svg{
+.formats-image-svg svg {
     cursor: pointer;
-    transition:all 0.5s ease;
+    transition: ease .5s;
 }
 
-.formats-image-svg svg:nth-child(1):hover{
+.formats-image-svg svg:nth-child(1):hover,
+.formats-image-svg svg:nth-child(2):hover {
     width: 40px;
     height: 40px;
 }
-.formats-image-svg svg:nth-child(2) path{
+
+.formats-image-svg svg:nth-child(2) path {
     stroke: var(--color-rosy-brown);
 }
 
-.formats-image-svg svg:nth-child(2):hover{
+.formats-image-svg svg:nth-child(2):hover {
     fill: var(--color-rosy-brown);
 }
 
-.formats-image-svg svg:nth-child(3):hover{
+.formats-image-svg svg:nth-child(3):hover {
     transform: rotate(180deg);
 }
 
-/* ---------formats-image-images------------- */
-.formats-image-images{
+
+/* ------------------------- formats-image__images-image -------------------------------- */
+
+.formats-image__images {
     max-width: 800px;
     margin: 20px auto;
     text-align: center;
 }
 
-.formats-image-images__item{
+.formats-image__images-item {
     display: inline-block;
-    transition: .5s ease;
+    transition: ease .5s;
 }
 
-.formats-image-images__item img{
+.formats-image__images-item img {
     width: 300px;
 }
 
-.formats-image-images__item:hover{
-    background-color: rgba(0, 0, 0, .3);
+.formats-image__images-item:hover {
+    background-color: rgba(204, 204, 204, 0.5);
+    cursor: pointer;
 }
 
-/* ---------tag-img--------- */
-.tag-img, .tag-img-wrap{
+/* ------------------------ section  tag-img -------------------------------------------*/
+
+.tag-img,
+.tag-img__wrap {
     margin: 20px 0;
 }
 
-.tag-img-wrap p{
+.tag-img__wrap p {
     font-style: italic;
 }
 
-/* ---------background-image--------- */
-.background-image{
+/* ------------------------ section  bacground-imgage -------------------------------------------*/
+
+.bacground-imgage {
     margin: 20px 0;
 }
-.background-image p{
+
+.bacground-imgage p {
     margin-bottom: 10px;
 }
 
-.background-image-wrap{
+
+/* ------------------------ details -------------------------------------------*/
+
+
+.list-details details summary {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-silver);
+    border: 1px solid var(--color-dim-gray);
+    list-style: none;
+    z-index: 1;
+}
+
+.list-details details summary::before {
+    content: '\27a3';
+    margin-right: 5px;
+    display: inline-block;
+    width: 15px;
+}
+
+.list-details details[open] summary::before {
+    content: '\2b99';
+    margin-right: 5px;
+}
+
+.list-details details>div {
+    background-color: var(--color-old-lace);
+    border: 1px solid var(--color-bisque);
+    border-radius: 5px;
+    box-shadow: 5px 11px 20px var(--color-silver);
+    padding: 10px;
+}
+
+.list-details h3 {
+    margin-top: 10px;
+}
+
+/* ------------------------ list-multi -------------------------------------------*/
+.list-multi {
+    margin: 10px 0 10px 40px;
+}
+
+.list-multi li {
+    margin: 3px 0 0 20px;
+}
+
+.list-multi span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-dim-gray);
+    font-style: italic;
+}
+
+/* ------------------------ background-image-wrap -------------------------------------------*/
+
+.background-image-wrap {
     margin: 20px 0;
     height: 200px;
+    /* background-color: #000; */
     border: 1px solid var(--color-dim-gray);
     border-radius: 5px;
 }
-.background-image__image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/leopard-black.jpg);
+
+.background-image-image {
+    background-image: url(/img/leopard-black.jpg);
     height: 100%;
-    /* background-color: black; */
-    /* background-repeat: repeat-x; */
-    /* background-repeat: repeat-y; */
-    /* background-repeat: space; */
-    /* background-repeat: no-repeat; */
-    /* background-position: top center; */
-    /* background-position: 30px bottom; */
-    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
     -webkit-background-clip: text;
     font-size: 100px;
     color: transparent;
-
 }
-

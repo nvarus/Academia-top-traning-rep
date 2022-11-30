@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/smile.png">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+    <div class="container header-container">
+        <header>
+            <div class="head-menu box-shadow">
+                <div class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </div>
+                <div class="nav-links">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Main</a></li>
+                            <li><a href="./block-model.html">Block-model</a></li>
+                            <li><a href="./images.html">Images</a></li>
+                            <li><a href="./animation.html">Animation</a></li>
+                            <li><a href="./tables.html">Tables</a></li>
+                            <li><a href="./pseudoclasses.html">Pseudoclasses</a></li>
+                            <li><a href="./position.html">Position</a></li>
+                            <li><a href="./flexbox.html">Flexbox</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
+                            <li><a href="./forms.html">Forms</a></li>
+                            <li><a href="./adaptive.html">Adaptive</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+</div>
+    <div class="container body-container">
+        <aside class="aside-container">
+            <h2 class="title-color">Ссылки</h2>
+            <h3>полезные программы</h3>
+            <ul class="aside-nav">
+                <li class="sprite-generate">
+                    <a href="https://spritegen.website-performance.org/" target="_blank">sprite generate</a>
+                </li>
+                <li class="fonts-google">
+                    <a href="https://fonts.google.com/" target="_blank">link fonts</a>
+                </li>
+                <li class="colors-cheme">
+                    <a href="https://colorscheme.ru/html-colors.html" target="_blank">colors cheme</a>
+                </li>
+                <li class="htmlbook">
+                    <a href="http://htmlbook.ru/" target="_blank">html-book</a>
+                </li>
+                <li class="html-symbols">
+                    <a href="https://htmlweb.ru/html/symbols.php/" target="_blank">html-symbols</a>
+                </li>
+                <li class="image-png">
+                    <a href="http://imgpng.ru/" target="_blank">image-png</a>
+                </li>
+                <li class="image-png">
+                    <a href="https://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+                </li>
+                <li class="image-png">
+                    <a href="https://icons8.ru/icons/" target="_blank">icons</a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-container box-shadow animation">
+            <div class="content-container">
+                <section  class="title-color title-h1">
+                    <h1>Анимация</h1>
+                </section>
+
+                <section class="animation-web">
+                    <h2 class="title-h2">Анимация в веб-дизайне</h2>
+
+                    <div class="text">
+                        <p>CSS анимации подходят для выполнения простых движений элемента и когда не требуется совместимость с устаревшими браузерами. JavaScript позволяет создавать сложные анимации, с возможностью интерактивного взаимодействия.</p>
+                    </div>
+
+                    <div class="list">
+                        <p>Эффект движущихся элементов на сайте, можно создать с помощью свойств CSS3:</p>
+                        <ul>
+                            <li>переходов — <span>transition;</span></li>
+                            <li>анимации — <span>animation;</span></li>
+                            <li>трансформации — <span>transformation.</span></li>
+                        </ul>
+                        <p>Следует отметить, что трансформация не создаёт анимацию, а только трансформирует (перемещает, вращает, увеличивает) элемент. Трансформации часто используются совместно со свойствами <b><i>  animation и transition</i></b>.</p>
+                    </div>
+                </section>
+
+                <section class="animation-transition">
+                    <h2 class="title-h2">CSS-переходы. Свойство Transition</h2>
+
+                    <div class="text">
+                        <p>CSS-переходы <b><i>(transition),</i></b> позволяют изменять CSS свойствам одно значение на другое, за определённый  промежуток времени. Простейший пример подобного поведения — это изменение цвета фона ссылки-кнопки с помощью псевдокласса <b><i>:hover</i></b>, при котором моментально происходит смена значений CSS-свойства <b><i>background-color</i></b>.</p>
+                    </div>
+
+                    <div class="animation-transition__button">
+                        <button>transition</button>
+                    </div>
+
+                    <div class="text">
+                        <p><span>transition: all 0.5s ease 0s;</span> — сокращенное свойство, определяющее переход. <br> Первое значение определяет список свойств, чьи переходы должны анимироваться. <br>  Второе определяет время перехода. <br> Третье значение определяет временную функцию. <br> Четвертое определяет время задержки до начала анимации.</p>
+                        <p>CSS-свойство <b><i>transition</i></b> необходимо применять для элемента в том состоянии, из которого будет осуществляться переход.</p>
+                        <p>Объявить переход можно с помощью сокращенного свойства transition (как указано в примере выше) или с помощью 4-х отдельный свойств: <b><i>transition-property, transition-duration, transition-timing-function, transition-delay</i></b>.</p>
+                    </div>
+
+                    <div class="list-details">
+                        <ol class="list-multi">
+                            <li>
+                                <details>
+                                    <summary><span>transition-property</span></summary>
+                                    <div>
+                                        Определяет список изменяемых свойств. Можно указать одно свойство или список свойств, которые должны изменяться, через запятую. <br> Изменению подлежат те CSS свойства, которые изменяют внешний вид элемента или его расположение в HTML
+                                        документе. К таким свойствам относятся: <span>width, height, left, top, right, bottom, color, opacity, background-color, margin, left, border</span>  и т.д.
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><span>transition-duration</span></summary>
+                                    <div>
+                                        Определяет время перехода, указывается в s (секунды) или в ms (миллисекунды). Является обязательным свойством, при котором будет создаваться переход. Если в свойстве transition-property указано несколько свойств, длительность перехода можно указать разную для каждого свойства, через запятую.
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><span>transition-timing-function</span></summary>
+                                    <div>
+                                        Временная функция, которая определяет, как будут изменяться, указанные свойства. Существует несколько стандартных функций. Также возможно написать свою собственную функцию, используя кривые Безье.
+
+                                        <h3>Значение для собственной функции:</h3>
+                                        <ul class="list-multi">
+                                            <li>сubic-bezier(x1,x2,x3,x4)</li>
+                                        </ul>
+
+                                        <h3>Стандартные функции:</h3>
+                                        <ul class="list-multi">
+                                            <li><span>ease</span> — переход начинается быстро, к концу скорость увеличивается. Используется по умолчанию;</li>
+                                            <li><span>linear</span>  — скорость линейная, постоянная;</li>
+                                            <li><span>ease-in</span> — переход начинается медленно, к концу скорость увеличивается;</li>
+                                            <li><span>ease-out</span> — переход начинается быстро, к концу скорость уменьшается;</li>
+                                            <li><span>ease-in-out</span> — переход медленно начинается, к середине времени увеличивается и к концу опять уменьшается.</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><span>transition-delay</span></summary>
+                                    <div>
+                                        Определяет задержку до начала перехода, указывается в s или в ms. Если значение не указывается, то по умолчанию оно равно 0 и переход создаётся сразу. Если в свойстве transition-property указано несколько свойств, задержку для каждого свойства можно указывать через запятую.
+                                    </div>
+                                </details>
+                            </li>
+
+                        </ol>
+                    </div>
+
+                </section>
+
+                <section class="animation-transform">
+                    <h2 class="title-h2">CSS-трансформация. Свойство Transform</h2>
+                    <div class="text">
+                        <p>С помощью трансформаций (свойство <b><i>transform</i></b>) элемент можно увеличить в размере, вращать, наклонять,  сдвигать, не затрагивая другие элементы на странице. <br> Часто трансформации используются вместе с переходами. Переходы позволяют сделать процесс трансформации элемента плавным. Существуют 2D и 3D-типы трансформации. Трансформация происходит в двух осях X (по горизонтали) и Y (по вертикали). <br> Для преобразования элемента используется свойство <b><i>transform</i></b>, которое определяет тип трансформации элемента и свойство <b><i>transform-origin</i></b>, которое определяет исходную точку начала трансформации.</p>
+                    </div>
+
+                    <div class="list-details">
+                        <ol class="list-multi">
+                            <li>
+                                <details>
+                                    <summary><span>transform-origin</span></summary>
+                                    <div>
+                                        Значения по умолчанию: 50% 50% 0. Первое значение указывает координату x, перемещение элемента по горизонтали. <br> Второе значение указывает координату y, перемещение элемента по вертикали. Эти значения вычисляются от верхнего левого угла элемента. <br> Третье значение задает z-смещение и используется при 3D-преобразованиях. Значения можно указывать в единицах измерения длины элемента, в процентах или ключевыми словами <span>center, left, right, top, bottom</span>. z-смещение задавать не обязательно.
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>translate(x, y)</span></summary>
+                                    <div>
+                                        Изменение местоположения элемента на значение x слева направо, на значение y сверху вниз. В случае указания отрицательных значений, сдвиг будет направлен справа налево и снизу вверх.
+                                        <ul class="list-multi">
+                                            <li><span>translateX(x)</span>  — похожа на функцию <i>translate(x, y)</i>, однако, для неё указывается одно значение для сдвига элемента по оси x, влево или вправо.
+                                            </li>
+                                            <li><span>translateY(y)</span> — похожа на функцию <i>translate(x, y)</i>, однако, для неё указывается одно значение для сдвига элемента по оси y, вверх или вниз.
+                                            </li>
+                                            <li><span>scale(x, y)</span> — масштабирует элемент. Если указаны значения от 0 до 1, то элемент уменьшается. Если значения больше 1, то элемент увеличивается в масштабе. При отрицательных значениях отображает элемент зеркально. Следует отметить, что при увеличении элемента, качество отображаемого элемента может ухудшиться. Действует для элементов блочного типа <i>(display:block; display:inline-block;)</i>. Почему только для таких элементов? Так как масштабирование — это одновременное увеличение ширины и высоты элемента.
+                                            </li>
+                                            <li><span>scaleY(y)</span> — масштабирует элемент по вертикали. Если указаны значения от 0 до 1, то элемент уменьшается. Если больше 1, то увеличивается в масштабе. При отрицательных значениях отображает элемент зеркально. Следует отметить, что при увеличении элемента, качество может ухудшиться.
+                                            </li>
+                                            <li><span>rotate()</span> — вращает элемент вокруг исходной точки (за расположение исходной точки отвечает свойство <i>transform-origin</i>). Единицы измерения: градусы <i>(deg)</i>. При положительном значении — элемент поворачивается по часовой стрелке. При отрицательном — элемент поворачивается   против часовой стрелки. При указании угла по ворота более 360 град, элемент будет вращаться на указанное значение, например, при transform: <i>rotate(3600deg)</i>, элемент совершить 10 оборотов вокруг исходной точки.
+                                            </li>
+                                            <li><span>skew(x, y)</span> — определяет наклон элемента вдоль осей X и Y. Если указать только одно значение, то наклон элемента произойдёт по оси X. Значения указываются в углах, градусах, радианах и оборотах. При положительных значениях наклон совершает по часовой стрелке, при отрицательных против часовой стрелки. </li>
+                                            <li><span>skewX(x)</span> — определяет наклон элемента вдоль осей X. При положительных значениях наклон совершает влево, при отрицательных в вправо.
+                                            </li>
+                                            <li><span>skewY(y)</span> — определяет наклон элемента вдоль осей Y. При положительных значениях наклон совершает вверх, при отрицательных вниз.
+                                            </li>
+                                            <li><span>matrix</span> — объединяет ряд трансформаций <i>(scale, rotate, skew, traslate)</i> в одно объявление. <br> Синтаксис <i>matrix(a, c, b, d, tx, ty)</i>, где:
+                                                <ul class="list-style">
+                                                    <li><span>а</span> — изменение масштаба по горизонтали scaleX;</li>
+                                                    <li><span>c</span> — наклон по вертикали skewY;</li>
+                                                    <li><span>b</span> — наклон по горизонтали skewX;</li>
+                                                    <li><span>d</span> — изменение масштаба по вертикали scaleY;</li>
+                                                    <li><span>tx</span> — смещение по горизонтали translateX;</li>
+                                                    <li><span>ty</span> — смещение по вертикали translateY.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3 class="title-h3">Пример: с помощью  <i>transform: translateX()</i>, блок выезжает на 700px</h3>
+
+                    <div class="animation-transform__example">
+                        <div class="animation-transform__example-aside">
+                            <div class="animation-transform__item">
+                                <h5>transform: scale(1.1);</h5>
+                                <span class="animation-round  scale"></span>
+                            </div>
+                            <div class="animation-transform__item">
+                                <h5>transform: rotate(90deg);</h5>
+                                <span class="animation-round rotate"></span>
+                            </div>
+                            <div class="animation-transform__item">
+                                <h5>transform: skewX(-30deg);</h5>
+                                <span class="animation-round skew"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="animation-property">
+                    <h2 class="title-h2">CSS-анимация. Свойство Animation</h2>
+                    <div class="text">
+                        <p>Создание анимации базируется на ключевых кадрах, которые позволяют автоматически воспроизводить и повторять эффекты на протяжении заданного времени, а также останавливать анимацию внутри цикла. <br> CSS3-анимация может применяться практически для всех html-элементов, а также для псевдоэлементов <b><i>:before и :after.</i></b></p>
+                        <p>Кадры создаются с помощью специального правила <span>@keyframes</span>. Сами кадры объявляются ключевыми словами <b><i>from — «от»</i></b> или начальный, первый кадр. И <b><i>to — «до»</i></b> или конечный кадр, второй и последний кадр. Если количество кадров больше, чем два, то к кадру обращаются, как к отрезкам, выраженным в процентах пройденного пути. Например, три кадра — <b>0%</b> — начальный первый кадр, <b>50% </b>— второй кадр, <b>100%</b> — конечный третий кадр.</p>
+                    </div>
+
+                    <h3 class="title-h3">Синтаксис</h3>
+                    <!-- <pre> -->
+                    <p class="animation-property__syntax" >
+
+                        <span>h1{</span> <br>
+                        <span style="text-indent: 30px;">animation: name 5s linear alternate infinite;</span><br>
+                        <span>}</span><br><br>
+
+                        <span>@keyframes name{</span><br>
+                        <span style="text-indent: 30px;">from{</span><br>
+                        <span style="text-indent: 60px;">условие анимации</span><br>
+                        <span style="text-indent: 30px;">}</span><br>
+                        <span style="text-indent: 30px;">to{</span><br>
+                        <span style="text-indent: 60px;">условие анимации</span><br>
+                        <span style="text-indent: 30px;">}</span><br>
+                        <span>}</span><br>
+
+                        где, name — имя анимации, создаётся произвольно
+                        согласно смыслу анимации.
+                    </p>
+                    <!-- </pre> -->
+
+                    <div class="text">
+                        <p>CSS свойство <b><i>animation</i></b> — это краткая запись для <b><i>animation-name, animation-duration, animation-timingfunction, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state</i></b>.
+                        </p>
+                    </div>
+
+                    
+                    <div class="list-details">
+                        <ol class="list-multi">
+                            <li>
+                                <details>
+                                    <summary><span>animation-name</span></summary>
+                                    <div>
+                                        Имя анимации, создается произвольно;
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>animation-duration</span></summary>
+                                    <div>
+                                        Длительность анимации за один цикл;
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>animation-timingfunction</span></summary>
+                                    <div>
+                                        Временная функция, определяет, как происходит анимация в течение одного цикла.
+
+                                        <h3>Значение для собственной функции:</h3>
+                                        <ul class="list-multi">
+                                            <li><span>сubic-bezier</span></li>
+                                        </ul>
+
+                                        <h3>Стандартные функции:</h3>
+                                        <ul class="list-multi">
+                                            <li><span>ease</span> — переход начинается быстро, к концу скорость увеличивается;</li>
+                                            <li><span>linear</span> — скорость линейная, постоянная;</li>
+                                            <li><span>ease-in</span> — переход начинается медленно, к концу скорость увеличивается;</li>
+                                            <li><span>ease-out</span> — переход начинается быстро, к концу скорость уменьшается;</li>
+                                            <li><span>ease-in-out</span> — переход медленно начинается, к середине времени  увеличивается и к концу опять уменьшается.</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>animation-delay</span></summary>
+                                    <div>
+                                        Определяет время задержки перед началом анимации;
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>animation-iteration-count</span></summary>
+                                    <div>
+                                        Определяет сколько раз будет проигрываться цикл анимации, перед тем  как остановиться. Значение <b><i>infinite</i></b> определяет бесконечное число циклов.
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>animation-direction</span></summary>
+                                    <div>
+                                        Определяет направление анимации. Существует несколько стандартных значений:
+                                        <ul class="list-multi">
+                                            <li>
+                                                <span>normal</span> — значение по умолчанию, анимация начинается в начальном кадре проходит цикл до конечного кадра и моментально возвращается в начальный кадр;
+                                            </li>
+                                            <li>
+                                                <span>reverse</span> — анимация проигрывается наоборот. Начинается в конченом кадре, проигрывается до начального и сбрасывается в начальном кадре, моментально возвращаясь в конечный кадр;
+                                            </li>
+                                            <li>
+                                                <span>alternate</span> — анимация меняет направление в каждом цикле. От начального кадра идёт вперёд до конченого в одном цикле, в следующем возвращается из конечного кадра в начальный, количество за от числа итераций <b><i>animation-iteration-count</i></b>;
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>animation-fill-mode</span></summary>
+                                    <div>
+                                        Определяет необходимо ли применять стили анимации к элементу до и после окончания анимации. Имеет стандартные значения:
+                                        <ul class="list-multi">
+                                            <li>
+                                                <span>none</span> — стили анимации не будут применены до и после окончания анимации;
+                                            </li>
+                                            <li>
+                                                <span>forwards</span> — после окончания анимации, элемент сохранит стили анимации конечного ключевого кадра, которые зависит от <b><i>animation-direction и animation-iteration-count</i></b>;
+                                            </li>
+                                            <li>
+                                                <span>alternate</span> — анимация меняет направление в каждом цикле. От начального кадра идёт вперёд до конченого в одном цикле, в следующем возвращается из конечного кадра в начальный, количество за от числа итераций <b><i>animation-iteration-count</i></b>;
+                                            </li>
+                                            <li>
+                                                <span>backwards</span> — элемент сохранит стили анимации начального кадра, на протяжении всей задержки <b><i>(animation-delay)</i></b> до начала анимации, которая определяется значением <b><i>animation-direction</i></b>;
+                                            </li>
+                                            <li>
+                                                <span>both</span> — определяет одновременного применение значений <b><i>forwards и backwards</i></b>.
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><span>animation-play-state</span></summary>
+                                    <div>
+                                        Определяет состояния паузы и проигрыша анимации. Используется в скриптах,анимацию можно остановить и возобновить с помощью скриптов и проигрываться она начнет с момента остановки, не сначала. Имеет два значения:
+                                        <ul class="list-multi">
+                                            <li>
+                                                <span>runing</span> — анимация проигрывается;
+                                            </li>
+                                            <li>
+                                                <span>paused</span> — анимация приостановлена.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <h3 class="title-h3">Пример:</h3>
+                    <div class="animation-property__example">
+                        <div class="animation-round animation">1</div>
+                        <div class="animation-round animation">2</div>
+                        <div class="animation-round animation">3</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+</div>
+<script src="/js/script.js"></script>
+</body>
+
+</html>

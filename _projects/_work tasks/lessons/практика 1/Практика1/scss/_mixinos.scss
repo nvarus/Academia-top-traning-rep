@@ -1,0 +1,9 @@
+// прямоугольник (ширина, высота, цвет)
+@mixin rectangle ($width, $height, $back-color) {
+	width: $width;
+	height: $height;
+	background-color: $back-color;
+	display: inline-block;
+	margin: 5px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, .5);
+}

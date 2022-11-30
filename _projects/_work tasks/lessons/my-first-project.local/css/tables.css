@@ -1,24 +1,24 @@
-.tables-example {
-	margin: 20px 0;
+.tables-exemple {
+    margin: 20px 0;
+}
+.tables-exemple table{
+    width: 100%;
+    border-collapse: separate;
+    /* border: 1px solid #000; */
+    border-spacing: 10px;
+    background-color: #fdfdfd;
+    font-size: 14px;
+    text-align: center;
 }
 
-.tables-example table {
-	width: auto;
-	border-collapse: separate;
-	border: 1px solid #ddd;
-	border-spacing: 10px;
-	background: #fdfdfd;
-	font-size: 14px;
+.tables-exemple table th,td{
+    border: 1px solid #777;
+    padding: 5px;
 }
-
-td, th {
-	border: 1px solid #ddd;
-	padding: 5px;
-}
-
-caption {
-	font-style: italic;
-	text-align: right;
-	margin: 0px 0px 10px 0px;
-	color: darkslateblue;
+.tables-exemple caption{
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 10px;
+    color: rgb(18, 112, 34);
+    margin-right: 10px;
 }
