@@ -96,7 +96,7 @@ h5 {
 	font-family: inherit;
 }
 
-.header {}
+
 
 .exam-head {
 	position: sticky;
@@ -185,7 +185,6 @@ h5 {
 .aside-wrap {
 	flex-basis: 40%;
 	margin-right: 30px;
-	border: 1px solid #000;
 
 }
 
@@ -229,7 +228,7 @@ h5 {
 
 .block-wrap a {
 	padding: 5px 20px;
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
 	border-radius: 5px;
 }
 
@@ -250,11 +249,49 @@ h5 {
 	background-color: #c0c0c0;
 }
 
+/*TODO    features          */
+
+.features-wrap {
+	max-width: 90%;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(200px, auto);
+	justify-content: center;
+}
+
+.features-item {
+	padding: 40px;
+	text-align: center;
+}
+
+.features-icon {
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	background-color: silver;
+}
+
+.features-item h3 {
+	margin: 20px 0;
+	font-size: 18px;
+}
+
+.features-item:nth-child(-n+3) {
+	border-bottom: 1px solid #c0c0c0;
+}
+
+
+.features-item:nth-child(-n+2),.features-item:nth-child(n+4):nth-child(-n+5){
+	border-right: 1px solid #c0c0c0;
+}
+
 /*?   __МЕДИА ЗАПРОСЫ__                 */
 
 @media only screen and (max-width: 1200px) {
 	.exam-container {
 		max-width: 1000px;
+		
 	}
 	.aside-wrap {
 		display: none;
@@ -284,6 +321,26 @@ h5 {
 		min-height: 40vh;
 	}
 
+	.features-wrap {
+	grid-template-columns: repeat(2, 1fr);
+	max-width: 70%;
+	}
+	.features-item:nth-child(-n+3) {
+		border-bottom: none;
+	}
+
+	.features-item:nth-child(-n+2),.features-item:nth-child(n+4):nth-child(-n+5){
+		border-right: none;
+	}
+
+	.features-item:nth-child(-n+4) {
+		border-bottom: 1px solid #c0c0c0;
+	}
+
+	.features-item:nth-child(odd) {
+		border-right: 1px solid #c0c0c0!important;
+	}
+
 }
 
 @media only screen and (max-width: 600px)  {
@@ -300,8 +357,20 @@ h5 {
 		flex-direction: column-reverse;
 		border-bottom: none;
 		margin-bottom: 30px;
+		
 	}
 
-	
+	.features-wrap {
+		grid-template-columns: repeat(1, 1fr);
+		max-width: 50%;
+	}
+
+	.features-item:nth-child(-n+4) {
+			border-bottom: 1px solid #c0c0c0;
+	}
+
+	.features-item:nth-child(odd) {
+			border-right: none;
+	}
 
 }
