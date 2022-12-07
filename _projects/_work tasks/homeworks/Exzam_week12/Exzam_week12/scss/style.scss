@@ -5,10 +5,6 @@
 body {
 	font-family: Segoe UI;
 }
-
-
-
-
 // Общий контейнер для боковой панели и панели администратора
 .content {
 	max-width: 1200px;
@@ -30,8 +26,6 @@ body {
 					padding-left: 25px;
         }
 }
-
-
 .aside {
 position: sticky;
 top: 0;
@@ -98,10 +92,7 @@ box-shadow: 4px 0px 4px rgba(96, 84, 84, .5);
 
 
 .main-wrap {
-
-	&__main {
-	}
-
+	
 	&__footer {
 		border-top: 2px solid #928d8d;
 
@@ -545,8 +536,9 @@ padding-right: 25px;
 }
 
 .lists {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
 	margin: 100px 0 50px 0;
 	&__task-list {
 		min-width: 49%;
@@ -567,7 +559,7 @@ padding-right: 25px;
 
 .task-list {
 	position: relative;
-	padding: 80px 17px 0 17px;
+	padding: 70px 17px 0 17px;
 	&__header {
 		position: absolute;
 		background-color: #C7A139;
@@ -638,8 +630,8 @@ padding-right: 25px;
 
 
 .task-list-row {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: .2fr 4fr .1fr .1fr ;
 	margin : 0 0 15px 0;
 	padding-top: 15px;
 	border-top: 1px solid #928d8d;
@@ -647,15 +639,16 @@ padding-right: 25px;
 	&:first-child {
 		border-top: 1px solid green;
 	}
+	& button {
+		background-color: #F6F6F6;
+	}
 }
-
 .task-list-row_no-board {
 	border-top: none;
 }
-
 .worker-list {
 	position: relative;
-	padding: 102px 17px 0 17px;
+	padding: 80px 17px 0 17px;
 	&__header {
 		position: absolute;
 		background-color:#3C4B93;
@@ -667,41 +660,48 @@ padding-right: 25px;
 		width: 93%;
 		height: 80px;
 		padding: 15px;
-		
 		& h2 {
 			color: #E9E9E9;
 			margin-bottom: 15px;
 			font-weight: 400;
 		}
-
 		& h3 {
 			color: #E9E9E9;
 		}
-		
 	}
 
-	&__worker-table {
-	}
 }
+
 .worker-table {
+	padding-left: 15px;
+	&__header {
+		display: grid;
+		grid-template-columns: 1fr 3fr 2fr 2fr;		
 
-	
+		& h2 {
+			margin: 0 0px 10px 0px;
+			font-weight: 400;
+			color: #6B989E;
+			font-size: 12px;
+			}
+		}
 
-	&__row td {
-		border-bottom: #817D7A;
-		margin: 10px;
+	& p {
+		margin-right: 40px;
+		font-size: 12px;
+		font-weight: 400;
+		color: #817D7A;
+		margin: 10px 0px 10px 0px;
+	}
+
+	&__rows {
+		border-top: 1px solid #928d8d;
+		display: grid;
+		grid-template-columns: 1fr 3fr 2fr 2fr;	
+
 	}
 }
 
-table {
-	text-align: left;
-	border-collapse: separate;
-	border-spacing: 15px;
-}
-
-table td {
-	border: 1px solid #000;
-}
 
 
 

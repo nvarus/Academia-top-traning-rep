@@ -521,8 +521,9 @@ body {
 }
 
 .lists {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   margin: 100px 0 50px 0;
 }
 .lists__task-list {
@@ -538,7 +539,7 @@ body {
 
 .task-list {
   position: relative;
-  padding: 80px 17px 0 17px;
+  padding: 70px 17px 0 17px;
 }
 .task-list__header {
   position: absolute;
@@ -591,14 +592,17 @@ body {
 }
 
 .task-list-row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 0.2fr 4fr 0.1fr 0.1fr;
   margin: 0 0 15px 0;
   padding-top: 15px;
   border-top: 1px solid #928d8d;
 }
 .task-list-row:first-child {
   border-top: 1px solid green;
+}
+.task-list-row button {
+  background-color: #F6F6F6;
 }
 
 .task-list-row_no-board {
@@ -607,7 +611,7 @@ body {
 
 .worker-list {
   position: relative;
-  padding: 102px 17px 0 17px;
+  padding: 80px 17px 0 17px;
 }
 .worker-list__header {
   position: absolute;
@@ -629,19 +633,31 @@ body {
 .worker-list__header h3 {
   color: #E9E9E9;
 }
-.worker-table__row td {
-  border-bottom: #817D7A;
-  margin: 10px;
-}
 
-table {
-  text-align: left;
-  border-collapse: separate;
-  border-spacing: 15px;
+.worker-table {
+  padding-left: 15px;
 }
-
-table td {
-  border: 1px solid #000;
+.worker-table__header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+}
+.worker-table__header h2 {
+  margin: 0 0px 10px 0px;
+  font-weight: 400;
+  color: #6B989E;
+  font-size: 12px;
+}
+.worker-table p {
+  margin-right: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #817D7A;
+  margin: 10px 0px 10px 0px;
+}
+.worker-table__rows {
+  border-top: 1px solid #928d8d;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr;
 }
 
 /**            МЕДИА ЗАПРОСЫ               */
@@ -668,7 +684,7 @@ table td {
     max-width: 100%;
   }
   .lists {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
   .lists__task-list {
     min-width: 100%;
