@@ -31,7 +31,7 @@
 	}
 
 	.lists {
-		flex-wrap: wrap;
+		grid-template-columns: 1fr;
 
 		&__task-list {
 			min-width: 100%;
