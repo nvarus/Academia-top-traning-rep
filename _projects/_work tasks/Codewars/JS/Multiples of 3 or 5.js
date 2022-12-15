@@ -5,5 +5,15 @@
 * Примечание: Если число кратно как 3, так и 5, подсчитайте его только один раз.*/
 
 function solution(number) {
-
+	if (number < 0) return 0;
+	let summ = 0;
+	for (let i = 3; i < number; i++) {
+		if (i % 3 == 0 || i % 5 == 0) summ += i;
+	}
+	return summ;
 }
+
+
+
+
+console.log(solution(10));

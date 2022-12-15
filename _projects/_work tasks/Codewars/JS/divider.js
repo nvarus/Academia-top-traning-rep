@@ -15,4 +15,3 @@ test(1, 1);
 test(8, 4);
 test(74, 12);
 test(78954, 5);
-console.error('ОШИБКА')
