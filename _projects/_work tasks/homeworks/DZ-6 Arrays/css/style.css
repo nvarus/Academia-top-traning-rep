@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/** Сброс стилей CSS                 */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input ::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a :visited {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font: inherit;
+  font-weight: 400;
+}
+
+/**                                        */
+.content {
+  max-width: 600px;
+  min-width: 200px;
+  margin: 20px auto;
+  background-color: silver;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+}
+.content h3 {
+  border: 1px solid white;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 27px;
+}
+.content .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.5fr;
+}
+.content .grid-element {
+  border: 1px solid white;
+}
+.content .buy {
+  color: DarkGreen;
+}
+.content .not-buy {
+  color: DarkRed;
+}
+.content .header {
+  font-weight: 600;
+}
+
+/**            МЕДИА ЗАПРОСЫ               */

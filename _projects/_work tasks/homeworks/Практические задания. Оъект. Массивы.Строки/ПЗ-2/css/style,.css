@@ -1,6 +1,24 @@
-h4 {
-	font-size: 20px;
+body {
+	padding: 50px;
+}
+
+
+.showArr {
+	font-size: 30px;
+	line-height: 40px;
 	font-weight: bold;
 	display: inline-block;
 	text-align: center;
+	display: inline-block;
+	border: 1px solid #000;
+	padding: 10px 5px 5px 5px;
+	width: 50px;
+	height: 45px;
+	color: blue;
+	background-color: yellow;
+	margin: 3px;
+}
+
+.content {
+	background-color: sienna;
 }
