@@ -96,6 +96,7 @@ h5 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
   line-height: 36px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .content h3 {
   border: 1px solid white;
@@ -118,6 +119,65 @@ h5 {
 }
 .content .header {
   font-weight: 600;
+}
+
+.form {
+  background: silver;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.form__add {
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+.form__buy {
+  padding: 5px;
+}
+.form__button {
+  padding: 3px 7px;
+  font-size: 15px;
+  line-height: 18px;
+  margin-left: 10px;
+  border-radius: 3px;
+  color: gray;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.form__button:hover {
+  color: blue;
+}
+.form__input {
+  font-size: 17px;
+  line-height: 25px;
+  padding: 0px 3px;
+  color: gray;
+  border: 1px solid silver;
+}
+.form__input:focus {
+  border: 1px solid orangered;
+}
+.form #input-quant {
+  width: 140px;
+}
+.form #input-name {
+  width: 280px;
+}
+.form #input-buy {
+  width: 280px;
+}
+.form__display {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.form__ok {
+  color: ForestGreen;
+}
+.form__error {
+  color: Red;
 }
 
 /**            МЕДИА ЗАПРОСЫ               */

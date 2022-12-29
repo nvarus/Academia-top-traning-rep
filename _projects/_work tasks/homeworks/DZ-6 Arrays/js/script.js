@@ -1,6 +1,18 @@
 // * Создать массив «Список покупок». Каждый элемент массива является объектом,
 // * который содержит название продукта, необходимое количество и куплен или нет
 
+let inputName = document.querySelector('#input-name');
+let inputQuant = document.querySelector('#input-quant');
+let buttonAdd = document.querySelector('#btn-add');
+let display = document.querySelector('.form__display');
+buttonAdd.addEventListener('click', () => {
+	let name = inputName.value;
+	let quant = inputQuant.value;
+	console.log(name);
+
+});
+
+
 const shopList = [
 
 	{
@@ -95,10 +107,10 @@ function purchased(product, list = shopList) {
 	if (find === false) alert(`В вашем списке нет ${product}`) // если не найден в списке
 }
 
-addItem('молоко', 2)
-addItem('Колбаса', 1)
+// addItem('молоко', 2)
+// addItem('Колбаса', 1)
 
-purchased('колбаса')
+// purchased('колбаса')
 // purchased('сыр')
-purchased('мясо')
+// purchased('мясо')
 showList();

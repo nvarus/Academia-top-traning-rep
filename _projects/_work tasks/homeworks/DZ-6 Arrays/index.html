@@ -10,7 +10,22 @@
 </head>
 
 <body>
+	<form class="form">
+		<div class="form__add">
+			<input type="text" class="form__input" id="input-name" placeholder="Введите продукт">
+			<input type="text" class="form__input" id="input-quant" placeholder="Введите кол-во">
+			<button class="form__button" id="btn-add">Добавить в список</button>
+		</div>
 
+		<div class="form__buy">
+			<input type="text" class="form__input" id="input-buy" placeholder="Введите продукт">
+			<button class="form__button" id="btn-buy">Купить товар</button>
+		</div>
+		<div class="form__display">
+			<!-- <p class="form__ok">Продукт добавлен в список</p> -->
+			<!-- <p class="form__error">Вы уже купили Сыр !</p> -->
+		</div>
+	</form>
 	<div class="content">
 		<div class="grid-container">
 			<div class="header grid-element">Наименование</div>
