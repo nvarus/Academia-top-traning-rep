@@ -1,0 +1,24 @@
+{
+	"files.autoSave": "onFocusChange",
+	"workbench.colorCustomizations": {
+		"titleBar.activeForeground": "#f7f0f0",
+		"titleBar.inactiveForeground": "#f7f0f0",
+		"titleBar.activeBackground": "#6c0b79",
+		"titleBar.inactiveBackground": "#2c0531",
+		"editorGroupHeader.tabsBackground": "#1d1e2a",
+		"editorWhitespace.foreground": "#263238", // theme background
+		"background": "#FF00FF",
+		"badge.foreground": "#B4B4B4",
+		"panel.border": "#1d2a1d",
+		"sideBar.foreground": "#B4B4B4",
+		"sideBar.background": "#1d262a",
+		"statusBar.background": "#202a1d",
+		"tab.border": "#546e7a",
+		"tab.inactiveForeground": "#B4B4B4",
+		"tab.inactiveBackground": "#1d262a",
+		"tab.activeBackground": "#0d3f06",
+		"tab.activeForeground": "#fa1212",
+		"tab.activeBorderTop": "#3eee12",
+		"tab.activeBorder": "#3eee12",
+	},
+}

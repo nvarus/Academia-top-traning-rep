@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/** Сброс стилей CSS                 */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input ::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a :visited {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font: inherit;
+  font-weight: 400;
+}
+
+/**                                        */
+body {
+  background-color: lightblue;
+  height: 100vh;
+}
+
+.content {
+  max-width: 800px;
+  background-color: white;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 56px;
+  text-align: center;
+  color: LightYellow;
+  background-color: blue;
+}
+
+.list {
+  padding: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.list__title {
+  margin-top: 10px;
+}
+.list__title > div {
+  border: 1px solid #000;
+  text-align: center;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 25px;
+}
+.list__list {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.list__list > div {
+  border: 1px solid #000;
+}
+
+.H2-title {
+  color: MediumBlue;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.6fr;
+}
+
+.select {
+  margin-top: 20px;
+}
+.select select {
+  border: 1px solid DarkGrey;
+  color: DarkSlateGrey;
+  font-size: 18px;
+  height: 30px;
+  width: 300px;
+}
+.select__button {
+  width: 80px;
+}
+
+.sort {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.sort__seat {
+  width: 350px;
+}
+.sort__title {
+  width: 350px;
+}
+
+.button {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+  background: blue;
+  color: lightyellow;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.button:hover {
+  color: blue;
+  background-color: lightyellow;
+}
+
+/**            МЕДИА ЗАПРОСЫ               */
