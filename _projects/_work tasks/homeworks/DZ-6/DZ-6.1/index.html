@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>empty_project</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="form">
+		<div class="form__add">
+			<input type="text" class="form__input" id="input-name" placeholder="Введите продукт">
+			<input type="text" class="form__input" id="input-quant" placeholder="Введите кол-во">
+			<button class="form__button" id="btn-add">Добавить в список</button>
+		</div>
+
+		<div class="form__buy">
+			<input type="text" class="form__input" id="input-buy" placeholder="Введите продукт">
+			<button class="form__button" id="btn-buy">Купить товар</button>
+		</div>
+		<div class="form__display">
+			<!-- <p class="form__ok">Продукт добавлен в список</p> -->
+			<!-- <p class="form__error">Вы уже купили Сыр !</p> -->
+		</div>
+	</div>
+	<div class="content">
+		<div class="grid-container">
+			<div class="header grid-element">Наименование</div>
+			<div class="header grid-element">Кол-во</div>
+			<div class="header grid-element">Куплен</div>
+		</div>
+		<h3>Не куплен</h3>
+		<div class="not-buy grid-container">
+		</div>
+		<h3>Куплен</h3>
+		<div class="buy grid-container">
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>

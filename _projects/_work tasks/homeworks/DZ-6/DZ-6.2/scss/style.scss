@@ -1,0 +1,68 @@
+@import "./resetting-styles";
+@import "./_mixins"; 
+@import "./templates";
+//*****************************
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+
+.content {
+    font-family: 'IBM Plex Mono', monospace;
+    max-width: 800px;
+    height: 100vh;
+    background-color: silver;
+    margin: 0 auto;
+    padding: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr .4fr .4fr .4fr;
+}
+.voucher {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    color: blue;
+    &__header {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 45px;
+        border-bottom: 3px dashed blue;
+    }
+    &__result {
+        padding: 10px;
+        text-align: center;
+        font-size: 19px;
+        line-height: 26px;
+    }
+}
+
+.list {
+    padding: 10px;
+    &__header {
+        text-align: center;
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 25px;
+        border-bottom: 1px dashed blue;
+    }
+    &__list {
+        padding: 5px;
+        text-align: center;
+        line-height: 20px;
+        border-bottom: 1px dashed blue;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//* МЕДИА ЗАПРОСЫ         
+@import "./media_queries";
