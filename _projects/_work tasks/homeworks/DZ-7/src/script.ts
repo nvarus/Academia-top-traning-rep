@@ -40,4 +40,4 @@ const numToString = (num: number):string  => {
 
 }
 
-/* */
+/* Задача номер 3 */
