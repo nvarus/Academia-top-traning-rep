@@ -12,7 +12,7 @@ class ProductLine {
         this.lineAmount = qty * price;
     }
 }
-// создаем саммив
+// создаем массив
 const cashVoucher = [];
 // заполняем объектами типа ProductLine
 cashVoucher.push(new ProductLine('Печенье "Юбилейное"', 2, 96));
