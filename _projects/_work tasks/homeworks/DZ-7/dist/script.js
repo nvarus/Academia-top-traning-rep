@@ -3,16 +3,19 @@
 количество других знаков. */
 const strInfo = (str) => {
     let number = str.match(/\d/gi);
-    let latin = str.match(/[a-z]/gui);
-    let cyrilic = str.match(/[а-я]/gui);
-    let space = str.match(/\s/g);
-    let symbol = str.match(/[^a-zа-я0-9\s]/gui);
-    let string = document.querySelector('.string');
-    string.innerHTML = `
+};
+;
+let latin = str.match(/[a-z]/gui);
+;
+let cyrilic = str.match(/[а-я]/gui);
+let space = str.match(/\s/g);
+let symbol = str.match(/[^a-zа-я0-9\s]/gui);
+let string = document.querySelector('.string');
+string.innerHTML = `
     <h2>Введенная строка:</h2>
     <p>${str}</p>`;
-    let info = document.querySelector('.info');
-    info.innerHTML = `
+let info = document.querySelector('.info');
+info.innerHTML = `
     <h2>Состав строки:</h2>
     // <ul>
     <li>цифры: ${(number === null) ? 0 : number.length}</li>
@@ -21,7 +24,7 @@ const strInfo = (str) => {
     <li>пробелы: ${(space === null) ? 0 : space.length}</li>
     <li>другие символы: ${(symbol === null) ? 0 : symbol.length}</li></ul>
 `;
-};
+;
 /*2. Написать функцию, которая принимает двузначное число и возвращает его в текстовом виде.
 Например: 35 – тридцать пять, 89 – восемьдесят девять, 12 – двенадцать.*/
 const numToString = (num) => {
@@ -43,5 +46,7 @@ const numToString = (num) => {
 большие буквы на маленькие, маленькие – на большие, а
 цифры – на знак нижнего подчеркивания. */
 const upperLowerRevers = (str) => {
-    let newArr = [];
+    let newArr = [1, 1, 1, 2, 5, 6, 8, 4];
+    for (let i = 0; i < newArr.length; i++) {
+    }
 };
