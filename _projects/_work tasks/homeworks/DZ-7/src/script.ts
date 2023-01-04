@@ -45,5 +45,5 @@ const numToString = (num: number):string  => {
 цифры – на знак нижнего подчеркивания. */
 
 const upperLowerRevers = (str:string):string => {
-
+    let newArr = [];
 }

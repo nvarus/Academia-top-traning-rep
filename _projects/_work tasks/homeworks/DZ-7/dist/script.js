@@ -43,4 +43,5 @@ const numToString = (num) => {
 большие буквы на маленькие, маленькие – на большие, а
 цифры – на знак нижнего подчеркивания. */
 const upperLowerRevers = (str) => {
+    let newArr = [];
 };
