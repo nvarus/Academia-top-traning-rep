@@ -39,3 +39,4 @@ const numToString = (num) => {
     else
         return `${array20[tens]} ${array1[units]}`;
 };
+/* */ 
