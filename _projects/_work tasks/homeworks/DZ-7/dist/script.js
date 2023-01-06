@@ -3,33 +3,32 @@
 количество других знаков. */
 const strInfo = (str) => {
     let number = str.match(/\d/gi);
-};
-;
-let latin = str.match(/[a-z]/gui);
-;
-let cyrilic = str.match(/[а-я]/gui);
-let space = str.match(/\s/g);
-let symbol = str.match(/[^a-zа-я0-9\s]/gui);
-let string = document.querySelector('.string');
-string.innerHTML = `
+    let latin = str.match(/[a-z]/gui);
+    let cyrillic = str.match(/[а-я]/gui);
+    let space = str.match(/\s/g);
+    let symbol = str.match(/[^a-zа-я0-9\s]/gui);
+    let string = document.querySelector('.string');
+    // @ts-ignore
+    string === null || string === void 0 ? void 0 : string.innerHTML = `
     <h2>Введенная строка:</h2>
     <p>${str}</p>`;
-let info = document.querySelector('.info');
-info.innerHTML = `
+    let info = document.querySelector('.info');
+    // @ts-ignore
+    info === null || info === void 0 ? void 0 : info.innerHTML = `
     <h2>Состав строки:</h2>
     // <ul>
     <li>цифры: ${(number === null) ? 0 : number.length}</li>
     <li>латинские буквы: ${(latin === null) ? 0 : latin.length}</li>
-    <li>русские буквы: ${(cyrilic === null) ? 0 : cyrilic.length}</li>
+    <li>русские буквы: ${(cyrillic === null) ? 0 : cyrillic.length}</li>
     <li>пробелы: ${(space === null) ? 0 : space.length}</li>
     <li>другие символы: ${(symbol === null) ? 0 : symbol.length}</li></ul>
 `;
-;
+};
 /*2. Написать функцию, которая принимает двузначное число и возвращает его в текстовом виде.
 Например: 35 – тридцать пять, 89 – восемьдесят девять, 12 – двенадцать.*/
 const numToString = (num) => {
     const array1 = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
-    const array11 = ['десять', 'одинадцать', 'двенадцать', 'тринадцать',
+    const array11 = ['десять', 'одиннадцать', 'двенадцать', 'тринадцать',
         'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать'];
     const array20 = ['', '', 'двадцать', 'тридцать', 'сорок', 'пятьдесят',
         'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто'];
@@ -45,5 +44,5 @@ const numToString = (num) => {
 /* 3 Написать функцию, которая заменяет в полученной строке
 большие буквы на маленькие, маленькие – на большие, а
 цифры – на знак нижнего подчеркивания. */
-const upperLowerRevers = (str) => {
-};
+let N = 0;
+N += 5;
