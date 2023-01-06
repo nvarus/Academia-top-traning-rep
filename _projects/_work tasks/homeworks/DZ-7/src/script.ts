@@ -41,8 +41,7 @@ const numToString = (num: number): string => {
     if (num < 20) return array11[units];
     else return `${array20[tens]} ${array1[units]}`;
 
-}
-
+};
 /* 3 Написать функцию, которая заменяет в полученной строке
 большие буквы на маленькие, маленькие – на большие, а
 цифры – на знак нижнего подчеркивания. */
