@@ -15,7 +15,7 @@ const strInfo = (str: string) => {
 	// @ts-ignore
 	info?.innerHTML = `
     <h2>Состав строки:</h2>
-    // <ul>
+    <ul>
     <li>цифры: ${(number === null) ? 0 : number.length}</li>
     <li>латинские буквы: ${(latin === null) ? 0 : latin.length}</li>
     <li>русские буквы: ${(cyrillic === null) ? 0 : cyrillic.length}</li>
@@ -42,8 +42,45 @@ const numToString = (num: number): string => {
 	else return `${array20[tens]} ${array1[units]}`;
 
 };
-/* 3 Написать функцию, которая заменяет в полученной строке
-большие буквы на маленькие, маленькие – на большие, а
-цифры – на знак нижнего подчеркивания. */
-let N = 0;
-N += 5;
+
+/** 3 Написать функцию, которая заменяет в полученной строке большие буквы на маленькие,
+ * маленькие – на большие, а цифры – на знак нижнего подчеркивания. */
+const upperLowerLining = (str: string) => {
+	let newStr = ''
+	for (let letter of str) {
+		if (letter === letter.toLowerCase()) newStr += letter.toUpperCase();
+		else if (letter === letter.toUpperCase()) newStr += letter.toLowerCase();
+	}
+	return newStr.replace(/[0-9]/gi, '_');
+};
+
+/** 4. Написать функцию, которая преобразует названия css стилей с дефисом в название в СamelСase стиле:
+ *  font-size  в fontSize, background-color в backgroundColor, textalign в textAlign. */
+const cssInCamalCase = (property: any) => {
+	let newStr = ''
+	for (let i = 0; i <= property.length; i++) {
+		if (property[i] === '-') {
+			newStr = property.replace(property[i + 1], property[i + 1].toUpperCase())
+			newStr = newStr.replace(/-/gi, '');
+		}
+	}
+	return newStr
+}
+
+/** 5. Написать функцию, которая принимает словосочетание и превращает его в аббревиатуру.
+ Например: cascading style sheets в CSS, объектноориентированное программирование в ООП.*/
+const abbr = (str: string, result = '') => {
+	let newStr = str.split(' ')
+	newStr.forEach(item => result += item[0].toUpperCase())
+	return result
+}
+
+/** Написать функцию, которая принимает любое количество строк, объединяет их в одну длинную
+ * строку и возвращает ее. */
+const getLongString = (str: string): string => {
+	let result = '';
+
+
+
+	return result;
+}

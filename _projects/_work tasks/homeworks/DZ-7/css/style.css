@@ -78,10 +78,18 @@ body {
 
 .info {
   background: beige;
-  height: 200px; }
+  height: 200px;
+  padding: 10px; }
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px; }
 
 li {
   color: blue;
-  text-align: center; }
+  font-size: 18px;
+  line-height: 23px;
+  margin-left: 20px; }
 
 /*----------------------МЕДИА ЗАПРСЫ----------------------- */
