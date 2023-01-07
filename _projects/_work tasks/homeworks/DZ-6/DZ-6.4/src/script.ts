@@ -112,4 +112,26 @@ const sortForTitle = () => {
     auditori.sort((a, b) => a.title > b.title ? 1 : -1)
     showAllAud();
 }
-showAllAud();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
