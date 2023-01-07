@@ -44,9 +44,13 @@ function showVoucher(array = cashVoucher): void {
 
 /** 2. Подсчет общей суммы покупки. */
 const calcSum = (array = cashVoucher, result: number = 0): number => {
+    array.reduce((total, array) => total + array.pricePerUnit, 0})
+    return total;
+}
+/*const calcSum = (array = cashVoucher, result: number = 0): number => {
     for (let item of array) result += item['lineAmount'];
-    return result;
-};
+    return result;*/
+// };
 
 /** 3. Получение самой дорогой покупки в чеке. */
 const maxPrice = (array = cashVoucher, max: number = 0): number => {

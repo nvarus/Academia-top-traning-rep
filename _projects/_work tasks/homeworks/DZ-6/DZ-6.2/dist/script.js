@@ -37,11 +37,10 @@ function showVoucher(array = cashVoucher) {
     sum === null || sum === void 0 ? void 0 : sum.innerHTML += `<div>Средняя стоимость одного товара: ${averagePrice.toFixed(2)} руб.</div>`;
 }
 /** 2. Подсчет общей суммы покупки. */
-const calcSum = (array = cashVoucher, result = 0) => {
-    for (let item of array)
-        result += item['lineAmount'];
-    return result;
-};
+const calcSum = (array = cashVoucher) => {
+    let summ = array.reduce((total, array) => total + array.pricePerUnit * array.quantity,0)
+    return summ
+}
 /** 3. Получение самой дорогой покупки в чеке. */
 const maxPrice = (array = cashVoucher, max = 0) => {
     for (let item of array) {

@@ -108,22 +108,24 @@ function addItem(nm, qt = 1, list = shopList) {
 
 // * 3. Покупка продукта. Функция принимает название продукта и отмечает его как купленный.
 function purchased(product, list = shopList) {
-	find = false;
+	let find = false;
 	for (let i in list) {
 		if (list[i]['name'].toLowerCase() === product.toLowerCase()) { // если в списке есть продукт
 			if (list[i]['bought'] === 'нет') {	// и он не куплен
-				list[i]['bought'] = 'да';	// отмечаем как купленый
+				list[i]['bought'] = 'да';	// отмечаем как купленный
 				find = true;
 				break;
 			} else {
 				display.innerHTML = `
-				<div class="form__error">Вы уже купили ${product.toLowerCase()}</div>`
+			 	<div class="form__error">Вы уже купили ${product.toLowerCase()}</div>`
 				find = true;
 			}
 		}
 	}
 	if (find === false) display.innerHTML = `<div class="form__error">В вашем списке нет: ${product.toLowerCase()}</div>` // если не найден в списке
 }
+
+
 
 showList(shopList);
 

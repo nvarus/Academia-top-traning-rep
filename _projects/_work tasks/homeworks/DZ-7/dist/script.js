@@ -24,7 +24,7 @@ const strInfo = (str) => {
     <li>другие символы: ${(symbol === null) ? 0 : symbol.length}</li></ul>
 `;
 };
-/*2. Написать функцию, которая принимает двузначное число и возвращает его в текстовом виде.
+/** 2. Написать функцию, которая принимает двузначное число и возвращает его в текстовом виде.
 Например: 35 – тридцать пять, 89 – восемьдесят девять, 12 – двенадцать.*/
 const numToString = (num) => {
     const array1 = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
@@ -41,8 +41,34 @@ const numToString = (num) => {
     else
         return `${array20[tens]} ${array1[units]}`;
 };
-/* 3 Написать функцию, которая заменяет в полученной строке
-большие буквы на маленькие, маленькие – на большие, а
-цифры – на знак нижнего подчеркивания. */
-let N = 0;
-N += 5;
+/** 3 Написать функцию, которая заменяет в полученной строке большие буквы на маленькие,
+ * маленькие – на большие, а цифры – на знак нижнего подчеркивания. */
+const upperLowerLining = (str) => {
+    let newStr = '';
+    for (let letter of str) {
+        if (letter === letter.toLowerCase())
+            newStr += letter.toUpperCase();
+        else if (letter === letter.toUpperCase())
+            newStr += letter.toLowerCase();
+    }
+    return newStr.replace(/[0-9]/gi, '_');
+};
+/** 4. Написать функцию, которая преобразует названия css стилей с дефисом в название в СamelСase стиле:
+ *  font-size  в fontSize, background-color в backgroundColor, textalign в textAlign. */
+const cssInCamalCase = (property) => {
+    let newStr = '';
+    for (let i = 0; i <= property.length; i++) {
+        if (property[i] === '-') {
+            newStr = property.replace(property[i + 1], property[i + 1].toUpperCase());
+            newStr = newStr.replace(/-/gi, '');
+        }
+    }
+    return newStr;
+};
+/** 5. Написать функцию, которая принимает словосочетание и превращает его в аббревиатуру.
+ Например: cascading style sheets в CSS, объектноориентированное программирование в ООП.*/
+const abbr = (str, result = '') => {
+    let newStr = str.split(' ');
+    newStr.forEach(item => result += item[0].toUpperCase());
+    return result;
+};

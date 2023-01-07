@@ -26,7 +26,7 @@ arrStyle.push(new CssStyle('margin-top', '40vh'));
 /** Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью
  * document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями,
  * перечисленными в массиве. */
-const showText = (arr = arrStyle, text) => {
+const showText = (text, arr = arrStyle) => {
     // формируем открывающий тег
     let openTag = `<p style="`;
     // проходим по массиву и с помошью метода getCss() заполняем атрибут style
@@ -36,4 +36,14 @@ const showText = (arr = arrStyle, text) => {
     // выводим на экран
     document.write(openTag + text + closedTag);
 };
-showText(arrStyle, 'Lorem ipsum dolor sit amet.');
+showText('Lorem ipsum dolor sit amet.');
+
+
+
+
+
+
+
+
+
+
