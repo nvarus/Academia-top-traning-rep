@@ -25,7 +25,7 @@ const strInfo = (str: string) => {
 };
 
 
-/*2. Написать функцию, которая принимает двузначное число и возвращает его в текстовом виде.
+/** 2. Написать функцию, которая принимает двузначное число и возвращает его в текстовом виде.
 Например: 35 – тридцать пять, 89 – восемьдесят девять, 12 – двенадцать.*/
 
 const numToString = (num: number): string => {
@@ -75,12 +75,11 @@ const abbr = (str: string, result = '') => {
 	return result
 }
 
-/** Написать функцию, которая принимает любое количество строк, объединяет их в одну длинную
+/** 6. Написать функцию, которая принимает любое количество строк, объединяет их в одну длинную
  * строку и возвращает ее. */
-const getLongString = (str: string): string => {
-	let result = '';
-
-
-
-	return result;
+function getLongString(): string {
+	let result = [];
+	for (let i = 0; i < arguments.length; i++) result.push(arguments[i]);
+	return result.join(' ');
 }
+
