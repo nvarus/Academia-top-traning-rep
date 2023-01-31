@@ -1,0 +1,84 @@
+// ИМПОРТЫ
+@import "resetting-styles"
+//-------------------------------------------
+
+// параметры кнопки
+$btn-width: 200px
+$btn-height: 40px
+// параметры подсказки
+$popup-background: blue
+$popup-color: white
+
+body
+	height: 100vh
+	width: 100%
+
+
+.content
+	padding: 20px
+	background-color: beige
+	display: flex
+	gap: 40px
+
+.content>div:nth-child(1)
+	margin-top: 80px
+
+.btn
+	background-color: Crimson
+	color: white
+	font-size: 20px
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8)
+
+
+
+// специальные классы для кнопки с подсказкой
+
+.popup-rotate
+	text-align: center
+	position: absolute
+	padding: 5px
+	top: $btn-height + 15
+	background: $popup-background
+	padding: 10px 5px
+	min-width: $btn-width
+
+.popup-array-rotate
+	position: absolute
+	transform: rotate(45deg)
+	background: $popup-background
+	height: 15px
+	width: 15px
+	top: -5px
+	left: $btn-width / 2
+
+.btnHint
+	position: relative
+	display: flex
+	color: $popup-color
+
+.btnHint__button
+	width: $btn-width
+	height: $btn-height
+
+.btnHint__popup
+	display: none
+	text-align: center
+	position: absolute
+	padding: 5px
+	top: -50px
+	background: $popup-background
+	padding: 10px 5px
+	min-width: $btn-width
+
+.btnHint__popup-array
+	position: absolute
+	transform: rotate(45deg)
+	background: $popup-background
+	height: 15px
+	width: 15px
+	bottom: -5px
+	left: $btn-width / 2
+
+//------------------------------------------
+// МЕДИА ЗАПРОСЫ
+@import "media_queries"

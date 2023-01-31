@@ -1,0 +1,193 @@
+// ИМПОРТЫ
+@import "resetting-styles"
+@import "patterns"
+//-------------------------------------------
+
+
+
+
+body
+	background-color: DarkSlateGrey
+	font-family: Verdana
+
+.task
+	background-color: silver
+	max-width: 900px
+	margin: 10px auto
+	min-height: 250px
+	border-radius: 4px
+	padding: 10px
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+
+
+.title-h2
+	font-size: 26px
+	font-weight: 600
+	text-align: center
+	color: blue
+	font-style: italic
+	margin-top: 0
+	margin-bottom: 10px
+
+.input
+	font-size: 20px
+	line-height: 30px
+	width: 400px
+	border: 1px solid grey
+	padding: 4px
+	display: block
+
+
+.outText
+	font-size: 20px
+	line-height: 30px
+	width: 400px
+	border: 1px solid grey
+	padding: 4px
+	min-height: 40px
+
+.none
+	display: none
+
+.button
+	font-size: 20px
+	padding: 5px 10px
+	background-color: OrangeRed
+	color: beige
+	border: none
+	border-radius: 3%
+	display: block
+	transition: 0.2s all
+
+.button:active
+	transform: scale(0.96)
+
+
+.modal
+	background-color: white
+	padding: 15px
+	width: 440px
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
+	position: relative
+
+	.modal__title
+		font-size: 24px
+		text-align: center
+		font-weight: 600
+
+	.modal__button
+		margin: 0 auto
+
+	.modal__x
+		font-family: monospace
+		border: 1px solid red
+		background-color: red
+		color: white
+		border-radius: 5px
+		text-align: center
+		width: 25px
+		position: absolute
+		right: 5px
+		top: 5px
+		cursor: pointer
+		font-size: 30px
+		margin: 0
+
+	.modal__x:hover
+		color: red
+		background-color: white
+		font-weight: bolder
+
+
+// ---------Задание 1------------
+
+.task1
+
+.task1__input
+	color: grey
+	margin: 10px auto
+
+.task1__outText
+	color: grey
+	margin: 0 auto
+
+// ---------Задание 2------------
+
+.task2
+	position: relative
+
+	.task2__button
+		margin: 10px auto
+
+	.task2__modal
+		position: absolute
+		top: 100px
+		left: 220px
+
+// ---------Задание 4 ------------
+
+.task4__wrap
+	@extend %flex-center-center
+	gap: 20px
+
+
+.task4__button
+	width: 130px
+	height: 170px
+	border-radius: 20px
+	border: none
+	font-size: 30px
+	font-weight: 500
+	background: OrangeRed
+	color: white
+	transition: 0.2s all
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+
+	&:active
+		transform: scale(0.96)
+
+#traffic-lights
+	border: 2px solid grey
+	border-radius: 15px
+	width: 440px
+	min-height: 180px
+	background: silver
+	gap: 15px
+	@extend %flex-center-center
+
+$Circle-size: 120px
+
+.lights
+	background: dimgray
+	width: $Circle-size
+	height: $Circle-size
+	border-radius: 50%
+
+.light_green > div:nth-child(1)
+		background: LawnGreen
+
+.light_yellow > div:nth-child(2)
+	background: yellow
+
+.light_red > div:nth-child(3)
+	background: red
+
+// ---------Задание 5 ------------
+
+.task5__wrap
+	background: white
+	padding: 10px
+
+li
+	cursor: pointer
+	font-size: 21px
+	line-height: 40px
+
+.active
+	background: Chocolate
+
+
+
+//------------------------------------------
+// МЕДИА ЗАПРОСЫ
+@import "media_queries"

@@ -1,0 +1,32 @@
+// ИМПОРТЫ
+@import "resetting-styles"
+//-------------------------------------------
+$trSize: 3px    // размер треугольника
+$trIndent: 0.5px
+.framed-text
+	position: relative
+	border: 1px solid grey
+
+.triangle:after
+	content: ''
+	position: absolute
+	border: $trSize solid transparent
+	border-right: $trSize solid grey
+	border-bottom: $trSize solid grey
+	bottom: $trIndent
+	right: $trIndent
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------
+// МЕДИА ЗАПРОСЫ
+@import "media_queries"
