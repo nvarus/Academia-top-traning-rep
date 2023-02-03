@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>empty_project</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<form id="form" action="#">
+	<div class="box-input">
+		<label for="">Имя</label>
+		<input id="person-Fn" type="text" name="personName"></input>
+	</div>
+	<div class="box-input">
+		<label for="">Фамилия</label>
+		<input id="person-lastName" type="text" name="personLastName"></input>
+	</div>
+	<div class="box-input">
+		<label for="">Дата рождения</label>
+		<input id="person-date" type="date" name="personDate"></input>
+	</div>
+	<div class="box-input">
+		<label for="">Страна</label>
+		<input id="person-country" type="text" name="personCountry"></input>
+	</div>
+	<div class="box-check">
+		<div class="box-input">
+			<label for="">Город</label>
+			<input id="person-city" type="text" name="personCity"></input>
+		</div>
+		<div class="box-check">
+			<span>Пол</span>
+			<label for="">М</label>
+			<input type="radio" name="personGender" value="Мужской"></input>
+			<label for="">Ж</label>
+			<input type="radio" name="personGender" value="Женский"></input>
+		</div>
+		<div class="box-check">
+			<div class="box-check">
+				<span>Навыки</span>
+				<label for="">HTML</label>
+				<input class="skill" type="checkbox" value="HTML" name="personSkill"></input>
+				<label for="">CSS</label>
+				<input class="skill" type="checkbox" value="CSS" name="personSkill"></input>
+				<label for="">JS</label>
+				<input class="skill" type="checkbox" value="JS" name="personSkill"></input>
+				<label for="">PHP</label>
+				<input class="skill" type="checkbox" value="PHP" name="personSkill"></input>
+				<label for="">C++</label>
+				<input class="skill" type="checkbox" value="C++" name="personSkill"></input>
+				<label for="">Java</label>
+				<input class="skill" type="checkbox" value="Java" name="personSkill"></input>
+				<label for="">C#</label>
+				<input class="skill" type="checkbox" value="C#" name="personSkill"></input>
+			</div>
+			<button type="submit">Нажми</button>
+		</div>
+	</div>
+</form>
+
+<script type="text/javascript" src="./dist/script.js"></script>
+</body>
+
+</html>
