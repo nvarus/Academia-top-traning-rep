@@ -1,0 +1,220 @@
+WARNING on line 104 of style.sass:
+This selector doesn't have any properties and will not be rendered.
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input ::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a :visited {
+  text-decoration: none; }
+
+a :hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5 {
+  font: inherit;
+  font-weight: 400; }
+
+/*--------------------------------------------------------- */
+/** Флекс центр */
+.task4__wrap, #traffic-lights {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+body {
+  background-color: DarkSlateGrey;
+  font-family: Verdana; }
+
+.task {
+  background-color: silver;
+  max-width: 900px;
+  margin: 10px auto;
+  min-height: 250px;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }
+
+.title-h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: blue;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 10px; }
+
+.input {
+  font-size: 20px;
+  line-height: 30px;
+  width: 400px;
+  border: 1px solid grey;
+  padding: 4px;
+  display: block; }
+
+.outText {
+  font-size: 20px;
+  line-height: 30px;
+  width: 400px;
+  border: 1px solid grey;
+  padding: 4px;
+  min-height: 40px; }
+
+.none {
+  display: none; }
+
+.button {
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: OrangeRed;
+  color: beige;
+  border: none;
+  border-radius: 3%;
+  display: block;
+  transition: 0.2s all; }
+
+.button:active {
+  transform: scale(0.96); }
+
+.modal {
+  background-color: white;
+  padding: 15px;
+  width: 440px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative; }
+  .modal .modal__title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600; }
+  .modal .modal__button {
+    margin: 0 auto; }
+  .modal .modal__x {
+    font-family: monospace;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0; }
+  .modal .modal__x:hover {
+    color: red;
+    background-color: white;
+    font-weight: bolder; }
+
+.task1__input {
+  color: grey;
+  margin: 10px auto; }
+
+.task1__outText {
+  color: grey;
+  margin: 0 auto; }
+
+.task2 {
+  position: relative; }
+  .task2 .task2__button {
+    margin: 10px auto; }
+  .task2 .task2__modal {
+    position: absolute;
+    top: 100px;
+    left: 220px; }
+
+.task4__wrap {
+  gap: 20px; }
+
+.task4__button {
+  width: 130px;
+  height: 170px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  font-weight: 500;
+  background: OrangeRed;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+  .task4__button:active {
+    transform: scale(0.96); }
+
+#traffic-lights {
+  border: 2px solid grey;
+  border-radius: 15px;
+  width: 440px;
+  min-height: 180px;
+  background: silver;
+  gap: 15px; }
+
+.lights {
+  background: dimgray;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; }
+
+.light_green > div:nth-child(1) {
+  background: LawnGreen; }
+
+.light_yellow > div:nth-child(2) {
+  background: yellow; }
+
+.light_red > div:nth-child(3) {
+  background: red; }
+
+.task5__wrap {
+  background: white;
+  padding: 10px; }
+
+li {
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 40px; }
+
+.active {
+  background: Chocolate; }
+
+/*----------------------МЕДИА ЗАПРСЫ----------------------- */

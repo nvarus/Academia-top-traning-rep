@@ -1,0 +1,140 @@
+// ИМПОРТЫ
+@import "resetting-styles"
+@import "patterns"
+//-------------------------------------------
+
+
+html
+	height: 100%
+
+body
+	background-color: DarkSlateGrey
+	font-family: Verdana
+	padding-bottom: 10px
+	height: 100%
+
+.task
+	background-color: silver
+	max-width: 900px
+	margin: 10px auto
+	min-height: 250px
+	border-radius: 4px
+	padding: 10px
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+
+
+.title-h2
+	font-size: 26px
+	font-weight: 600
+	text-align: center
+	color: blue
+	font-style: italic
+	margin-top: 0
+	margin-bottom: 10px
+
+
+
+// ---------Задание 1------------
+
+$lineHeight: 7px
+$lineWidth: 200px
+$lineColor: gray
+$SliderColor: blue
+
+
+
+
+
+.trackbar
+	margin: 70px auto
+	border: 1px solid $lineColor
+	height: $lineWidth / 8
+	width: $lineWidth + 20
+	@extend %flex-center-center
+
+.line
+	border: 1px solid grey
+	height: $lineWidth / 40
+	width: $lineWidth
+	background-color: $lineColor
+	position: relative
+
+.slider
+	background-color: $SliderColor
+	height: $lineWidth / 22
+	width: $lineWidth / 25
+	position: absolute
+	top: -($lineWidth / 40) / 2
+
+// ---------Задание 2------------
+
+$arrowSize: 50px
+.gallery
+	@extend %flex-center-center
+	gap: 40px
+	margin: 20px
+.arrow
+	width: $arrowSize
+	cursor: pointer
+
+
+
+.gallery__forward
+	transform: rotate(180deg)
+
+
+
+.gallery__img
+	@extend %flex-center-center
+	width: 230px
+
+	height: 250px
+
+.gallery__img > img
+	width: 100%
+
+.disable
+	filter: grayscale(100%)
+	opacity: 30%
+
+// ---------Задание 3------------
+
+.info
+	margin: 0
+	padding: 0
+.info__title
+	@extend %border
+	background-color: #518CBB
+	color: white
+	font-size: 18px
+	line-height: 24px
+
+.info__text
+	border-top: 1px solid black
+	background-color: #B4DBE8
+	color: black
+	font-size: 15px
+	line-height: 17px
+	padding: 5px
+
+.hidden > p
+	display: none
+
+// ---------Задание 4------------
+.news
+	padding: 30px 100px
+
+.news__title
+	font-size: 18px
+	font-weight: bold
+	margin-bottom: 15px
+
+.news__text
+	line-height: 24px
+
+	width: 100px
+
+
+//------------------------------------------
+// МЕДИА ЗАПРОСЫ
+@import "media_queries"
