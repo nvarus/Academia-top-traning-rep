@@ -160,35 +160,58 @@ const news = {
 	currentNews: 0,
 	
 	addNews(newsNum) {
-		const section = document.createElement('section')
-		section.classList.add('news')
-		const title = document.createElement('h2')
-		title.classList.add('news__title')
-		const text = document.createElement('p')
-		text.classList.add('news__text')
-		section.append(title)
-		section.append(text)
+		const section = document.createElement('section');
+		section.classList.add('news');
+		const title = document.createElement('h2');
+		title.classList.add('news__title');
+		const text = document.createElement('p');
+		text.classList.add('news__text');
+		section.append(title);
+		section.append(text);
 		
 		if (newsNum < this.newsArray.length) {
-			title.textContent = this.newsArray[newsNum].title
-			text.textContent = this.newsArray[newsNum].text
+			title.textContent = this.newsArray[newsNum].title;
+			text.textContent = this.newsArray[newsNum].text;
 		} else {
-			title.textContent = "НОВОСТИ ЗАКОНЧИЛИСЬ"
-			this.currentNews--
+			title.textContent = "НОВОСТИ ЗАКОНЧИЛИСЬ";
+			this.currentNews--;
 			
 		}
-		document.querySelector('.task4').append(section)
+		document.querySelector('.task4').append(section);
 	}, // выводит на экран новость с указанным номером из массива newsArray
-	nextNews() {
-		this.currentNews++
-		this.addNews(this.currentNews)
+	get nextNews() {
+		this.currentNews++;
+		this.addNews(this.currentNews);
 	}, // добавляет следующую новость
+	
+	checkPosition() {
+		// высота документа
+		const height = Math.max(
+			document.body.scrollHeight, document.documentElement.scrollHeight,
+			document.body.offsetHeight, document.documentElement.offsetHeight,
+			document.body.clientHeight, document.documentElement.clientHeight	);
+		
+		const screenHeight = window.innerHeight; // высота экрана
+		
+		const scrolled = window.scrollY // сколько пикселей уже проскроллено
+		
+		const position = scrolled + screenHeight; // текущая позиция
+		
+		if (position >= height - 5) {
+			console.log('КОНЕЦ ДОКУМЕНТА')
+		}
+		
+		console.log(
+			`документ:${height} экран:${screenHeight} скролл:${position}`
+		)
+		
+		
+		
+	} // определяет конец скролла
 }
 
 news.addNews(news.currentNews)
-
-
-
+document.addEventListener('scroll', news.checkPosition)
 
 
 
