@@ -1,0 +1,17 @@
+doctype
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title empty_project
+		link(rel="stylesheet", href="./style/style.css")
+	body
+		h2.title-h2 Задание 1
+		.task1.task
+			.task1__messages
+			form(name="task1")#task1_form
+				input.task1-form__input#task1-form-name(type="text", name="task1FormName", placeholder="Введите ваше имя")
+				textarea#task1-form-message.task1-form__input(name="task1FormMessage", cols="30", rows="8", placeholder="Введите ваше сообщение")
+				button#task1-form-button(name="task1FormButton") Отправить
+		script(type="text/javascript", src="./js/script.js")

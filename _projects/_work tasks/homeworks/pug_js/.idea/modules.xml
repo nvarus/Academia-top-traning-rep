@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/.idea/DZ-16.iml" filepath="$PROJECT_DIR$/.idea/DZ-16.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/.idea/_empty_project_ts+scss.iml" filepath="$PROJECT_DIR$/.idea/_empty_project_ts+scss.iml" />
->>>>>>> acf568d80c2ce21c54383e95a049e64c422d9f1d
     </modules>
   </component>
 </project>
