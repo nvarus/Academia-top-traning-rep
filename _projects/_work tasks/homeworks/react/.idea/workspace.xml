@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad5f7845-5e08-4733-b51f-874ab75854bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DZ-14/.idea/DZ-14.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DZ-14/DZ-14_5/.idea/_empty_project_ts+scss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14/sass/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/_empty_project_ts+scss.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/dictionaries/alx.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/arrow.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/jest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/jquery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/nodejs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/npm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/prettir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/ts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/vue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/_media_queries.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/_resetting-styles.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/style.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_media_queries.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_patterns.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_resetting-styles.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/patterns.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/style.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_media_queries.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_patterns.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_resetting-styles.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/style.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/_media_queries.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/_resetting-styles.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/style.sassc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_media_queries.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_patterns.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_resetting-styles.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/style.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/ts/script.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/tsconfig-checks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2LF6qFGH0YrmwGzZthHJ3VTyyNb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad5f7845-5e08-4733-b51f-874ab75854bf" name="Changes" comment="" />
+      <created>1675454675032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675454675032</updated>
+      <workItem from="1675454676715" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
