@@ -3,6 +3,7 @@
   <component name="ProjectTasksOptions">
     <enabled-global>
       <option value="Sass" />
+      <option value="Pug/Jade" />
     </enabled-global>
   </component>
 </project>
