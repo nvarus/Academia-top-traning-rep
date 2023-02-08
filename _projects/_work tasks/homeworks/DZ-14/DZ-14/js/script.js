@@ -129,37 +129,40 @@ document.addEventListener('click', (e) => {
  новости в список. Новости для подгрузки хранить в заранее подготовленном массиве. */
 
 const news = {
+	
+	currentNews: 0,
+	
 	newsArray: [
 		
 		{
-			title: 'What is Lorem Ipsum?',
+			title: '1. What is Lorem Ipsum?',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt doloremque enim, error fugit' +
 				' illo impedit itaque, maiores maxime natus neque placeat praesentium quas ullam vero. Consectetur' +
 				' corporis esse est explicabo ipsum libero rerum? Cupiditate dolore ipsam nisi quos sint ut. At in labore magnam, quae saepe sint voluptatem. A architecto asperiores ducimus minima nam? Accusamus aperiam beatae consequuntur cum eius illum iste iusto mollitia nobis omnis quae repellendus, saepe sed sunt, totam voluptas voluptate. Ad aut beatae, delectus excepturi qui quis quisquam repellendus sint sit tempore ullam, voluptates! Deleniti dolorem dolorum non! Ab deleniti iure labore optio. Autem, omnis.',
 		},
 		{
-			title: 'Why do we use it?',
+			title: '2. Why do we use it?',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt doloremque enim, error fugit' +
 				' illo impedit itaque, maiores maxime natus neque placeat praesentium quas ullam vero. Consectetur' +
 				' corporis esse est explicabo ipsum libero rerum? Cupiditate dolore ipsam nisi quos sint ut. At in labore magnam, quae saepe sint voluptatem. A architecto asperiores ducimus minima nam? Accusamus aperiam beatae consequuntur cum eius illum iste iusto mollitia nobis omnis quae repellendus, saepe sed sunt, totam voluptas voluptate. Ad aut beatae, delectus excepturi qui quis quisquam repellendus sint sit tempore ullam, voluptates! Deleniti dolorem dolorum non! Ab deleniti iure labore optio. Autem, omnis.',
 		},
 		{
-			title: 'Where does it come from?',
+			title: '3. Where does it come from?',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt doloremque enim, error fugit' +
 				' illo impedit itaque, maiores maxime natus neque placeat praesentium quas ullam vero. Consectetur' +
 				' corporis esse est explicabo ipsum libero rerum? Cupiditate dolore ipsam nisi quos sint ut. At in labore magnam, quae saepe sint voluptatem. A architecto asperiores ducimus minima nam? Accusamus aperiam beatae consequuntur cum eius illum iste iusto mollitia nobis omnis quae repellendus, saepe sed sunt, totam voluptas voluptate. Ad aut beatae, delectus excepturi qui quis quisquam repellendus sint sit tempore ullam, voluptates! Deleniti dolorem dolorum non! Ab deleniti iure labore optio. Autem, omnis.',
 		},
 		{
-			title: 'Where can I get some?',
+			title: '4. Where can I get some?',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt doloremque enim, error fugit' +
 				' illo impedit itaque, maiores maxime natus neque placeat praesentium quas ullam vero. Consectetur' +
 				' corporis esse est explicabo ipsum libero rerum? Cupiditate dolore ipsam nisi quos sint ut. At in labore magnam, quae saepe sint voluptatem. A architecto asperiores ducimus minima nam? Accusamus aperiam beatae consequuntur cum eius illum iste iusto mollitia nobis omnis quae repellendus, saepe sed sunt, totam voluptas voluptate. Ad aut beatae, delectus excepturi qui quis quisquam repellendus sint sit tempore ullam, voluptates! Deleniti dolorem dolorum non! Ab deleniti iure labore optio. Autem, omnis.',
 		},
 	
 	], // массив с новостями
-	currentNews: 0,
 	
-	addNews(newsNum) {
+	nextNews(newsArr = this.newsArray) {
+		// ======== создаем html блок для вывода новости =========
 		const section = document.createElement('section');
 		section.classList.add('news');
 		const title = document.createElement('h2');
@@ -168,21 +171,27 @@ const news = {
 		text.classList.add('news__text');
 		section.append(title);
 		section.append(text);
-		
-		if (newsNum < this.newsArray.length) {
-			title.textContent = this.newsArray[newsNum].title;
-			text.textContent = this.newsArray[newsNum].text;
+		// перебираем новости по порядку, если закончились, начинаем заново
+		console.log(`currentNews: ${this.currentNews} length: ${newsArr.length}`)
+		if (this.currentNews < newsArr.length) {
+			// если не дошли до конца массива, выводим следующую новость
+			title.textContent = newsArr[this.currentNews].title;
+			text.textContent = newsArr[this.currentNews].text;
+			this.currentNews++
+			// если новости закончились, сообщаем об этом
+		} else if (this.currentNews === newsArr.length) {
+			console.log('next news')
+			title.textContent = 'НОВОСТИ ЗАКОНЧИЛИСЬ';
+			this.currentNews++
+			// вывозим заново новости
 		} else {
-			title.textContent = "НОВОСТИ ЗАКОНЧИЛИСЬ";
-			this.currentNews--;
-			
+			title.textContent = newsArr[0].title;
+			text.textContent = newsArr[0].text;
+			this.currentNews = 1;
 		}
+		
 		document.querySelector('.task4').append(section);
-	}, // выводит на экран новость с указанным номером из массива newsArray
-	get nextNews() {
-		this.currentNews++;
-		this.addNews(this.currentNews);
-	}, // добавляет следующую новость
+	}, // выводит на экран следующую новость
 	
 	checkPosition() {
 		// высота документа
@@ -192,26 +201,56 @@ const news = {
 			document.body.clientHeight, document.documentElement.clientHeight	);
 		
 		const screenHeight = window.innerHeight; // высота экрана
-		
 		const scrolled = window.scrollY // сколько пикселей уже проскроллено
-		
 		const position = scrolled + screenHeight; // текущая позиция
-		
-		if (position >= height - 5) {
-			console.log('КОНЕЦ ДОКУМЕНТА')
+		const upPoint = height - 5 // точка загрузки
+			// если достигли низа документа
+		if (position >= (upPoint) ) {
+			// временно останавливаем событие, что бы не загрузились лишние элементы
+			document.removeEventListener('scroll', news.checkPosition)
+			news.delay()
+			
 		}
 		
-		console.log(
-			`документ:${height} экран:${screenHeight} скролл:${position}`
-		)
 		
 		
-		
-	} // определяет конец скролла
+	}, // определяет конец скролла
+	
+	
+	// задержка открытия новости и анимация полосы загрузки
+	delay() {
+		// создаем элементы загрузки
+		const out = document.querySelector('.task4')
+		const downloadWrap = document.createElement('div')
+		downloadWrap.classList.add('wrap')
+		const text = document.createElement('p')
+		text.textContent = 'Загружаем следующую новость'
+		downloadWrap.append(text)
+		const downloadLane = document.createElement('div')
+		downloadLane.classList.add('lane')
+		downloadWrap.append(downloadLane)
+		out.append(downloadWrap)
+		// с помощью setInterval имитируем полосу загрузки
+		let count = 0;
+		window.scrollBy(0, 50);
+		const download = setInterval(()=> {
+			downloadLane.append(document.createElement('div'))
+			count++
+			// условие завершения setInterval
+			if (count > 30) {
+				clearInterval(download)
+				downloadWrap.remove()      // удаляем полосу загрузки
+				news.nextNews()            // выводим следующую новость
+				window.scrollBy(0, 50);
+				document.addEventListener('scroll', news.checkPosition) // снова запускаем событие
+			}
+		}, 50)
+	} // задержка открытия новости и анимация полосы загрузки
 }
-
-news.addNews(news.currentNews)
+news.nextNews()
 document.addEventListener('scroll', news.checkPosition)
+
+
 
 
 

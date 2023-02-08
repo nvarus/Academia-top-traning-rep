@@ -164,6 +164,28 @@ body {
 
 .news__text {
   line-height: 24px;
-  width: 80%; }
+  width: 70%; }
+
+.lane {
+  margin: 0 auto;
+  width: 310px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2px;
+  border: 1px solid blueviolet; }
+
+.lane > div {
+  height: 100%;
+  width: 8px;
+  background-color: blueviolet; }
+
+.wrap {
+  color: blueviolet;
+  margin: 0 auto;
+  text-align: center; }
+
+.wrap > p {
+  margin-bottom: 3px; }
 
 /*----------------------МЕДИА ЗАПРСЫ----------------------- */
