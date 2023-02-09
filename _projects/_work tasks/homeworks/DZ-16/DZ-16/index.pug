@@ -14,4 +14,21 @@ html(lang="ru")
 				input.task1-form__input#task1-form-name(type="text", name="task1FormName", placeholder="Введите ваше имя")
 				textarea#task1-form-message.task1-form__input(name="task1FormMessage", cols="30", rows="8", placeholder="Введите ваше сообщение")
 				button#task1-form-button(name="task1FormButton") Отправить
+		.task2.task
+			h2.title-h2 Задание 2
+			#task2-root
+
+		.task3.task
+			h2.title-h2 Задание 3
+			.task3__content
+				.task3__checkboxes
+					input.task3__check(type="checkbox", data-check="task3-bold")
+					span Bold
+					input.task3__check(type="checkbox", data-check="task3-underline")
+					span Underline
+					input.task3__check(type="checkbox", data-check="task3-italic" checked)
+					span Italics
+			.task3__div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, perspiciatis.
+
+
 		script(type="text/javascript", src="./js/script.js")
