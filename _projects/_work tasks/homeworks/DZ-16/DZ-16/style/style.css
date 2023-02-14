@@ -61,9 +61,6 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: center; }
 
-.task3__content, .task3__checkboxes {
-  border: 1px solid black; }
-
 html {
   height: 100%; }
 
@@ -135,66 +132,5 @@ body {
 
 .message__text {
   padding: 5px; }
-
-#task2-form {
-  margin: 0 auto;
-  width: 450px;
-  background-color: Moccasin;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  padding: 10px; }
-
-.task2-questin {
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 10px; }
-
-.task2-radio {
-  margin: 0px 0px 5px 15px;
-  font-size: 16px; }
-
-input[type='radio']:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: #d1d3d1;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid white; }
-
-input[type='radio']:checked:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: #ffa500;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid white; }
-
-#task2-button {
-  display: block;
-  margin: 10px auto;
-  width: 100px;
-  font-weight: bold;
-  line-height: 30px;
-  border-radius: 3px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
-
-.task3-bold {
-  font-weight: bold; }
-
-.task3-underline {
-  text-decoration: underline; }
-
-.task3-italic {
-  font-style: italic; }
 
 /*----------------------МЕДИА ЗАПРСЫ----------------------- */
