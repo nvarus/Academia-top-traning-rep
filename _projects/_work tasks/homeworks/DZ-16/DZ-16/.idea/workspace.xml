@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="984c2cfc-d4d9-423d-a012-971b7244bead" name="Changes" comment="">
+    <list default="true" id="984c2cfc-d4d9-423d-a012-971b7244bead" name="Changes" comment="ывва">
+      <change afterPath="$PROJECT_DIR$/../../DZ-17/DZ-17 — копия/sass/.sass-cache/549f8cfa924ad332439f76afe38655ebe332f93b/_media_queries.sassc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DZ-17/DZ-17 — копия/sass/.sass-cache/549f8cfa924ad332439f76afe38655ebe332f93b/_patterns.sassc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DZ-17/DZ-17 — копия/sass/.sass-cache/549f8cfa924ad332439f76afe38655ebe332f93b/_resetting-styles.sassc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DZ-17/DZ-17 — копия/sass/.sass-cache/549f8cfa924ad332439f76afe38655ebe332f93b/style.sassc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DZ-14/DZ-14/sass/.sass-cache/2c5548f8f20be147b2e88677bbfec71de6c0c9c4/style.sassc" beforeDir="false" afterPath="$PROJECT_DIR$/../../DZ-14/DZ-14/sass/.sass-cache/2c5548f8f20be147b2e88677bbfec71de6c0c9c4/style.sassc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DZ-14/DZ-14/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../DZ-14/DZ-14/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/.sass-cache/040faba9a94b552cf9ee0f041c6c529c4e24f501/style.sassc" beforeDir="false" afterPath="$PROJECT_DIR$/sass/.sass-cache/040faba9a94b552cf9ee0f041c6c529c4e24f501/style.sassc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +61,32 @@
       <workItem from="1675863230918" duration="28000" />
       <workItem from="1675863294418" duration="413000" />
       <workItem from="1675872307523" duration="15764000" />
-      <workItem from="1675939180718" duration="3958000" />
+      <workItem from="1675939180718" duration="4693000" />
+      <workItem from="1675944715448" duration="285000" />
+      <workItem from="1676357367252" duration="388000" />
     </task>
+    <task id="LOCAL-00001" summary="ывва">
+      <created>1675944580891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675944580891</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ывва">
+      <created>1675944597035</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675944597035</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ывва" />
+    <option name="LAST_COMMIT_MESSAGE" value="ывва" />
   </component>
 </project>

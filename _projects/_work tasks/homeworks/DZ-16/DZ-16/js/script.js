@@ -149,7 +149,9 @@ const quest = {
 			answer.forEach(radio => {
 				if (radio.checked) {
 					check++
-					if (+radio.dataset.answer === +questList[quest.count].correctAnswer) quest.corrAnswers++;
+					if (+radio.dataset.answer === +questList[quest.count].correctAnswer) {
+						quest.corrAnswers++
+					};
 					quest.count++
 					form.remove()
 					quest.showQuestion()
