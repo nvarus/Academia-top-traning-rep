@@ -56,10 +56,13 @@ h1, h2, h3, h4, h5 {
 
 /*--------------------------------------------------------- */
 /** Флекс центр */
-#task1_form {
+#task1_form, .task3__content {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.task3__content, .task3__div {
+  border: 1px solid black; }
 
 html {
   height: 100%; }
@@ -132,5 +135,103 @@ body {
 
 .message__text {
   padding: 5px; }
+
+#task2-form {
+  margin: 0 auto;
+  width: 450px;
+  background-color: Moccasin;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px; }
+
+.task2-questin {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.task2-radio {
+  margin: 0px 0px 5px 15px;
+  font-size: 16px; }
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white; }
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white; }
+
+#task2-button {
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  font-weight: bold;
+  line-height: 30px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 14px; }
+
+.task3__content {
+  width: 450px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 10px; }
+
+.task3__checkboxes {
+  padding: 5px;
+  margin-bottom: 10px; }
+
+.task3__checkboxes > span {
+  display: inline-block;
+  margin-right: 7px;
+  margin-left: 4px; }
+
+.task3-bold {
+  font-weight: bold; }
+
+.task3-underline {
+  text-decoration: underline; }
+
+.task3-italic {
+  font-style: italic; }
+
+.task3__textarea {
+  width: 96%;
+  padding: 5px;
+  font-size: 15px; }
+
+.task3__button {
+  width: 96%;
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+
+.task3__div {
+  width: 450px;
+  margin: 10px auto;
+  padding: 5px; }
+
+.task3__none {
+  display: none; }
 
 /*----------------------МЕДИА ЗАПРСЫ----------------------- */
