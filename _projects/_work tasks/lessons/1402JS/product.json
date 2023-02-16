@@ -1,0 +1,29 @@
+{
+  "product1": {
+    "title": "Батон",
+    "price": 22,
+    "local": true,
+    "address": ["shop1",	"shop2"],
+    "sostav": {
+      "kalory": 100,
+      "uglevody": 88},
+  },
+  "product2": {
+    "title": "Батон",
+    "price": 22,
+    "local": true,
+    "address": ["shop1",	"shop2"],
+    "sostav": {
+      "kalory": 100,
+      "uglevody": 88},
+  },
+  "product3": {
+    "title": "Батон",
+    "price": 22,
+    "local": true,
+    "address": ["shop1",	"shop2"],
+    "sostav": {
+      "kalory": 100,
+      "uglevody": 88},
+  }
+}
