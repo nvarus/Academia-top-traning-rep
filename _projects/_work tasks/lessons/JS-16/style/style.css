@@ -1,0 +1,7 @@
+WARNING on line 5 of style.sass:
+This selector doesn't have any properties and will not be rendered.
+@charset "UTF-8";
+form {
+  display: flex; }
+
+/*----------------------МЕДИА ЗАПРСЫ----------------------- */

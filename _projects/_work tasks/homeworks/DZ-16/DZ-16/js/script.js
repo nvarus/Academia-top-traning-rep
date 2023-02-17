@@ -149,9 +149,7 @@ const quest = {
 			answer.forEach(radio => {
 				if (radio.checked) {
 					check++
-					if (+radio.dataset.answer === +questList[quest.count].correctAnswer) {
-						quest.corrAnswers++
-					};
+					if (+radio.dataset.answer === +questList[quest.count].correctAnswer) quest.corrAnswers++;
 					quest.count++
 					form.remove()
 					quest.showQuestion()
@@ -182,14 +180,33 @@ document.addEventListener('click', quest.nextQuestion)
 /** Задание 3
 создать html-страницу с формой для ввода стилизованного текста. После заполнения формы, вывести текст на экран в
  соответствии с указанными стилями. */
-
-const bold = document.querySelectorAll('.task3__check')
-const div3 = document.querySelector('.task3__div')
-bold.forEach(item => {
-	if (item.checked) {
-		div3.classList.add(item.dataset.check)
+const task3 = {
+	
+	
+	showText() {
+		const div = document.querySelector('.task3__div')
+		const textarea = document.querySelector('.task3__textarea')
+		div.textContent = `Результат:`+ textarea.value
+		div.classList.remove('task3__none')
+		
+		const checkBox = document.querySelectorAll('.task3__check')
+		checkBox.forEach(item => {
+			// если чекбокс выбран, добавляем к результату нужный класс
+			if (item.checked) div.classList.add(item.dataset.check)});
+		
+		const radio = document.querySelectorAll('.task3__radio')
+		radio.forEach(item => {
+			// если radio кнопка выбрана, добавляем к результату нужный стиль
+			if (item.checked) div.style.textAlign = item.dataset.radio});
+		
 	}
-})
+}
+
+const task3Button = document.querySelector('#task3-button')
+task3Button.addEventListener('click', task3.showText)
+
+
+
 
 
 

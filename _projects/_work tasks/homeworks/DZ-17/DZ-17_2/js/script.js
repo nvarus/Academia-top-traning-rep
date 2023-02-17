@@ -4,6 +4,18 @@
 дальше вводит тему занятия и отмечает присутствующих. Также добавить возможность посмотреть уже отмеченные пары.
 Хранить информацию в заранее подготовленных массивах. */
 
+<<<<<<< HEAD
+class Group {
+    constructor(name = [], present = []) {
+        this.name = name;
+        this.present = present;
+    }
+}
+
+const group = [
+    new Group(['Иванов Иван', 'Петров Петр'])
+]
+=======
 const groups = {
 	group1: [
 		"Павлова Дарья",
@@ -55,7 +67,7 @@ const fillOption = () => {
 		option.textContent = group;
 		selectGroup.append(option);
 	});
-	
+
 	// заполняем урок
 	const selectLesson = form.task2Lesson;
 	lessonsList.forEach(lesson => {
@@ -68,20 +80,21 @@ const fillOption = () => {
 	newOption.value = 'newLesson';
 	newOption.textContent = 'Новый урок';
 	selectLesson.append(newOption)
-	
-	
+
+
 }
 fillOption()
+>>>>>>> 28755d219c5bbf79cd72314dedd127367214f03e
 
 document.addEventListener('click', (e) => {
-	const form = document.forms.task2Form;
-	const selectLesson = form.task2Lesson;
-	const selectGroup = form.task2Group;
-	if (e.target.id === 'task2-button') {
-		e.preventDefault()
-		console.log(selectLesson.value)
-		selectGroup.value = 'group2'
-		console.log(lessonsList[1])
-		console.log(lessonsList[1])
-	}
+    const form = document.forms.task2Form;
+    const selectLesson = form.task2Lesson;
+    const selectGroup = form.task2Group;
+    if (e.target.id === 'task2-button') {
+        e.preventDefault()
+        console.log(selectLesson.value)
+        selectGroup.value = 'group2'
+        console.log(lessonsList[1])
+        console.log(lessonsList[1])
+    }
 })

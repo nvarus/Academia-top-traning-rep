@@ -16,6 +16,28 @@ html(lang="ru")
 				button#task1-form-button(name="task1FormButton") Отправить
 		.task2.task
 			h2.title-h2 Задание 2
+			#task2-root
 
+		.task3.task
+			h2.title-h2 Задание 3
+			.task3__content
+				.task3__checkboxes
+					input.task3__check(type="checkbox", data-check="task3-bold")
+					span Bold
+					input.task3__check(type="checkbox", data-check="task3-underline")
+					span Underline
+					input.task3__check(type="checkbox", data-check="task3-italic")
+					span Italics
+					input.task3__radio(type="radio", name="text-align", data-radio="left")
+					span left
+					input.task3__radio(type="radio", name="text-align", data-radio="right")
+					span right
+					input.task3__radio(type="radio", name="text-align", data-radio="justify")
+					span justify
+				textarea.task3__textarea(cols=70, rows=6)
+				button.task3__button#task3-button Показать текст
+			.task3__div.task3__none Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, perspiciatis.
 
-	script(type="text/javascript", src="./js/script.js")
+		.task4.task
+			h2.title-h2 Задание 4
+		script(type="text/javascript", src="./js/script.js")
