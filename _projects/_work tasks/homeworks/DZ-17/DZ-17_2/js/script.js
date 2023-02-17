@@ -48,9 +48,9 @@ class Lesson {
 }
 
 const lessonsList = [
-	new Lesson('lesson1', groups.group1, [true, true, false, true, true, false, false, true, true, true], "Классы", true),
-	new Lesson('lesson2', groups.group2, [true, true, false, true, true, false, false, true], "Логические операторы", true),
-	new Lesson('lesson3', groups.group1, [true, true, false, true, true, false, false, true, true, true], "Циклы", true),
+	new Lesson('lesson1', "group1", [true, true, false, true, true, false, false, true, true, true], "Классы", true),
+	new Lesson('lesson2', "group2", [true, true, false, true, true, false, false, true], "Логические операторы", true),
+	new Lesson('lesson3', "group1", [true, true, false, true, true, false, false, true, true, true], "Циклы", true),
 ]
 
 const fillOption = () => {
@@ -70,15 +70,14 @@ const fillOption = () => {
 		const option = document.createElement('option');
 		option.value = lesson.lessonName;
 		option.textContent = lesson.lessonName;
-		selectLesson.append(option)
-	})
+		selectLesson.append(option);
+	});
 	const newOption = document.createElement('option');
 	newOption.value = 'newLesson';
 	newOption.textContent = 'Новый урок';
-	selectLesson.append(newOption)
-
-
+	selectLesson.append(newOption);
 }
+
 fillOption()
 
 
