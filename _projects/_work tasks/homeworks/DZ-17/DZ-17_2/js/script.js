@@ -4,7 +4,7 @@
 дальше вводит тему занятия и отмечает присутствующих. Также добавить возможность посмотреть уже отмеченные пары.
 Хранить информацию в заранее подготовленных массивах. */
 
-<<<<<<< HEAD
+
 class Group {
     constructor(name = [], present = []) {
         this.name = name;
@@ -12,10 +12,6 @@ class Group {
     }
 }
 
-const group = [
-    new Group(['Иванов Иван', 'Петров Петр'])
-]
-=======
 const groups = {
 	group1: [
 		"Павлова Дарья",
@@ -84,7 +80,7 @@ const fillOption = () => {
 
 }
 fillOption()
->>>>>>> 28755d219c5bbf79cd72314dedd127367214f03e
+
 
 document.addEventListener('click', (e) => {
     const form = document.forms.task2Form;
