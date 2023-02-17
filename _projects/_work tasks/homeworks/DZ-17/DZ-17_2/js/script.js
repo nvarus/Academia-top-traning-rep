@@ -82,5 +82,6 @@ document.addEventListener('click', (e) => {
 		console.log(selectLesson.value)
 		selectGroup.value = 'group2'
 		console.log(lessonsList[1])
+		console.log(lessonsList[1])
 	}
 })
