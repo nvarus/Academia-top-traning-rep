@@ -14,7 +14,7 @@ body
 	height: 100%
 
 .task
-	background-color: white
+	background-color: silver
 	max-width: 600px
 	margin: 10px auto
 	border-radius: 4px
@@ -39,7 +39,7 @@ body
 	border-bottom: 1px solid grey
 	padding: 10px
 
-#task2-button
+#task2-chooseBtn
 	background: coral
 	line-height: 26px
 	padding: 0px 10px
@@ -49,6 +49,39 @@ body
 	@extend %border
 	width: 100px
 	height: 25px
+
+.task2-listForm
+	padding: 10px 20px
+
+#task2-topic
+	margin-left: 10px
+	height: 25px
+	width: 75%
+	font-size: 16px
+	padding-left: 5px
+
+.listForm__grid
+	margin: 20px auto
+	display: grid
+	grid-template-columns: 1fr .4fr
+	width: 70%
+
+h3
+	font-weight: bold
+	text-align: center
+
+.listForm__gridElem
+	border: 1px solid gray
+	padding: 5px
+
+.listForm__inputWrapper
+	@extend %flex-center-center
+
+.listForm__checkbox
+	text-align: center
+
+
+
 //------------------------------------------
 // МЕДИА ЗАПРОСЫ
 @import "media_queries"
