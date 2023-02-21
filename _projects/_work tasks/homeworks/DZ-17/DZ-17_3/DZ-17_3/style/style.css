@@ -56,12 +56,12 @@ h1, h2, h3, h4, h5 {
 
 /*--------------------------------------------------------- */
 /** Флекс центр */
-.listForm__inputWrapper, .list-topic {
+.check-wrap, .ticket > div {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.task2-select {
+.seatsForm, .check-wrap, .ticket > div {
   border: 1px solid black; }
 
 html {
@@ -75,7 +75,7 @@ body {
 
 .task {
   background-color: silver;
-  max-width: 600px;
+  max-width: 800px;
   margin: 10px auto;
   border-radius: 4px;
   padding: 20px;
@@ -90,67 +90,56 @@ body {
   margin-top: 0;
   margin-bottom: 10px; }
 
-#task2-form {
-  border-bottom: 1px solid grey;
-  padding: 10px; }
+#form-select {
+  border-bottom: 1px solid gray;
+  padding: 20px 0; }
 
-#task2-chooseBtn {
+.direction {
+  width: 250px;
+  height: 25px;
+  font-size: 16px; }
+
+.date {
+  width: 120px;
+  height: 25px;
+  font-size: 16px; }
+
+.button {
   background-color: coral;
-  font-size: 15px;
-  line-height: 22.5px;
-  width: 100px;
-  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 130px;
+  height: 25px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 0px 10px; }
 
-.task2-select {
-  width: 100px;
+.seatsForm {
+  min-height: 100px;
+  margin: 25px 0; }
+
+.seatsForm {
+  border-radius: 10px;
+  padding: 15px 10px;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(14, 50px);
+  grid-template-rows: repeat(2, 30px); }
+
+.footer {
+  text-align: right;
+  margin: 15px; }
+
+.footer > span {
+  margin-right: 25px; }
+
+.ticket {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.ticket > div {
   height: 25px; }
 
-.task2-listForm {
-  padding: 10px 20px; }
-
-#task2-topic {
-  margin-left: 10px;
-  height: 25px;
-  width: 75%;
-  font-size: 16px;
-  padding-left: 5px; }
-
-.listForm__grid {
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 1fr 0.4fr;
-  width: 70%; }
-
-h3 {
-  font-weight: bold;
-  text-align: center; }
-
-.listForm__gridElem {
-  border: 1px solid gray;
-  padding: 5px;
-  text-align: center; }
-
-.listForm__checkbox {
-  text-align: center; }
-
-.listForm__button {
-  background-color: coral;
-  font-size: 15px;
-  line-height: 22.5px;
-  width: 71%;
-  height: 24px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  padding: 0px 10px;
-  margin: 0 75px; }
-
-.list-topic {
-  margin: 20px 0;
-  gap: 10px;
-  font-size: 16px; }
-
-.list-topic > div {
+.title {
   font-weight: bold; }
 
 /*----------------------МЕДИА ЗАПРСЫ----------------------- */

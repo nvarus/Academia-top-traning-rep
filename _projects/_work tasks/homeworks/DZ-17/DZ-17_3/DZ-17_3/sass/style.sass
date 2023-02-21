@@ -1,0 +1,91 @@
+// ИМПОРТЫ
+@import "resetting-styles"
+@import "patterns"
+//-------------------------------------------
+
+
+html
+	height: 100%
+
+body
+	background-color: DarkSlateGrey
+	font-family: Verdana
+	padding-bottom: 10px
+	height: 100%
+
+.task
+	background-color: silver
+	max-width: 800px
+	margin: 10px auto
+	border-radius: 4px
+	padding: 20px
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+
+
+.title-h2
+	font-size: 26px
+	font-weight: 600
+	text-align: center
+	color: blue
+	font-style: italic
+	margin-top: 0
+	margin-bottom: 10px
+
+
+
+// ---------Задание 3------------
+#form-select
+	border-bottom: 1px solid gray
+	padding: 20px 0
+.direction
+	width: 250px
+	height: 25px
+	font-size: 16px
+
+.date
+	width: 120px
+	height: 25px
+	font-size: 16px
+
+.button
+	+button(coral, 16px, 130px, 25px)
+
+.seatsForm
+	@extend %border
+	min-height: 100px
+	margin: 25px 0
+
+.check-wrap
+	@extend %flex-center-center
+	@extend %border
+
+.seatsForm
+	border-radius: 10px
+	padding: 15px 10px
+	display: grid
+	gap: 3px
+	grid-template-columns: repeat(14, 50px)
+	grid-template-rows: repeat(2, 30px)
+
+.footer
+	text-align: right
+	margin: 15px
+
+.footer > span
+	margin-right: 25px
+
+.ticket
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+
+.ticket > div
+	height: 25px
+	@extend %border
+	@extend %flex-center-center
+
+.title
+	font-weight: bold
+
+//------------------------------------------
+// МЕДИА ЗАПРОСЫ
+@import "media_queries"

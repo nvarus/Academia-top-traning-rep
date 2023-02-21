@@ -40,10 +40,7 @@ body
 	padding: 10px
 
 #task2-chooseBtn
-	background: coral
-	line-height: 26px
-	padding: 0px 10px
-	@extend %shadow1
+	+button(coral, 15px, 100px, 24px)
 
 .task2-select
 	@extend %border
@@ -73,6 +70,7 @@ h3
 .listForm__gridElem
 	border: 1px solid gray
 	padding: 5px
+	text-align: center
 
 .listForm__inputWrapper
 	@extend %flex-center-center
@@ -80,6 +78,18 @@ h3
 .listForm__checkbox
 	text-align: center
 
+.listForm__button
+	+button(coral, 15px, 71%, 24px)
+	margin: 0 75px
+
+.list-topic
+	margin: 20px 0
+	@extend %flex-center-center
+	gap: 10px
+	font-size: 16px
+
+.list-topic > div
+	font-weight: bold
 
 
 //------------------------------------------
