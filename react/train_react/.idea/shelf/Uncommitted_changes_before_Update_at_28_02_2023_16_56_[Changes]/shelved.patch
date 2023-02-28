@@ -1,0 +1,386 @@
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.js b/src/App.jsx
+rename from src/App.js
+rename to src/App.jsx
+--- a/src/App.js	(revision d146a2505911851eed859fc4905af06fba6cb5b3)
++++ b/src/App.jsx	(date 1676994139546)
+@@ -1,22 +1,14 @@
+ import React, {useState} from "react";
+-function App() {
+-  const [likes, setLikes] = useState(5)
+-  
+-  function increment() {
+-   setLikes(likes + 1)
+-  }
+-  
+-  function decrement() {
+-    setLikes(likes - 1)
+-  
+-  }
++import Button from "./include/Button/Button.";
++import Header from "./section/Header/Header";
++import './App.css'
++
++const App = (props) => {
+   return (
+-    <div className="App">
+-    <h1>{likes}</h1>
+-    <button onClick={increment}>Increment</button>
+-    <button onClick={decrement}>Decrement</button>
+-    </div>
+-  );
++     <>
++     <Header/>
++     </>
++  )
+ }
+ 
+ export default App;
+Index: ../../_projects/_work tasks/lessons/react/new-react/src/App.test.js
+===================================================================
+diff --git a/../../_projects/_work tasks/lessons/react/new-react/src/App.test.js b/../../_projects/_work tasks/lessons/react/new-react/src/App.test.js
+deleted file mode 100644
+--- a/../../_projects/_work tasks/lessons/react/new-react/src/App.test.js	(revision d146a2505911851eed859fc4905af06fba6cb5b3)
++++ /dev/null	(revision d146a2505911851eed859fc4905af06fba6cb5b3)
+@@ -1,8 +0,0 @@
+-import { render, screen } from '@testing-library/react';
+-import App from './App';
+-
+-test('renders learn react link', () => {
+-  render(<App />);
+-  const linkElement = screen.getByText(/learn react/i);
+-  expect(linkElement).toBeInTheDocument();
+-});
+Index: src/include/Nav/Nav.module.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/include/Nav/Nav.module.css b/src/include/Nav/Nav.module.css
+new file mode 100644
+--- /dev/null	(date 1676997506429)
++++ b/src/include/Nav/Nav.module.css	(date 1676997506429)
+@@ -0,0 +1,12 @@
++.item {
++  color: #fff;
++  font-size: 16px;
++  font-weight: 400;
++  text-decoration: none; }
++
++.item:hover {
++  text-decoration: underline; }
++
++.list {
++  display: flex;
++  justify-content: space-between; }
+Index: src/include/Button/Button.module.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/include/Button/Button.module.css b/src/include/Button/Button.module.css
+new file mode 100644
+--- /dev/null	(date 1676996367476)
++++ b/src/include/Button/Button.module.css	(date 1676996367476)
+@@ -0,0 +1,9 @@
++button {
++  margin: 5px; }
++
++.btn {
++  width: 100px;
++  background: coral; }
++
++.saray {
++  color: blue; }
+Index: src/section/Header/Header.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/section/Header/Header.jsx b/src/section/Header/Header.jsx
+new file mode 100644
+--- /dev/null	(date 1676998123856)
++++ b/src/section/Header/Header.jsx	(date 1676998123856)
+@@ -0,0 +1,17 @@
++import "./Header.css"
++import Button from "../../include/Button/Button.";
++import Nav from "../../include/Nav/Nav";
++
++const Header = (props) => {
++  return (
++	  <header>
++		  <div className={'container'}>
++			  {/*<Logo/>*/}
++			  <Nav/>
++			  <Button title='Войти'/>
++		  </div>
++	  </header>
++  )
++}
++
++export default Header;
+\ No newline at end of file
+Index: src/include/Button/Button..jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/include/Button/Button..jsx b/src/include/Button/Button..jsx
+new file mode 100644
+--- /dev/null	(date 1676999529340)
++++ b/src/include/Button/Button..jsx	(date 1676999529340)
+@@ -0,0 +1,11 @@
++import style from './Button.module.css'
++
++console.log(style)
++const Button = (props) => {
++	return (
++		<button className={style.btn}>{props.title}</button>
++	)
++}
++
++export default Button;
++
+Index: src/include/Button/Button.module.sass
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/include/Button/Button.module.sass b/src/include/Button/Button.module.sass
+new file mode 100644
+--- /dev/null	(date 1676996366390)
++++ b/src/include/Button/Button.module.sass	(date 1676996366390)
+@@ -0,0 +1,11 @@
++button
++	margin: 5px
++
++
++.btn
++	width: 100px
++	background: coral
++
++
++.saray
++	color: blue
+Index: ../../_projects/_work tasks/homeworks/react/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ad5f7845-5e08-4733-b51f-874ab75854bf\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/../DZ-14/.idea/DZ-14.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../DZ-14/DZ-14_5/.idea/_empty_project_ts+scss.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14.rar\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../DZ-14/DZ-14.rar\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14/js/script.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../DZ-14/DZ-14/js/script.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14/sass/style.sass\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../DZ-14/DZ-14/sass/style.sass\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14/style/style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../DZ-14/DZ-14/style/style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/.gitignore\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/_empty_project_ts+scss.iml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/codeStyles/codeStyleConfig.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/compiler.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/dictionaries/alx.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/inspectionProfiles/Project_Default.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/jsLibraryMappings.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/modules.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/php.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/vcs.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/watcherTasks.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/arrow.ico\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/jest.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/jquery.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/js.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/nodejs.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/npm.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/prettir.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/ts.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/vue.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/index.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/js/script.js\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/_media_queries.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/_resetting-styles.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/style.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_media_queries.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_patterns.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_resetting-styles.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/patterns.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/style.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_media_queries.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_patterns.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_resetting-styles.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/style.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/_media_queries.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/_resetting-styles.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/style.sassc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_media_queries.sass\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_patterns.sass\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_resetting-styles.sass\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/style.sass\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/style/style.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/ts/script.ts\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/tsconfig-checks.json\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../DZ-14/DZ-14_4/tsconfig.json\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../../../..\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2LF6qFGH0YrmwGzZthHJ3VTyyNb\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"nodejs_package_manager_path\": \"npm\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ad5f7845-5e08-4733-b51f-874ab75854bf\" name=\"Changes\" comment=\"\" />\r\n      <created>1675454675032</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1675454675032</updated>\r\n      <workItem from=\"1675454676715\" duration=\"58000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../_projects/_work tasks/homeworks/react/.idea/workspace.xml b/../../_projects/_work tasks/homeworks/react/.idea/workspace.xml
+--- a/../../_projects/_work tasks/homeworks/react/.idea/workspace.xml	(revision d146a2505911851eed859fc4905af06fba6cb5b3)
++++ b/../../_projects/_work tasks/homeworks/react/.idea/workspace.xml	(date 1676989925217)
+@@ -2,57 +2,7 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="ad5f7845-5e08-4733-b51f-874ab75854bf" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/../DZ-14/.idea/DZ-14.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/../DZ-14/DZ-14_5/.idea/_empty_project_ts+scss.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14.rar" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14/js/script.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14/sass/style.sass" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14/style/style.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/.gitignore" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/_empty_project_ts+scss.iml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/compiler.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/dictionaries/alx.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/jsLibraryMappings.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/modules.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/php.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/vcs.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/watcherTasks.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/arrow.ico" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/jest.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/jquery.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/js.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/nodejs.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/npm.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/prettir.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/ts.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/img/task1/vue.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/index.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/js/script.js" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/_media_queries.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/_resetting-styles.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/9e381ed46a1999ba74e75047117b5099ee666159/style.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_media_queries.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_patterns.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/_resetting-styles.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/patterns.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/c4984a5b17b9d1427caa33c972805aaa095d2a86/style.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_media_queries.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_patterns.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/_resetting-styles.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/e28547766c3baa800f6e5121d61ebd67234adfb1/style.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/_media_queries.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/_resetting-styles.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/.sass-cache/f2c34e141c9f712ab33262a97beb0121a67137db/style.sassc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_media_queries.sass" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_patterns.sass" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/_resetting-styles.sass" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/sass/style.sass" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/style/style.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/ts/script.ts" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/tsconfig-checks.json" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/tsconfig.json" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -70,14 +20,14 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "nodejs_package_manager_path": "npm"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -87,6 +37,8 @@
+       <option name="presentableId" value="Default" />
+       <updated>1675454675032</updated>
+       <workItem from="1675454676715" duration="58000" />
++      <workItem from="1676989747489" duration="24000" />
++      <workItem from="1676989898054" duration="27000" />
+     </task>
+     <servers />
+   </component>
+Index: src/App.sass
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.sass b/src/App.sass
+new file mode 100644
+--- /dev/null	(date 1676996296125)
++++ b/src/App.sass	(date 1676996296125)
+@@ -0,0 +1,8 @@
++.container
++	margin: 0 auto
++	background: rgba(0,21,30,0.33)
++	width: 1000px
++	display: grid
++	grid-template-columns: repeat(16, 1fr)
++	column-gap: 20px
++	grid-template-rows: minmax(30px, auto)
+\ No newline at end of file
+Index: src/include/Nav/Nav.module.sass
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/include/Nav/Nav.module.sass b/src/include/Nav/Nav.module.sass
+new file mode 100644
+--- /dev/null	(date 1676997505402)
++++ b/src/include/Nav/Nav.module.sass	(date 1676997505402)
+@@ -0,0 +1,14 @@
++
++.item
++	color: #fff
++	font-size: 16px
++	font-weight: 400
++	text-decoration: none
++
++.item:hover
++	text-decoration: underline
++
++
++.list
++	display: flex
++	justify-content: space-between
+\ No newline at end of file
+Index: src/include/Nav/Nav.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/include/Nav/Nav.jsx b/src/include/Nav/Nav.jsx
+new file mode 100644
+--- /dev/null	(date 1676998110511)
++++ b/src/include/Nav/Nav.jsx	(date 1676998110511)
+@@ -0,0 +1,15 @@
++import style from './Nav.module.css'
++
++const Nav = (props) => {
++	return (
++			<nav className={style.list}>
++			<a href="" className={style.item}>Главная</a>
++			<a href="" className={style.item}>Новости</a>
++			<a href="" className={style.item}>О нас</a>
++			
++			
++			</nav>
++	)
++}
++
++export default Nav;
+\ No newline at end of file
+Index: src/section/Header/Header.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/section/Header/Header.css b/src/section/Header/Header.css
+new file mode 100644
+--- /dev/null	(date 1676997723355)
++++ b/src/section/Header/Header.css	(date 1676997723355)
+@@ -0,0 +1,5 @@
++header button {
++  grid-column: 15/16; }
++
++header nav {
++  grid-column: 6/10; }
+Index: src/App.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.css b/src/App.css
+new file mode 100644
+--- /dev/null	(date 1676996297411)
++++ b/src/App.css	(date 1676996297411)
+@@ -0,0 +1,8 @@
++.container {
++  margin: 0 auto;
++  background: rgba(0, 21, 30, 0.33);
++  width: 1000px;
++  display: grid;
++  grid-template-columns: repeat(16, 1fr);
++  column-gap: 20px;
++  grid-template-rows: minmax(30px, auto); }
+Index: src/section/Header/Header.sass
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/section/Header/Header.sass b/src/section/Header/Header.sass
+new file mode 100644
+--- /dev/null	(date 1676997722332)
++++ b/src/section/Header/Header.sass	(date 1676997722332)
+@@ -0,0 +1,5 @@
++header button
++	grid-column: 15/16
++
++header nav
++	grid-column: 6/10
