@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="653c5e22-512c-4b52-9a50-b7a11c8bc9be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/App.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/include/Button/Button..jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/include/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/include/Button/Button.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/include/Nav/Nav.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/include/Nav/Nav.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/include/Nav/Nav.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/section/Header/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/section/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../react/train_react/src/section/Header/Header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../react/train_react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../react/train_react/src/App.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LjzBCEi7Wzmdpk5ZjggQ1YOZ88" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="653c5e22-512c-4b52-9a50-b7a11c8bc9be" name="Changes" comment="" />
+      <created>1676399151875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676399151875</updated>
+      <workItem from="1676399152978" duration="4535000" />
+      <workItem from="1676557863423" duration="141000" />
+      <workItem from="1676558094836" duration="1300000" />
+      <workItem from="1676989915241" duration="30000" />
+      <workItem from="1676989975144" duration="141000" />
+      <workItem from="1676998055653" duration="10000" />
+      <workItem from="1676998083151" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
