@@ -1,3 +1,4 @@
-"use strict";
-let userName = 'Файл script.js подключен.';
-console.log(userName);
+function count() {
+	for (var i = 0; i < 3; i++) {alert( i );}
+	
+}

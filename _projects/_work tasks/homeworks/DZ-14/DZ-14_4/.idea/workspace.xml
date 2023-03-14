@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6056622-c9f3-4902-9d6b-2241e24221f6" name="Changes" comment="изменил empty_project">
-      <change afterPath="$PROJECT_DIR$/../../DZ-15/DZ-15/sass/.sass-cache/33e0c9341afa4bc296e7cb4669bafa3e53af5a8c/_media_queries.sassc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DZ-15/DZ-15/sass/.sass-cache/33e0c9341afa4bc296e7cb4669bafa3e53af5a8c/_patterns.sassc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DZ-15/DZ-15/sass/.sass-cache/33e0c9341afa4bc296e7cb4669bafa3e53af5a8c/_resetting-styles.sassc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DZ-15/DZ-15/sass/.sass-cache/33e0c9341afa4bc296e7cb4669bafa3e53af5a8c/style.sassc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DZ-14.rar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_module_project_ts+sass/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_module_project_ts+sass/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_module_project_ts+sass/src/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../angular/firstProg/angular-crach-course/src/app/components/product/product,component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../angular/firstProg/angular-crach-course/src/app/components/product/product.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../kids_HARD/img/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../kids_HARD/img/raccoon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_empty_js+pug" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_empty_js+pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_empty_js/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_empty_js/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_empty_js/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_empty_js/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_empty_ts+pug" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_empty_ts+pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DZ-18" beforeDir="false" afterPath="$PROJECT_DIR$/../../DZ-18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../kids_HARD/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../kids_HARD/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../kids_HARD/js/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../kids_HARD/js/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../kids_HARD/js/style/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../../../kids_HARD/js/style/main.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +90,7 @@
       <workItem from="1675103145835" duration="3283000" />
       <workItem from="1675522206646" duration="20000" />
       <workItem from="1675578824392" duration="292000" />
+      <workItem from="1678002927968" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="изменил empty_project">
       <created>1673168329579</created>

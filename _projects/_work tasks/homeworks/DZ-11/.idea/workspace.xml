@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bcf93c1-cfae-4f41-94dd-2b7305a0d786" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../DZ-6/DZ-6.4/readMe.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_module_project_ts+sass/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_module_project_ts+sass/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_module_project_ts+sass/src/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../angular/firstProg/angular-crach-course/src/app/components/product/product,component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../angular/firstProg/angular-crach-course/src/app/components/product/product.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kids_HARD/img/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kids_HARD/img/raccoon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_js+pug" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_js+pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_js/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_js/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_js/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_js/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_ts+pug" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_ts+pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-14/DZ-14_4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-17/DZ-17_3/DZ-17_3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-17/DZ-17_3/DZ-17_3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-18" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kids_HARD/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../kids_HARD/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kids_HARD/js/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../kids_HARD/js/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kids_HARD/js/style/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../../kids_HARD/js/style/main.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +55,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2022.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external"
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2022.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,6 +74,7 @@
       <workItem from="1673192509955" duration="1531000" />
       <workItem from="1673194448930" duration="14000" />
       <workItem from="1673876358533" duration="18403000" />
+      <workItem from="1678003334357" duration="37000" />
     </task>
     <servers />
   </component>

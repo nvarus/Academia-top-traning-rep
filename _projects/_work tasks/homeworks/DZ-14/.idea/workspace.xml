@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4bfc5ca-ab70-41f8-baab-9dc47b9125b3" name="Changes" comment="" />
+    <list default="true" id="c4bfc5ca-ab70-41f8-baab-9dc47b9125b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../_module_project_ts+sass/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_module_project_ts+sass/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_module_project_ts+sass/src/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../angular/firstProg/angular-crach-course/src/app/components/product/product,component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../angular/firstProg/angular-crach-course/src/app/components/product/product.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kids_HARD/img/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kids_HARD/img/raccoon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_js+pug" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_js+pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_js/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_js/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_js/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_js/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_empty_ts+pug" beforeDir="false" afterPath="$PROJECT_DIR$/../../_empty_ts+pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-11/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-11/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ-14_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DZ-14_4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-17/DZ-17_3/DZ-17_3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-17/DZ-17_3/DZ-17_3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-18" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kids_HARD/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../kids_HARD/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kids_HARD/js/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../kids_HARD/js/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kids_HARD/js/style/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../../kids_HARD/js/style/main.sass" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +42,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -34,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675407444508</updated>
       <workItem from="1675407446511" duration="8000" />
+      <workItem from="1678003491335" duration="66000" />
     </task>
     <servers />
   </component>
